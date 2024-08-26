@@ -1,0 +1,4 @@
+date:,2024-04-01 20:24:27
+duration:,8.445261240005493
+recording notes:,Austin walking towards radar 4-0m
+FmcwSimpleSequenceConfig:,    frame_repetition_time_s: 0.05263157933950424,    chirp_repetition_time_s: 0.00039999998989515007,    num_chirps: 128,    tdm_mimo: False,    chirp: FmcwSequenceChirp:,    start_frequency_Hz: 58000000000.0,    end_frequency_Hz: 63000000000.0,    sample_rate_Hz: 1000000.0,    num_samples: 256,    rx_mask: 5,    tx_mask: 1,    tx_power_level: 31,    lp_cutoff_Hz: 500000,    hp_cutoff_Hz: 80000,    if_gain_dB: 33
