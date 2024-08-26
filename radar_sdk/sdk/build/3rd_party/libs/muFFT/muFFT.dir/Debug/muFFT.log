@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/3rd_party/libs/muFFT/CMakeLists.txt
+  fft.c
+  kernel.c
+  cpu.c
+  muFFT.vcxproj -> C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\3rd_party\libs\muFFT\Debug\muFFT.lib

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60TR13C\common\common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60TR13C\common\json.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60TR13C\common\time_formatter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60TR13C\common\util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60TR13C\common\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60TR13C\common\json.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60TR13C\common\json.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60TR13C\common\time_formatter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60TR13C\common\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60TR13C\common\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7D7D727B-A4E9-3CE4-BB4C-EA75D655E5B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{38694128-076A-3E95-8BDD-8F6A94077261}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

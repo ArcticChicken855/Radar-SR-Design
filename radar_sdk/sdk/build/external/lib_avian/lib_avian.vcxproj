@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C880E0C1-3509-3158-9DB4-CDE89E018893}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>lib_avian</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">lib_avian.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">lib_avian</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">lib_avian.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">lib_avian</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">lib_avian.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">lib_avian</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">lib_avian.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">lib_avian</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_DEBUG;SDK_VERSION="3.5.0";SDK_VERSION_FULL="3.5.0+";SDK_COMMIT_HASH="";STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;STRATA_IMPORT;CMAKE_INTDIR="Debug";lib_avian_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;SDK_VERSION=\"3.5.0\";SDK_VERSION_FULL=\"3.5.0+\";SDK_COMMIT_HASH=\"\";STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;STRATA_IMPORT;CMAKE_INTDIR=\"Debug\";lib_avian_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd "C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\lib_avian"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/lib_avian.dir/Debug/exports.def" "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/lib_avian.dir/Debug//objects.txt"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>..\strata\library\Debug\strata_shared-d.lib;ws2_32.lib;iphlpapi.lib;strmiids.lib;..\strata\contrib\pugixml\Debug\pugixml-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/Debug/lib_avian.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/lib_avian.dir/Debug/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/bin/Debug/lib_avian.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;SDK_VERSION="3.5.0";SDK_VERSION_FULL="3.5.0+";SDK_COMMIT_HASH="";STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;STRATA_IMPORT;CMAKE_INTDIR="Release";lib_avian_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;SDK_VERSION=\"3.5.0\";SDK_VERSION_FULL=\"3.5.0+\";SDK_COMMIT_HASH=\"\";STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;STRATA_IMPORT;CMAKE_INTDIR=\"Release\";lib_avian_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd "C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\lib_avian"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/lib_avian.dir/Release/exports.def" "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/lib_avian.dir/Release//objects.txt"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>..\strata\library\Release\strata_shared.lib;ws2_32.lib;iphlpapi.lib;strmiids.lib;..\strata\contrib\pugixml\Release\pugixml.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/Release/lib_avian.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/lib_avian.dir/Release/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/bin/Release/lib_avian.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;SDK_VERSION="3.5.0";SDK_VERSION_FULL="3.5.0+";SDK_COMMIT_HASH="";STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;STRATA_IMPORT;CMAKE_INTDIR="MinSizeRel";lib_avian_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;SDK_VERSION=\"3.5.0\";SDK_VERSION_FULL=\"3.5.0+\";SDK_COMMIT_HASH=\"\";STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;STRATA_IMPORT;CMAKE_INTDIR=\"MinSizeRel\";lib_avian_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd "C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\lib_avian"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/lib_avian.dir/MinSizeRel/exports.def" "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/lib_avian.dir/MinSizeRel//objects.txt"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>..\strata\library\MinSizeRel\strata_shared.lib;ws2_32.lib;iphlpapi.lib;strmiids.lib;..\strata\contrib\pugixml\MinSizeRel\pugixml.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/MinSizeRel/lib_avian.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/lib_avian.dir/MinSizeRel/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/bin/MinSizeRel/lib_avian.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;SDK_VERSION="3.5.0";SDK_VERSION_FULL="3.5.0+";SDK_COMMIT_HASH="";STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;STRATA_IMPORT;CMAKE_INTDIR="RelWithDebInfo";lib_avian_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;SDK_VERSION=\"3.5.0\";SDK_VERSION_FULL=\"3.5.0+\";SDK_COMMIT_HASH=\"\";STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;STRATA_IMPORT;CMAKE_INTDIR=\"RelWithDebInfo\";lib_avian_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd "C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\lib_avian"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/lib_avian.dir/RelWithDebInfo/exports.def" "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/lib_avian.dir/RelWithDebInfo//objects.txt"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>..\strata\library\RelWithDebInfo\strata_shared.lib;ws2_32.lib;iphlpapi.lib;strmiids.lib;..\strata\contrib\pugixml\RelWithDebInfo\pugixml.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/RelWithDebInfo/lib_avian.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/lib_avian.dir/RelWithDebInfo/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/bin/RelWithDebInfo/lib_avian.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/external/lib_avian/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindThreads.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\lib_avian\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/external/lib_avian/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindThreads.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\lib_avian\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/external/lib_avian/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindThreads.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\lib_avian\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/external/lib_avian/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindThreads.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\lib_avian\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_CwController.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_DataConverter.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_DeviceTraits.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_Driver.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_ErrorCodes.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_HwTest.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_IPort.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_ParameterExtractor.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_RegisterSet.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_SensorMeter.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_StrataUtilities.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_TimingModel.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_Types.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_Utilities.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ports\ifxAvian_DummyPort.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ports\ifxAvian_StrataControlPort.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ports\ifxAvian_StrataPort.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\value_conversion\ifxAvian_RfConversion.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\value_conversion\ifxAvian_TimingConversion.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\_configuration.h" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\data_acquisition.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\default_settings.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\easy_mode.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\ifxRadar_BGT60TRxx.cpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\registers_BGT120TR24E.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\registers_BGT60TR11D.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\registers_BGT60TRxxC.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\registers_BGT60TRxxD.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\registers_BGT60TRxxE.h" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\spi_programming.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\testing.cpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Version.h" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_CwController.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_DeviceTraits.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_ErrorCodes.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_HwTest.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_ParameterExtractor.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_RegisterSet.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_SensorMeter.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_StrataUtilities.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_Utilities.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ports\ifxAvian_DummyPort.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ports\ifxAvian_StrataPort.cpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\register_maps\BGT120TR24E_ID000A.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\register_maps\BGT60TRxxC_ID0003.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\register_maps\BGT60TRxxC_ID0005.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\register_maps\BGT60TRxxD_ID0006.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\register_maps\BGT60TRxxD_ID0007.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\register_maps\BGT60TRxxE_ID0008.hpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\register_maps\BGT60TRxxE_ID0009.hpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\ModelBGT60TR11D.cpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\ModelBGT60TR11D.hpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\ModelBGT60TRxxC.cpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\ModelBGT60TRxxC.hpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\ModelBGT60TRxxD.cpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\ModelBGT60TRxxD.hpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\SequenceParameters.cpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\SequenceParameters.hpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\StateSequence.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\value_conversion\ifxAvian_RfConversion.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\value_conversion\ifxAvian_TimingConversion.cpp" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\VersionHistory.txt">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\ZERO_CHECK.vcxproj">
+      <Project>{73EF8E56-00FD-3104-9E52-27C1A51F5EDE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\contrib\pugixml\pugixml-static.vcxproj">
+      <Project>{72E866F5-8D62-3BFD-9370-AB68F68AE230}</Project>
+      <Name>pugixml-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\strata_shared.vcxproj">
+      <Project>{B670699D-9911-39B8-8FD2-1E1E1EF12787}</Project>
+      <Name>strata_shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

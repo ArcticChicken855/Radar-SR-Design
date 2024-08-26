@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\strata_shared-d.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\sdk_base.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\lib_avian.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\sdk_radar_device_common.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\sdk_mimose.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT24ATR22_raw_data_atr22.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\sdk_algo.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\sdk_fmcw.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\sdk_avian.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\sdk_radar.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\sdk_cw.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT60ATR24C_continuous_wave.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT60ATR24C_motion_angle.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT60ATR24C_presence_detection.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT60ATR24C_range_doppler_map.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT60ATR24C_raw_data.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT60ATR24C_segmentation.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\sdk_ltr11.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT60LTR11AIP_advanced_motion_sensing.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT60LTR11AIP_raw_data_ltr11.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT60TR13C_continuous_wave.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT60TR13C_motion_angle.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT60TR13C_presence_detection.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT60TR13C_range_doppler_map.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT60TR13C_raw_data.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT60TR13C_segmentation.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT60UTR11AIP_continuous_wave.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT60UTR11AIP_presence_detection.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\BGT60UTR11AIP_raw_data.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\bgt60-configurator-cli.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\x64\Debug\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

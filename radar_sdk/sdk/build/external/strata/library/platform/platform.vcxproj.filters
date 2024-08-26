@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\BoardAny.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\BoardDescriptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\BoardInstance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\BoardManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\NamedMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\Memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\RegisterGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeProtocol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeProtocolI2c.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeProtocolGpio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeProtocolSpi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeProtocolMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeProtocolFlash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeProtocolData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeWrapperBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\VendorCommandsImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\BridgeEthernet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\BridgeEthernetControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\BridgeEthernetData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\BridgeEthernetTcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\BridgeEthernetUdp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\EnumeratorEthernet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\BoardEthernetTcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\BoardEthernetUdp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\BoardDescriptorEthernet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\SocketTcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\SocketUdp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\fpga\BridgeFpgaIrpli.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\frames\DebugFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\frames\ErrorFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\frames\Frame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\frames\FrameBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\frames\FrameForwarder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\frames\FramePool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\frames\FrameQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\frames\FrameHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\macro\BoardInstanceMacro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\macro\BridgeMacro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\serial\SerialPort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\serial\BridgeSerial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\serial\BoardSerial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\uvc\BoardUvc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\uvc\VendorExtensionCypress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\uvc\VendorExtensionRealtek.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\uvc\VendorExtensionRealtekFlash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\uvc\VendorExtensionRealtekI2c.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\boards\Board.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\boards\BoardGeneric.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\boards\BoardRemote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\serial\SerialPortImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\serial\EnumeratorSerialImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\ethernet\SocketImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\ethernet\SocketTcpImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\ethernet\SocketUdpImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\serial\SerialPortImplAsync.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\video\EnumeratorDirectShow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\video\BridgeDirectShow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\video\Win32Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\BoardAny.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\BoardDescriptor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\BoardInstance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\BoardListProtocol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\BoardManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\NamedMemory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\Memory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\RegisterGenerator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeControl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeData.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeProtocol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeProtocolI2c.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeProtocolGpio.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeProtocolSpi.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeProtocolMemory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeProtocolFlash.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeProtocolData.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\BridgeWrapperBase.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\bridge\VendorCommandsImpl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\BoardEthernetTcp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\BoardEthernetUdp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\BoardDescriptorEthernet.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\BridgeEthernet.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\BridgeEthernetControl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\BridgeEthernetData.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\BridgeEthernetTcp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\BridgeEthernetUdp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\EnumeratorEthernet.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\SocketTcp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\ethernet\SocketUdp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\exception\EAlreadyOpened.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\exception\EBridgeData.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\exception\EConnection.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\exception\EInUse.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\exception\EMemory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\exception\EProtocol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\exception\EProtocolFunction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\exception\EUvcProperty.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\fpga\BridgeFpgaIrpli.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\frames\DebugFrame.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\frames\ErrorFrame.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\frames\Frame.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\frames\FrameBase.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\frames\FrameForwarder.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\frames\FrameListenerCaller.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\frames\FramePool.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\frames\FrameQueue.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\frames\FrameHelper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\IBoard.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\IBridge.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\IBridgeControl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\IBridgeData.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\IVendorCommands.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\IEnumerator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\IFrame.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\IFrameListener.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\IFramePool.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\IFrameQueue.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\access\IData.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\access\IGpio.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\access\IMemory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\access\II2c.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\access\ISpi.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\access\IFlash.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\link\ISerialPort.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\link\ISocket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\link\IMulticoreDebugger.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\interfaces\link\IUvcExtension.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\macro\BoardInstanceMacro.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\macro\BridgeMacro.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\serial\BoardSerial.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\serial\BridgeSerial.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\serial\SerialPort.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\templates\boardFactoryFunction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\templates\enumerateFunction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\templates\identifyBoardFunction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\templates\searchBoardFunction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\uvc\BoardUvc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\uvc\VendorExtensionList.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\uvc\VendorExtensionCypress.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\uvc\VendorExtensionRealtek.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\uvc\VendorExtensionRealtekFlash.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\uvc\VendorExtensionRealtekI2c.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\boards\Board.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\boards\BoardGeneric.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\boards\BoardRemote.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\ethernet\SocketImpl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\ethernet\SocketTcpImpl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\ethernet\SocketUdpImpl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\serial\EnumeratorSerialImpl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\serial\SerialPortImpl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\serial\SerialPortImplBridge.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\uvc\BridgeUvcImpl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\uvc\EnumeratorUvcImpl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\serial\SerialPortImplAsync.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\video\EDirectShow.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\video\BridgeDirectShow.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\video\BridgeDirectShowDefinitions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\video\EnumeratorDirectShow.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\video\EnumeratorDirectShowDefinitions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\video\Win32Utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\video\SampleGrabberInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\video\ComDefines.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows\video\VidCap.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7D7D727B-A4E9-3CE4-BB4C-EA75D655E5B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{38694128-076A-3E95-8BDD-8F6A94077261}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

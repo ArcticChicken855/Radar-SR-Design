@@ -1,0 +1,11 @@
+﻿  Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/library/common/CMakeLists.txt
+  Crc6.cpp
+  Crc8.cpp
+  Crc16.cpp
+  Crc32.cpp
+  LittleEndianReader.cpp
+  Logger.cpp
+  Profiler.cpp
+  ProductVersion.cpp
+  Generating Code...
+  common.vcxproj -> C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.dir\Debug\common.lib

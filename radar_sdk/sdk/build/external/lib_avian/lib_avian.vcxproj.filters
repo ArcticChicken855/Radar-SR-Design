@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\data_acquisition.cpp">
+      <Filter>Source Files\src\Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\default_settings.cpp">
+      <Filter>Source Files\src\Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\easy_mode.cpp">
+      <Filter>Source Files\src\Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\ifxRadar_BGT60TRxx.cpp">
+      <Filter>Source Files\src\Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\spi_programming.cpp">
+      <Filter>Source Files\src\Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\testing.cpp">
+      <Filter>Source Files\src\Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_CwController.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_DeviceTraits.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_ErrorCodes.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_HwTest.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_ParameterExtractor.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_RegisterSet.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_SensorMeter.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_StrataUtilities.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ifxAvian_Utilities.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ports\ifxAvian_DummyPort.cpp">
+      <Filter>Source Files\src\ports</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\ports\ifxAvian_StrataPort.cpp">
+      <Filter>Source Files\src\ports</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\ModelBGT60TR11D.cpp">
+      <Filter>Source Files\src\timing_model</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\ModelBGT60TRxxC.cpp">
+      <Filter>Source Files\src\timing_model</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\ModelBGT60TRxxD.cpp">
+      <Filter>Source Files\src\timing_model</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\SequenceParameters.cpp">
+      <Filter>Source Files\src\timing_model</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\StateSequence.cpp">
+      <Filter>Source Files\src\timing_model</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\value_conversion\ifxAvian_RfConversion.cpp">
+      <Filter>Source Files\src\value_conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\value_conversion\ifxAvian_TimingConversion.cpp">
+      <Filter>Source Files\src\value_conversion</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_CwController.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_DataConverter.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_DeviceTraits.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_Driver.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_ErrorCodes.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_HwTest.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_IPort.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_ParameterExtractor.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_RegisterSet.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_SensorMeter.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_StrataUtilities.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_TimingModel.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_Types.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ifxAvian_Utilities.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ports\ifxAvian_DummyPort.hpp">
+      <Filter>Source Files\include\ports</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ports\ifxAvian_StrataControlPort.hpp">
+      <Filter>Source Files\include\ports</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\ports\ifxAvian_StrataPort.hpp">
+      <Filter>Source Files\include\ports</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\value_conversion\ifxAvian_RfConversion.hpp">
+      <Filter>Source Files\include\value_conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\include\value_conversion\ifxAvian_TimingConversion.hpp">
+      <Filter>Source Files\include\value_conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\_configuration.h">
+      <Filter>Source Files\src\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\registers_BGT120TR24E.h">
+      <Filter>Source Files\src\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\registers_BGT60TR11D.h">
+      <Filter>Source Files\src\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\registers_BGT60TRxxC.h">
+      <Filter>Source Files\src\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\registers_BGT60TRxxD.h">
+      <Filter>Source Files\src\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Driver\registers_BGT60TRxxE.h">
+      <Filter>Source Files\src\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\Version.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\register_maps\BGT120TR24E_ID000A.hpp">
+      <Filter>Source Files\src\register_maps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\register_maps\BGT60TRxxC_ID0003.hpp">
+      <Filter>Source Files\src\register_maps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\register_maps\BGT60TRxxC_ID0005.hpp">
+      <Filter>Source Files\src\register_maps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\register_maps\BGT60TRxxD_ID0006.hpp">
+      <Filter>Source Files\src\register_maps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\register_maps\BGT60TRxxD_ID0007.hpp">
+      <Filter>Source Files\src\register_maps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\register_maps\BGT60TRxxE_ID0008.hpp">
+      <Filter>Source Files\src\register_maps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\register_maps\BGT60TRxxE_ID0009.hpp">
+      <Filter>Source Files\src\register_maps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\ModelBGT60TR11D.hpp">
+      <Filter>Source Files\src\timing_model</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\ModelBGT60TRxxC.hpp">
+      <Filter>Source Files\src\timing_model</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\ModelBGT60TRxxD.hpp">
+      <Filter>Source Files\src\timing_model</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\src\timing_model\SequenceParameters.hpp">
+      <Filter>Source Files\src\timing_model</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\lib_avian\VersionHistory.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{38694128-076A-3E95-8BDD-8F6A94077261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\include">
+      <UniqueIdentifier>{19922956-BA26-3507-9D65-05F4471FF72E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\include\ports">
+      <UniqueIdentifier>{BA492D0C-7168-32DC-A078-1F3EE0F79342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\include\value_conversion">
+      <UniqueIdentifier>{9E785B7E-2722-3E5F-B266-3B6CC5309020}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{6B093139-5025-3DEE-95D6-FE3483B0708D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Driver">
+      <UniqueIdentifier>{2A5BDEC0-82DC-38D3-A581-E8B1AB207B8C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\ports">
+      <UniqueIdentifier>{B2D04ADB-8941-3C8F-9B03-202B67DFC003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\register_maps">
+      <UniqueIdentifier>{95557548-28F3-3388-A01D-B2BD6C0A1055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\timing_model">
+      <UniqueIdentifier>{BF83B3F0-5721-34E4-B7BF-18B96A73612C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\value_conversion">
+      <UniqueIdentifier>{DD77F040-CC9A-3753-B0C4-3615E68F0426}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

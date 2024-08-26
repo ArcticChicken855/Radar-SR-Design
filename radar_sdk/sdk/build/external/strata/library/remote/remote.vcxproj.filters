@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteGasBoyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteProtocolAtr22.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteProtocolAvian.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteProtocolLtr11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteProtocolSmartar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemotePinsAvian.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemotePinsLtr11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemotePinsSmartar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteProcessingRadar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteRegisters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteRadarAvian.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteRadarAtr22.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteRadarLtr11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteRadarSmartar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteVendorCommands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteGasBoyle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteProtocolAtr22.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteProtocolAvian.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteProtocolLtr11.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteProtocolSmartar.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemotePinsAvian.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemotePinsLtr11.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemotePinsSmartar.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteProcessingRadar.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteRegisters.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteRadarAvian.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteRadarAtr22.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteRadarLtr11.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteRadarSmartar.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\RemoteVendorCommands.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\remote\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7D7D727B-A4E9-3CE4-BB4C-EA75D655E5B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{38694128-076A-3E95-8BDD-8F6A94077261}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

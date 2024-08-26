@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.28/Modules/TestBigEndian.cmake
+C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/CMakeLists.txt
+C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/Strata.cmake
+C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/cmake/Dependencies.cmake
+C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/cmake/Helper.cmake
+C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/cmake/Install.cmake
+C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/cmake/Platform.cmake
+C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/cmake/Version.cmake

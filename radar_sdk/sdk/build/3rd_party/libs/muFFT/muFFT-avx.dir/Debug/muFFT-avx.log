@@ -1,0 +1,3 @@
+﻿  Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/3rd_party/libs/muFFT/CMakeLists.txt
+  kernel.avx.c
+  muFFT-avx.vcxproj -> C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\3rd_party\libs\muFFT\Debug\muFFT-avx.lib

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Analyze.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Compiler.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Debug.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Dependencies.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Filesystem.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Format.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Helper.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Install.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\IntegrationTests.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Packages.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Platform.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\PythonTests.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Qt.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Resource.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Standalone.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\TestReports.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\UnitTests.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Version.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\local_settings.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\wheels.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\Strata.cmake" />
+    <None Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\VERSION" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

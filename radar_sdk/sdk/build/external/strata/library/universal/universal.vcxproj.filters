@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\error_strings.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\components\gas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\components\gas\igasboyle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\components\power_supply.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\components\processing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\components\processing\iprocessingradar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\components\radar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\components\radar\iradaratr22.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\components\radar\iradaravian.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\components\radar\iradarltr11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\components\radar\iradarrxs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\components\radar\iradarsmartar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\components\subinterfaces.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\components\subinterfaces\ipins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\components\subinterfaces\iprotocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\components\subinterfaces\iregisters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\data_definitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\error_definitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\error_strings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\fatal_error_codes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\gpio_definitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\i2c_definitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\link_definitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\modules\radar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\modules\radar\imoduleradarrxs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\modules\subinterfaces.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\protocol\protocol_definitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\protocol\protocol_definitions_ctrx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\protocol\protocol_definitions_mira.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\spi_definitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\types\AurixPlatformDataSettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\types\DataSettingsBgtRadar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\types\IfxRfe_Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\types\IfxRsp_Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\types\Types_IRadarRxs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\uvc_definitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\universal\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7D7D727B-A4E9-3CE4-BB4C-EA75D655E5B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{38694128-076A-3E95-8BDD-8F6A94077261}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

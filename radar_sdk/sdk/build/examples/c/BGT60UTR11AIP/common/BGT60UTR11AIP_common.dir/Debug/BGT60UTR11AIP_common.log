@@ -1,0 +1,7 @@
+﻿  Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/examples/c/BGT60UTR11AIP/common/CMakeLists.txt
+  common.c
+  time_formatter.c
+  util.c
+  Generating Code...
+  json.cpp
+  BGT60UTR11AIP_common.vcxproj -> C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60UTR11AIP\common\Debug\BGT60UTR11AIP_common.lib

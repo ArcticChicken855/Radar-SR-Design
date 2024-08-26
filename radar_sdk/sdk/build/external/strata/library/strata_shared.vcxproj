@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B670699D-9911-39B8-8FD2-1E1E1EF12787}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>strata_shared</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">strata_shared.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">strata_shared-d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">strata_shared.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">strata_shared</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">strata_shared.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">strata_shared</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">strata_shared.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">strata_shared</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34263 /w34266</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4996;4250</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_DEBUG;STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;SDK_VERSION="3.5.0";SDK_VERSION_FULL="3.5.0+";SDK_COMMIT_HASH="";NDEBUG;NOMINMAX;STRATA_EXPORT;TARGET_PLATFORM_WINDOWS;CMAKE_INTDIR="Debug";strata_shared_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;SDK_VERSION=\"3.5.0\";SDK_VERSION_FULL=\"3.5.0+\";SDK_COMMIT_HASH=\"\";NDEBUG;NOMINMAX;STRATA_EXPORT;TARGET_PLATFORM_WINDOWS;CMAKE_INTDIR=\"Debug\";strata_shared_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;iphlpapi.lib;strmiids.lib;..\contrib\pugixml\Debug\pugixml-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/strata/library/Debug/strata_shared-d.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/bin/Debug/strata_shared-d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34263 /w34266</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4800;4996;4250</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;SDK_VERSION="3.5.0";SDK_VERSION_FULL="3.5.0+";SDK_COMMIT_HASH="";NOMINMAX;STRATA_EXPORT;TARGET_PLATFORM_WINDOWS;CMAKE_INTDIR="Release";strata_shared_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;SDK_VERSION=\"3.5.0\";SDK_VERSION_FULL=\"3.5.0+\";SDK_COMMIT_HASH=\"\";NOMINMAX;STRATA_EXPORT;TARGET_PLATFORM_WINDOWS;CMAKE_INTDIR=\"Release\";strata_shared_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;iphlpapi.lib;strmiids.lib;..\contrib\pugixml\Release\pugixml.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/strata/library/Release/strata_shared.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/bin/Release/strata_shared.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34263 /w34266</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4800;4996;4250</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;SDK_VERSION="3.5.0";SDK_VERSION_FULL="3.5.0+";SDK_COMMIT_HASH="";NOMINMAX;STRATA_EXPORT;TARGET_PLATFORM_WINDOWS;CMAKE_INTDIR="MinSizeRel";strata_shared_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;SDK_VERSION=\"3.5.0\";SDK_VERSION_FULL=\"3.5.0+\";SDK_COMMIT_HASH=\"\";NOMINMAX;STRATA_EXPORT;TARGET_PLATFORM_WINDOWS;CMAKE_INTDIR=\"MinSizeRel\";strata_shared_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;iphlpapi.lib;strmiids.lib;..\contrib\pugixml\MinSizeRel\pugixml.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/strata/library/MinSizeRel/strata_shared.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/bin/MinSizeRel/strata_shared.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34263 /w34266</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4996;4250</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;SDK_VERSION="3.5.0";SDK_VERSION_FULL="3.5.0+";SDK_COMMIT_HASH="";NOMINMAX;STRATA_EXPORT;TARGET_PLATFORM_WINDOWS;CMAKE_INTDIR="RelWithDebInfo";strata_shared_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;SDK_VERSION=\"3.5.0\";SDK_VERSION_FULL=\"3.5.0+\";SDK_COMMIT_HASH=\"\";NOMINMAX;STRATA_EXPORT;TARGET_PLATFORM_WINDOWS;CMAKE_INTDIR=\"RelWithDebInfo\";strata_shared_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;iphlpapi.lib;strmiids.lib;..\contrib\pugixml\RelWithDebInfo\pugixml.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/strata/library/RelWithDebInfo/strata_shared.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/bin/RelWithDebInfo/strata_shared.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/library/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/strata/library/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Compiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/library/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/strata/library/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Compiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/library/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/strata/library/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Compiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/library/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/strata/library/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\cmake\Compiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\Dummy.cpp" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\strata_boards.dir\$(Configuration)\BoardList.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\strata_version.dir\$(Configuration)\Version.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\strata_library.dir\$(Configuration)\Library.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.dir\$(Configuration)\Crc6.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.dir\$(Configuration)\Crc8.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.dir\$(Configuration)\Crc16.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.dir\$(Configuration)\Crc32.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.dir\$(Configuration)\LittleEndianReader.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.dir\$(Configuration)\Logger.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.dir\$(Configuration)\Profiler.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.dir\$(Configuration)\ProductVersion.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\FlashImage.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\Registers8bitPec.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\ImagerIrs.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\ImagerIrs11x5.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\ImagerIrs16x5.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\PinsIrs.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\RegistersIrs.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\PowerSupplyMax2043xPec.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\SupplyMonitorIna231.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\TypeSerialization.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\NonvolatileMemory.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\NonvolatileMemoryEepromI2c.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\NonvolatileMemoryFlash.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\NonvolatileMemoryFlashSpi.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\TemperatureSensorTMP102.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\TemperatureSensorMCP98x43.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\ProcessingRadar.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardAny.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardDescriptor.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardInstance.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardManager.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\NamedMemory.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\Memory.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\RegisterGenerator.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeControl.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeData.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeProtocol.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeProtocolI2c.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeProtocolGpio.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeProtocolSpi.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeProtocolMemory.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeProtocolFlash.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeProtocolData.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeWrapperBase.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\VendorCommandsImpl.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeEthernet.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeEthernetControl.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeEthernetData.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeEthernetTcp.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeEthernetUdp.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\EnumeratorEthernet.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardEthernetTcp.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardEthernetUdp.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardDescriptorEthernet.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\SocketTcp.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\SocketUdp.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeFpgaIrpli.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\DebugFrame.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\ErrorFrame.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\Frame.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\FrameBase.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\FrameForwarder.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\FramePool.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\FrameQueue.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\FrameHelper.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardInstanceMacro.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeMacro.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\SerialPort.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeSerial.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardSerial.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardUvc.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\VendorExtensionCypress.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\VendorExtensionRealtek.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\VendorExtensionRealtekFlash.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\VendorExtensionRealtekI2c.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\Board.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardGeneric.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardRemote.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\SerialPortImpl.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\EnumeratorSerialImpl.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\SocketImpl.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\SocketTcpImpl.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\SocketUdpImpl.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\SerialPortImplAsync.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\EnumeratorDirectShow.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeDirectShow.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\Win32Utils.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteGasBoyle.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteProtocolAtr22.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteProtocolAvian.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteProtocolLtr11.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteProtocolSmartar.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemotePinsAvian.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemotePinsLtr11.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemotePinsSmartar.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteProcessingRadar.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteRegisters.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteRadarAvian.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteRadarAtr22.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteRadarLtr11.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteRadarSmartar.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteVendorCommands.obj" />
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\universal\universal.dir\$(Configuration)\error_strings.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\ZERO_CHECK.vcxproj">
+      <Project>{73EF8E56-00FD-3104-9E52-27C1A51F5EDE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.vcxproj">
+      <Project>{5A98777D-40ED-3C03-B229-CA46FBA17718}</Project>
+      <Name>common</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.vcxproj">
+      <Project>{FAFFF72D-50A2-3EE8-B637-25D2CE121D79}</Project>
+      <Name>components</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.vcxproj">
+      <Project>{BBBF9C1A-BDF8-3304-8238-41FA1DFE61A0}</Project>
+      <Name>platform</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\contrib\pugixml\pugixml-static.vcxproj">
+      <Project>{72E866F5-8D62-3BFD-9370-AB68F68AE230}</Project>
+      <Name>pugixml-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.vcxproj">
+      <Project>{7E91780F-F569-3FA2-B099-47DBF9FCDB69}</Project>
+      <Name>remote</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\strata_boards.vcxproj">
+      <Project>{AF70F2E3-CA69-376F-97F5-92B8092D4FD5}</Project>
+      <Name>strata_boards</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\strata_library.vcxproj">
+      <Project>{8EC35A64-33B6-3120-ABF1-E92089D3EB09}</Project>
+      <Name>strata_library</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\strata_version.vcxproj">
+      <Project>{49B1E82F-2621-364D-AD2E-70106547EC54}</Project>
+      <Name>strata_version</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\universal\universal.vcxproj">
+      <Project>{615566A0-9D73-33C4-8C8D-AA2680805E49}</Project>
+      <Name>universal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

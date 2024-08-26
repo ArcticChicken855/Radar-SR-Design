@@ -1,0 +1,10 @@
+^C:\USERS\NATHA\ALABAMA\SENIOR DESIGN\RADAR_SDK\SDK\BUILD\CMAKEFILES\5364D3A8F3E85BDD0E9F0FC62915303B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/rdk.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C831218D-0059-3345-8FCF-69436BEBCC3D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>BGT60ATR24C_presence_detection</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">BGT60ATR24C_presence_detection.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">BGT60ATR24C_presence_detection</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">BGT60ATR24C_presence_detection.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">BGT60ATR24C_presence_detection</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">BGT60ATR24C_presence_detection.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">BGT60ATR24C_presence_detection</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">BGT60ATR24C_presence_detection.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">BGT60ATR24C_presence_detection</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\c\ifxBase\..;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60ATR24C\common\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_DEBUG;SDK_VERSION="3.5.0";SDK_VERSION_FULL="3.5.0+";SDK_COMMIT_HASH="";STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;STRATA_IMPORT;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;SDK_VERSION=\"3.5.0\";SDK_VERSION_FULL=\"3.5.0+\";SDK_COMMIT_HASH=\"\";STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;STRATA_IMPORT;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\c\ifxBase\..;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60ATR24C\common\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\c\ifxBase\..;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60ATR24C\common\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "C:/Users/natha/Alabama/Senior Design/radar_sdk/libs/win32_x64/sdk_presence_sensing.dll" "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/bin/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\common\Debug\BGT60ATR24C_common.lib;C:\Users\natha\Alabama\Senior Design\radar_sdk\libs\win32_x64\sdk_presence_sensing.lib;..\..\..\..\sdk\c\ifxRadar\Debug\sdk_radar.lib;..\..\..\..\sdk\c\ifxAvian\Debug\sdk_avian.lib;..\..\..\..\sdk\c\ifxFmcw\Debug\sdk_fmcw.lib;..\..\..\..\sdk\c\ifxRadarDeviceCommon\Debug\sdk_radar_device_common.lib;..\..\..\..\sdk\c\ifxAlgo\Debug\sdk_algo.lib;..\..\..\..\sdk\c\ifxBase\Debug\sdk_base.lib;..\..\..\..\external\strata\library\Debug\strata_shared-d.lib;ws2_32.lib;iphlpapi.lib;strmiids.lib;..\..\..\..\external\strata\contrib\pugixml\Debug\pugixml-d.lib;..\..\..\..\3rd_party\libs\argparse\Debug\argparse.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/win32_x64;/win32_x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/examples/c/BGT60ATR24C/presence_detection/Debug/BGT60ATR24C_presence_detection.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/bin/Debug/BGT60ATR24C_presence_detection.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\c\ifxBase\..;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60ATR24C\common\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;SDK_VERSION="3.5.0";SDK_VERSION_FULL="3.5.0+";SDK_COMMIT_HASH="";STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;STRATA_IMPORT;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;SDK_VERSION=\"3.5.0\";SDK_VERSION_FULL=\"3.5.0+\";SDK_COMMIT_HASH=\"\";STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;STRATA_IMPORT;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\c\ifxBase\..;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60ATR24C\common\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\c\ifxBase\..;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60ATR24C\common\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "C:/Users/natha/Alabama/Senior Design/radar_sdk/libs/win32_x64/sdk_presence_sensing.dll" "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/bin/Release"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\common\Release\BGT60ATR24C_common.lib;C:\Users\natha\Alabama\Senior Design\radar_sdk\libs\win32_x64\sdk_presence_sensing.lib;..\..\..\..\sdk\c\ifxRadar\Release\sdk_radar.lib;..\..\..\..\sdk\c\ifxAvian\Release\sdk_avian.lib;..\..\..\..\sdk\c\ifxFmcw\Release\sdk_fmcw.lib;..\..\..\..\sdk\c\ifxRadarDeviceCommon\Release\sdk_radar_device_common.lib;..\..\..\..\sdk\c\ifxAlgo\Release\sdk_algo.lib;..\..\..\..\sdk\c\ifxBase\Release\sdk_base.lib;..\..\..\..\external\strata\library\Release\strata_shared.lib;ws2_32.lib;iphlpapi.lib;strmiids.lib;..\..\..\..\external\strata\contrib\pugixml\Release\pugixml.lib;..\..\..\..\3rd_party\libs\argparse\Release\argparse.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/win32_x64;/win32_x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/examples/c/BGT60ATR24C/presence_detection/Release/BGT60ATR24C_presence_detection.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/bin/Release/BGT60ATR24C_presence_detection.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\c\ifxBase\..;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60ATR24C\common\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;SDK_VERSION="3.5.0";SDK_VERSION_FULL="3.5.0+";SDK_COMMIT_HASH="";STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;STRATA_IMPORT;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;SDK_VERSION=\"3.5.0\";SDK_VERSION_FULL=\"3.5.0+\";SDK_COMMIT_HASH=\"\";STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;STRATA_IMPORT;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\c\ifxBase\..;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60ATR24C\common\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\c\ifxBase\..;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60ATR24C\common\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "C:/Users/natha/Alabama/Senior Design/radar_sdk/libs/win32_x64/sdk_presence_sensing.dll" "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/bin/MinSizeRel"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\common\MinSizeRel\BGT60ATR24C_common.lib;C:\Users\natha\Alabama\Senior Design\radar_sdk\libs\win32_x64\sdk_presence_sensing.lib;..\..\..\..\sdk\c\ifxRadar\MinSizeRel\sdk_radar.lib;..\..\..\..\sdk\c\ifxAvian\MinSizeRel\sdk_avian.lib;..\..\..\..\sdk\c\ifxFmcw\MinSizeRel\sdk_fmcw.lib;..\..\..\..\sdk\c\ifxRadarDeviceCommon\MinSizeRel\sdk_radar_device_common.lib;..\..\..\..\sdk\c\ifxAlgo\MinSizeRel\sdk_algo.lib;..\..\..\..\sdk\c\ifxBase\MinSizeRel\sdk_base.lib;..\..\..\..\external\strata\library\MinSizeRel\strata_shared.lib;ws2_32.lib;iphlpapi.lib;strmiids.lib;..\..\..\..\external\strata\contrib\pugixml\MinSizeRel\pugixml.lib;..\..\..\..\3rd_party\libs\argparse\MinSizeRel\argparse.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/win32_x64;/win32_x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/examples/c/BGT60ATR24C/presence_detection/MinSizeRel/BGT60ATR24C_presence_detection.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/bin/MinSizeRel/BGT60ATR24C_presence_detection.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\c\ifxBase\..;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60ATR24C\common\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;SDK_VERSION="3.5.0";SDK_VERSION_FULL="3.5.0+";SDK_COMMIT_HASH="";STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;STRATA_IMPORT;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;SDK_VERSION=\"3.5.0\";SDK_VERSION_FULL=\"3.5.0+\";SDK_COMMIT_HASH=\"\";STRATA_VERSION_MAJOR=2;STRATA_VERSION_MINOR=3;STRATA_VERSION_PATCH=1;STRATA_VERSION_BUILD=0;RAPIDJSON_HAS_STDSTRING;STRATA_IMPORT;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\c\ifxBase\..;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60ATR24C\common\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\c\ifxBase\..;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\platform\impl\Windows;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\rapidjson\include;C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\contrib\pugixml\src;C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60ATR24C\common\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "C:/Users/natha/Alabama/Senior Design/radar_sdk/libs/win32_x64/sdk_presence_sensing.dll" "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/bin/RelWithDebInfo"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\common\RelWithDebInfo\BGT60ATR24C_common.lib;C:\Users\natha\Alabama\Senior Design\radar_sdk\libs\win32_x64\sdk_presence_sensing.lib;..\..\..\..\sdk\c\ifxRadar\RelWithDebInfo\sdk_radar.lib;..\..\..\..\sdk\c\ifxAvian\RelWithDebInfo\sdk_avian.lib;..\..\..\..\sdk\c\ifxFmcw\RelWithDebInfo\sdk_fmcw.lib;..\..\..\..\sdk\c\ifxRadarDeviceCommon\RelWithDebInfo\sdk_radar_device_common.lib;..\..\..\..\sdk\c\ifxAlgo\RelWithDebInfo\sdk_algo.lib;..\..\..\..\sdk\c\ifxBase\RelWithDebInfo\sdk_base.lib;..\..\..\..\external\strata\library\RelWithDebInfo\strata_shared.lib;ws2_32.lib;iphlpapi.lib;strmiids.lib;..\..\..\..\external\strata\contrib\pugixml\RelWithDebInfo\pugixml.lib;..\..\..\..\3rd_party\libs\argparse\RelWithDebInfo\argparse.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/win32_x64;/win32_x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/examples/c/BGT60ATR24C/presence_detection/RelWithDebInfo/BGT60ATR24C_presence_detection.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/bin/RelWithDebInfo/BGT60ATR24C_presence_detection.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60ATR24C\presence_detection\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/examples/c/BGT60ATR24C/presence_detection/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/examples/c/BGT60ATR24C/presence_detection/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\TargetPlatform.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\arch.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60ATR24C\presence_detection\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/examples/c/BGT60ATR24C/presence_detection/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/examples/c/BGT60ATR24C/presence_detection/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\TargetPlatform.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\arch.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60ATR24C\presence_detection\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/examples/c/BGT60ATR24C/presence_detection/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/examples/c/BGT60ATR24C/presence_detection/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\TargetPlatform.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\arch.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60ATR24C\presence_detection\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/examples/c/BGT60ATR24C/presence_detection/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/examples/c/BGT60ATR24C/presence_detection/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\TargetPlatform.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\arch.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60ATR24C\presence_detection\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\examples\c\BGT60ATR24C\presence_detection\presence_detection.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\ZERO_CHECK.vcxproj">
+      <Project>{73EF8E56-00FD-3104-9E52-27C1A51F5EDE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60ATR24C\common\BGT60ATR24C_common.vcxproj">
+      <Project>{BE419B4E-392C-3354-BDA1-D276D78EE277}</Project>
+      <Name>BGT60ATR24C_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\3rd_party\libs\argparse\argparse.vcxproj">
+      <Project>{14E9A38D-D1F8-347A-84BE-FE35EDACE2C5}</Project>
+      <Name>argparse</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\contrib\pugixml\pugixml-static.vcxproj">
+      <Project>{72E866F5-8D62-3BFD-9370-AB68F68AE230}</Project>
+      <Name>pugixml-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\sdk\c\ifxAlgo\sdk_algo.vcxproj">
+      <Project>{09F0965A-B528-3A78-AB83-40F6FBA9B1A0}</Project>
+      <Name>sdk_algo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\sdk\c\ifxAvian\sdk_avian.vcxproj">
+      <Project>{6B9B510B-AF63-3B4B-92F2-31AA4CAD2047}</Project>
+      <Name>sdk_avian</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\sdk\c\ifxBase\sdk_base.vcxproj">
+      <Project>{96731E7F-712B-3FCD-8D79-4A5800AC9A91}</Project>
+      <Name>sdk_base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\sdk\c\ifxFmcw\sdk_fmcw.vcxproj">
+      <Project>{20D6B121-F537-3B36-9421-BCE674AE64E9}</Project>
+      <Name>sdk_fmcw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\sdk\c\ifxRadar\sdk_radar.vcxproj">
+      <Project>{2E2FA8AE-E094-37EC-88E5-8E24B70732D0}</Project>
+      <Name>sdk_radar</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\sdk\c\ifxRadarDeviceCommon\sdk_radar_device_common.vcxproj">
+      <Project>{1E92191E-B9DB-3D17-9A80-A11D0EC23982}</Project>
+      <Name>sdk_radar_device_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\strata_shared.vcxproj">
+      <Project>{B670699D-9911-39B8-8FD2-1E1E1EF12787}</Project>
+      <Name>strata_shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

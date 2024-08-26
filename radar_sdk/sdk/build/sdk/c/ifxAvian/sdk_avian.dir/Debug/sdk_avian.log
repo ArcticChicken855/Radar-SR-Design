@@ -1,0 +1,7 @@
+﻿  Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/c/ifxAvian/CMakeLists.txt
+  DeviceConfig.cpp
+  DeviceControl.cpp
+  Metrics.cpp
+  Generating Code...
+     Creating library C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/sdk/c/ifxAvian/Debug/sdk_avian.lib and object C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/sdk/c/ifxAvian/Debug/sdk_avian.exp
+  sdk_avian.vcxproj -> C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\sdk_avian.dll

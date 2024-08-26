@@ -1,0 +1,10 @@
+^C:\USERS\NATHA\ALABAMA\SENIOR DESIGN\RADAR_SDK\EXAMPLES\C\BGT60TR13C\RANGE_DOPPLER_MAP\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/examples/c/BGT60TR13C/range_doppler_map/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

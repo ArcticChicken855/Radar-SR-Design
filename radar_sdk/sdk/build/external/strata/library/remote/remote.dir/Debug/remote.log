@@ -1,0 +1,18 @@
+﻿  Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/library/remote/CMakeLists.txt
+  RemoteGasBoyle.cpp
+  RemoteProtocolAtr22.cpp
+  RemoteProtocolAvian.cpp
+  RemoteProtocolLtr11.cpp
+  RemoteProtocolSmartar.cpp
+  RemotePinsAvian.cpp
+  RemotePinsLtr11.cpp
+  RemotePinsSmartar.cpp
+  RemoteProcessingRadar.cpp
+  RemoteRegisters.cpp
+  RemoteRadarAvian.cpp
+  RemoteRadarAtr22.cpp
+  RemoteRadarLtr11.cpp
+  RemoteRadarSmartar.cpp
+  RemoteVendorCommands.cpp
+  Generating Code...
+  remote.vcxproj -> C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\Debug\remote.lib

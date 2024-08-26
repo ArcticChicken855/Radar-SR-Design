@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/c/ifxComPort/CMakeLists.txt
+  COMPort_Unix.c
+  COMPort_Windows.c
+  Generating Code...
+  ComPort.cpp
+  sdk_comport_obj.vcxproj -> C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\sdk\c\ifxComPort\sdk_comport_obj.dir\Debug\sdk_comport_obj.lib

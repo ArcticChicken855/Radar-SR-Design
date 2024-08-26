@@ -1,0 +1,51 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{14E9A38D-D1F8-347A-84BE-FE35EDACE2C5}|3rd_party\\libs\\argparse\\argparse.vcxproj|C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\3rd_party\\libs\\argparse\\argparse.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C880E0C1-3509-3158-9DB4-CDE89E018893}|external\\lib_avian\\lib_avian.vcxproj|C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\external\\lib_avian\\include\\ifxAvian_CwController.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "argparse.c",
+              "DocumentMoniker": "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\3rd_party\\libs\\argparse\\argparse.c",
+              "RelativeDocumentMoniker": "..\\..\\3rd_party\\libs\\argparse\\argparse.c",
+              "ToolTip": "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\3rd_party\\libs\\argparse\\argparse.c",
+              "RelativeToolTip": "..\\..\\3rd_party\\libs\\argparse\\argparse.c",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAABwAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-03-06T00:29:39.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ifxAvian_CwController.hpp",
+              "DocumentMoniker": "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\external\\lib_avian\\include\\ifxAvian_CwController.hpp",
+              "RelativeDocumentMoniker": "..\\..\\external\\lib_avian\\include\\ifxAvian_CwController.hpp",
+              "ToolTip": "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\external\\lib_avian\\include\\ifxAvian_CwController.hpp",
+              "RelativeToolTip": "..\\..\\external\\lib_avian\\include\\ifxAvian_CwController.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-06T00:26:16.146Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

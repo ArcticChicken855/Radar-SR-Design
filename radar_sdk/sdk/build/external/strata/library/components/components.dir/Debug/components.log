@@ -1,0 +1,20 @@
+﻿  Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/library/components/CMakeLists.txt
+  FlashImage.cpp
+  Registers8bitPec.cpp
+  ImagerIrs.cpp
+  ImagerIrs11x5.cpp
+  ImagerIrs16x5.cpp
+  PinsIrs.cpp
+  RegistersIrs.cpp
+  PowerSupplyMax2043xPec.cpp
+  SupplyMonitorIna231.cpp
+  TypeSerialization.cpp
+  NonvolatileMemory.cpp
+  NonvolatileMemoryEepromI2c.cpp
+  NonvolatileMemoryFlash.cpp
+  NonvolatileMemoryFlashSpi.cpp
+  TemperatureSensorTMP102.cpp
+  TemperatureSensorMCP98x43.cpp
+  ProcessingRadar.cpp
+  Generating Code...
+  components.vcxproj -> C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\Debug\components.lib

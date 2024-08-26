@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2E0CCB9D-2AB1-36AE-AF71-7186EF1B0FE5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>bossa</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\3rd_party\libs\bossa\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bossa.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bossa</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\3rd_party\libs\bossa\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bossa.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bossa</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\3rd_party\libs\bossa\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bossa.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bossa</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\3rd_party\libs\bossa\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bossa.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bossa</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_DEBUG;_CRT_SECURE_NO_WARNINGS;SDK_VERSION="3.5.0";SDK_VERSION_FULL="3.5.0+";SDK_COMMIT_HASH="";CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_CRT_SECURE_NO_WARNINGS;SDK_VERSION=\"3.5.0\";SDK_VERSION_FULL=\"3.5.0+\";SDK_COMMIT_HASH=\"\";CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;_CRT_SECURE_NO_WARNINGS;SDK_VERSION="3.5.0";SDK_VERSION_FULL="3.5.0+";SDK_COMMIT_HASH="";CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;SDK_VERSION=\"3.5.0\";SDK_VERSION_FULL=\"3.5.0+\";SDK_COMMIT_HASH=\"\";CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;_CRT_SECURE_NO_WARNINGS;SDK_VERSION="3.5.0";SDK_VERSION_FULL="3.5.0+";SDK_COMMIT_HASH="";CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;SDK_VERSION=\"3.5.0\";SDK_VERSION_FULL=\"3.5.0+\";SDK_COMMIT_HASH=\"\";CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;_CRT_SECURE_NO_WARNINGS;SDK_VERSION="3.5.0";SDK_VERSION_FULL="3.5.0+";SDK_COMMIT_HASH="";CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;SDK_VERSION=\"3.5.0\";SDK_VERSION_FULL=\"3.5.0+\";SDK_COMMIT_HASH=\"\";CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/3rd_party/libs/bossa/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/3rd_party/libs/bossa/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\3rd_party\libs\bossa\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/3rd_party/libs/bossa/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/3rd_party/libs/bossa/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\3rd_party\libs\bossa\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/3rd_party/libs/bossa/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/3rd_party/libs/bossa/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\3rd_party\libs\bossa\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/3rd_party/libs/bossa/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/3rd_party/libs/bossa/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\3rd_party\libs\bossa\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\Applet.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\D2xNvmFlash.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\D5xNvmFlash.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\Device.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\EefcFlash.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\EfcFlash.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\Flash.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\Flasher.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\LinuxPortFactory.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\OSXPortFactory.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\PosixSerialPort.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\Samba.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\WinPortFactory.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\WinSerialPort.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\WordCopyApplet.cpp" />
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\WordCopyArm.cpp" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\Applet.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\D2xNvmFlash.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\D5xNvmFlash.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\Device.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\EefcFlash.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\EfcFlash.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\FileError.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\Flash.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\Flasher.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\LinuxPortFactory.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\OSXPortFactory.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\PortFactory.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\PosixSerialPort.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\Samba.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\SerialPort.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\Shell.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\WinPortFactory.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\WinSerialPort.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\WordCopyApplet.h" />
+    <ClInclude Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\3rd_party\libs\bossa\WordCopyArm.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\ZERO_CHECK.vcxproj">
+      <Project>{73EF8E56-00FD-3104-9E52-27C1A51F5EDE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

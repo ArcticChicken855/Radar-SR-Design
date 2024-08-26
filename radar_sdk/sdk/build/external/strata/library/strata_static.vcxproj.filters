@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\Dummy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\external\strata\library\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\strata_boards.dir\$(Configuration)\BoardList.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\strata_version.dir\$(Configuration)\Version.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\strata_library.dir\$(Configuration)\Library.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.dir\$(Configuration)\Crc6.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.dir\$(Configuration)\Crc8.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.dir\$(Configuration)\Crc16.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.dir\$(Configuration)\Crc32.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.dir\$(Configuration)\LittleEndianReader.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.dir\$(Configuration)\Logger.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.dir\$(Configuration)\Profiler.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\common\common.dir\$(Configuration)\ProductVersion.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\FlashImage.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\Registers8bitPec.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\ImagerIrs.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\ImagerIrs11x5.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\ImagerIrs16x5.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\PinsIrs.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\RegistersIrs.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\PowerSupplyMax2043xPec.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\SupplyMonitorIna231.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\TypeSerialization.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\NonvolatileMemory.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\NonvolatileMemoryEepromI2c.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\NonvolatileMemoryFlash.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\NonvolatileMemoryFlashSpi.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\TemperatureSensorTMP102.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\TemperatureSensorMCP98x43.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\components\components.dir\$(Configuration)\ProcessingRadar.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardAny.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardDescriptor.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardInstance.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardManager.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\NamedMemory.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\Memory.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\RegisterGenerator.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeControl.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeData.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeProtocol.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeProtocolI2c.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeProtocolGpio.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeProtocolSpi.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeProtocolMemory.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeProtocolFlash.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeProtocolData.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeWrapperBase.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\VendorCommandsImpl.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeEthernet.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeEthernetControl.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeEthernetData.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeEthernetTcp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeEthernetUdp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\EnumeratorEthernet.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardEthernetTcp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardEthernetUdp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardDescriptorEthernet.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\SocketTcp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\SocketUdp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeFpgaIrpli.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\DebugFrame.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\ErrorFrame.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\Frame.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\FrameBase.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\FrameForwarder.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\FramePool.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\FrameQueue.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\FrameHelper.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardInstanceMacro.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeMacro.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\SerialPort.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeSerial.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardSerial.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardUvc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\VendorExtensionCypress.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\VendorExtensionRealtek.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\VendorExtensionRealtekFlash.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\VendorExtensionRealtekI2c.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\Board.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardGeneric.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BoardRemote.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\SerialPortImpl.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\EnumeratorSerialImpl.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\SocketImpl.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\SocketTcpImpl.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\SocketUdpImpl.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\SerialPortImplAsync.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\EnumeratorDirectShow.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\BridgeDirectShow.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\$(Configuration)\Win32Utils.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteGasBoyle.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteProtocolAtr22.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteProtocolAvian.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteProtocolLtr11.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteProtocolSmartar.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemotePinsAvian.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemotePinsLtr11.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemotePinsSmartar.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteProcessingRadar.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteRegisters.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteRadarAvian.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteRadarAtr22.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteRadarLtr11.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteRadarSmartar.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\remote\remote.dir\$(Configuration)\RemoteVendorCommands.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\universal\universal.dir\$(Configuration)\error_strings.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{DE982C25-6AF6-3180-B473-CFCB57398FF5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{38694128-076A-3E95-8BDD-8F6A94077261}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

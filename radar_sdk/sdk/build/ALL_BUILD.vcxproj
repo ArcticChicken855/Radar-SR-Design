@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C237D2E3-DBEF-3F24-A1ED-867EDDBEDC24}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\TestBigEndian.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\build_settings.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\c_flags_overrides.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\cxx_flags_overrides.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\macros.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\version.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\3.28.3\CMakeCCompiler.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\3.28.3\CMakeCXXCompiler.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\3.28.3\CMakeRCCompiler.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\3.28.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\TestBigEndian.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\build_settings.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\c_flags_overrides.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\cxx_flags_overrides.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\macros.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\version.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\3.28.3\CMakeCCompiler.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\3.28.3\CMakeCXXCompiler.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\3.28.3\CMakeRCCompiler.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\3.28.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\TestBigEndian.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\build_settings.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\c_flags_overrides.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\cxx_flags_overrides.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\macros.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\version.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\3.28.3\CMakeCCompiler.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\3.28.3\CMakeCXXCompiler.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\3.28.3\CMakeRCCompiler.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\3.28.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/natha/Alabama/Senior Design/radar_sdk" "-BC:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build" --check-stamp-file "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\TestBigEndian.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\build_settings.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\c_flags_overrides.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\cxx_flags_overrides.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\macros.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\cmake\version.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\3.28.3\CMakeCCompiler.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\3.28.3\CMakeCXXCompiler.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\3.28.3\CMakeRCCompiler.cmake;C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\3.28.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\ZERO_CHECK.vcxproj">
+      <Project>{73EF8E56-00FD-3104-9E52-27C1A51F5EDE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT24ATR22\raw_data\BGT24ATR22_raw_data_atr22.vcxproj">
+      <Project>{7AF9D3C9-570F-3D26-86EF-1E9CBEFEA64E}</Project>
+      <Name>BGT24ATR22_raw_data_atr22</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60ATR24C\common\BGT60ATR24C_common.vcxproj">
+      <Project>{BE419B4E-392C-3354-BDA1-D276D78EE277}</Project>
+      <Name>BGT60ATR24C_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60ATR24C\continuous_wave\BGT60ATR24C_continuous_wave.vcxproj">
+      <Project>{77ECF594-0ED1-359F-BDA2-5213CE7F107F}</Project>
+      <Name>BGT60ATR24C_continuous_wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60ATR24C\motion_angle\BGT60ATR24C_motion_angle.vcxproj">
+      <Project>{EBF20D17-8AAD-3FA7-93A6-81897CAEBB9E}</Project>
+      <Name>BGT60ATR24C_motion_angle</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60ATR24C\presence_detection\BGT60ATR24C_presence_detection.vcxproj">
+      <Project>{C831218D-0059-3345-8FCF-69436BEBCC3D}</Project>
+      <Name>BGT60ATR24C_presence_detection</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60ATR24C\range_doppler_map\BGT60ATR24C_range_doppler_map.vcxproj">
+      <Project>{6E128EF0-1FFE-3EF5-9F9B-8D1BDCFB425F}</Project>
+      <Name>BGT60ATR24C_range_doppler_map</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60ATR24C\raw_data\BGT60ATR24C_raw_data.vcxproj">
+      <Project>{0C9AD0A4-C998-3B55-89B3-55D2E7B84D5C}</Project>
+      <Name>BGT60ATR24C_raw_data</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60ATR24C\segmentation\BGT60ATR24C_segmentation.vcxproj">
+      <Project>{320B474B-1716-38D1-9FF9-DB6578C654B0}</Project>
+      <Name>BGT60ATR24C_segmentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60LTR11AIP\advanced_motion_sensing\BGT60LTR11AIP_advanced_motion_sensing.vcxproj">
+      <Project>{5A553661-989E-3FB3-B613-241AEEC9ACEE}</Project>
+      <Name>BGT60LTR11AIP_advanced_motion_sensing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60LTR11AIP\raw_data\BGT60LTR11AIP_raw_data_ltr11.vcxproj">
+      <Project>{E67CB460-F5F0-3020-8BD1-EE03391F1D8D}</Project>
+      <Name>BGT60LTR11AIP_raw_data_ltr11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60TR13C\common\BGT60TR13C_common.vcxproj">
+      <Project>{515D1E31-8374-32C3-8D66-7ACDD6FC4CFF}</Project>
+      <Name>BGT60TR13C_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60TR13C\continuous_wave\BGT60TR13C_continuous_wave.vcxproj">
+      <Project>{9AD914FB-56BA-309A-81AB-EF7EEE8A02E9}</Project>
+      <Name>BGT60TR13C_continuous_wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60TR13C\motion_angle\BGT60TR13C_motion_angle.vcxproj">
+      <Project>{4C05C12A-C810-38AE-BD08-9344DD3DFF98}</Project>
+      <Name>BGT60TR13C_motion_angle</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60TR13C\presence_detection\BGT60TR13C_presence_detection.vcxproj">
+      <Project>{7F2BE1D3-AED3-3C79-A753-869439036FA1}</Project>
+      <Name>BGT60TR13C_presence_detection</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60TR13C\range_doppler_map\BGT60TR13C_range_doppler_map.vcxproj">
+      <Project>{E192CE0C-8266-339A-9A53-568DBACB8CAB}</Project>
+      <Name>BGT60TR13C_range_doppler_map</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60TR13C\raw_data\BGT60TR13C_raw_data.vcxproj">
+      <Project>{21144B31-4269-353E-A139-C0ADBA41B2DC}</Project>
+      <Name>BGT60TR13C_raw_data</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60TR13C\segmentation\BGT60TR13C_segmentation.vcxproj">
+      <Project>{5A0AF66D-2F63-3146-BC47-14ECFBCEFBB2}</Project>
+      <Name>BGT60TR13C_segmentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60UTR11AIP\common\BGT60UTR11AIP_common.vcxproj">
+      <Project>{EFC3A110-2739-3DC4-A51C-80D3766DE2B6}</Project>
+      <Name>BGT60UTR11AIP_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60UTR11AIP\continuous_wave\BGT60UTR11AIP_continuous_wave.vcxproj">
+      <Project>{BD1E89ED-8E3C-3B3D-8C14-A38A9C8A8B2E}</Project>
+      <Name>BGT60UTR11AIP_continuous_wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60UTR11AIP\presence_detection\BGT60UTR11AIP_presence_detection.vcxproj">
+      <Project>{96D8532D-6CEC-3874-8AC5-AF1D325DB57A}</Project>
+      <Name>BGT60UTR11AIP_presence_detection</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\examples\c\BGT60UTR11AIP\raw_data\BGT60UTR11AIP_raw_data.vcxproj">
+      <Project>{D5D971FB-F97E-3585-A374-6C39C358D666}</Project>
+      <Name>BGT60UTR11AIP_raw_data</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\tools\bgt60-configurator-cli\bgt60-configurator-cli.vcxproj">
+      <Project>{A5EF71DB-25A1-38B7-A53E-6220259AC2EC}</Project>
+      <Name>bgt60-configurator-cli</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\contrib\pugixml\pugixml-static.vcxproj">
+      <Project>{72E866F5-8D62-3BFD-9370-AB68F68AE230}</Project>
+      <Name>pugixml-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\sdk\c\ifxAlgo\sdk_algo.vcxproj">
+      <Project>{09F0965A-B528-3A78-AB83-40F6FBA9B1A0}</Project>
+      <Name>sdk_algo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\sdk\c\ifxAvian\sdk_avian.vcxproj">
+      <Project>{6B9B510B-AF63-3B4B-92F2-31AA4CAD2047}</Project>
+      <Name>sdk_avian</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\sdk\c\ifxBase\sdk_base.vcxproj">
+      <Project>{96731E7F-712B-3FCD-8D79-4A5800AC9A91}</Project>
+      <Name>sdk_base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\sdk\c\ifxComPort\sdk_comport_obj.vcxproj">
+      <Project>{49C2C008-5455-3F6F-93CA-88EFDAB09AD0}</Project>
+      <Name>sdk_comport_obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\sdk\c\ifxCw\sdk_cw.vcxproj">
+      <Project>{E33BB5A6-80F8-313A-B48B-AB858A17BE23}</Project>
+      <Name>sdk_cw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\sdk\c\ifxFmcw\sdk_fmcw.vcxproj">
+      <Project>{20D6B121-F537-3B36-9421-BCE674AE64E9}</Project>
+      <Name>sdk_fmcw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\sdk\c\ifxLtr11\sdk_ltr11.vcxproj">
+      <Project>{BE5D0060-19B7-3952-9654-5E0717E7C2A6}</Project>
+      <Name>sdk_ltr11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\sdk\c\ifxMimose\sdk_mimose.vcxproj">
+      <Project>{19EDBA18-1190-31B2-8527-E2DF00FED5CB}</Project>
+      <Name>sdk_mimose</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\sdk\c\ifxRadar\sdk_radar.vcxproj">
+      <Project>{2E2FA8AE-E094-37EC-88E5-8E24B70732D0}</Project>
+      <Name>sdk_radar</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\sdk\c\ifxRadarDeviceCommon\sdk_radar_device_common.vcxproj">
+      <Project>{1E92191E-B9DB-3D17-9A80-A11D0EC23982}</Project>
+      <Name>sdk_radar_device_common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

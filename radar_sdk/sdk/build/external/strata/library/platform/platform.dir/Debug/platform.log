@@ -1,0 +1,67 @@
+﻿  Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/library/platform/CMakeLists.txt
+  BoardAny.cpp
+  BoardDescriptor.cpp
+  BoardInstance.cpp
+  BoardManager.cpp
+  NamedMemory.cpp
+  Memory.cpp
+  RegisterGenerator.cpp
+  BridgeControl.cpp
+  BridgeData.cpp
+  BridgeProtocol.cpp
+  BridgeProtocolI2c.cpp
+  BridgeProtocolGpio.cpp
+  BridgeProtocolSpi.cpp
+  BridgeProtocolMemory.cpp
+  BridgeProtocolFlash.cpp
+  BridgeProtocolData.cpp
+  BridgeWrapperBase.cpp
+  VendorCommandsImpl.cpp
+  BridgeEthernet.cpp
+  BridgeEthernetControl.cpp
+  Generating Code...
+  Compiling...
+  BridgeEthernetData.cpp
+  BridgeEthernetTcp.cpp
+  BridgeEthernetUdp.cpp
+  EnumeratorEthernet.cpp
+  BoardEthernetTcp.cpp
+  BoardEthernetUdp.cpp
+  BoardDescriptorEthernet.cpp
+  SocketTcp.cpp
+  SocketUdp.cpp
+  BridgeFpgaIrpli.cpp
+  DebugFrame.cpp
+  ErrorFrame.cpp
+  Frame.cpp
+  FrameBase.cpp
+  FrameForwarder.cpp
+  FramePool.cpp
+  FrameQueue.cpp
+  FrameHelper.cpp
+  BoardInstanceMacro.cpp
+  BridgeMacro.cpp
+  Generating Code...
+  Compiling...
+  SerialPort.cpp
+  BridgeSerial.cpp
+  BoardSerial.cpp
+  BoardUvc.cpp
+  VendorExtensionCypress.cpp
+  VendorExtensionRealtek.cpp
+  VendorExtensionRealtekFlash.cpp
+  VendorExtensionRealtekI2c.cpp
+  Board.cpp
+  BoardGeneric.cpp
+  BoardRemote.cpp
+  SerialPortImpl.cpp
+  EnumeratorSerialImpl.cpp
+  SocketImpl.cpp
+  SocketTcpImpl.cpp
+  SocketUdpImpl.cpp
+  SerialPortImplAsync.cpp
+  EnumeratorDirectShow.cpp
+  BridgeDirectShow.cpp
+  Win32Utils.cpp
+  Generating Code...
+  platform.vcxproj -> C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\platform\platform.dir\Debug\platform.lib

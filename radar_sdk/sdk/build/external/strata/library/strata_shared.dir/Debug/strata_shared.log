@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/library/CMakeLists.txt
+  Dummy.cpp
+     Creating library C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/strata/library/Debug/strata_shared-d.lib and object C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/strata/library/Debug/strata_shared-d.exp
+  strata_shared.vcxproj -> C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\strata_shared-d.dll

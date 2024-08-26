@@ -1,0 +1,31 @@
+﻿  Building Custom Rule C:/Users/natha/Alabama/Senior Design/radar_sdk/external/lib_avian/CMakeLists.txt
+  data_acquisition.cpp
+  default_settings.cpp
+  easy_mode.cpp
+  ifxRadar_BGT60TRxx.cpp
+  spi_programming.cpp
+  testing.cpp
+  ifxAvian_CwController.cpp
+  ifxAvian_DeviceTraits.cpp
+  ifxAvian_ErrorCodes.cpp
+  ifxAvian_HwTest.cpp
+  ifxAvian_ParameterExtractor.cpp
+  ifxAvian_RegisterSet.cpp
+  ifxAvian_SensorMeter.cpp
+  ifxAvian_StrataUtilities.cpp
+  ifxAvian_Utilities.cpp
+  ifxAvian_DummyPort.cpp
+  ifxAvian_StrataPort.cpp
+  ModelBGT60TR11D.cpp
+  ModelBGT60TRxxC.cpp
+  ModelBGT60TRxxD.cpp
+  Generating Code...
+  Compiling...
+  SequenceParameters.cpp
+  StateSequence.cpp
+  ifxAvian_RfConversion.cpp
+  ifxAvian_TimingConversion.cpp
+  Generating Code...
+  Auto build dll exports
+     Creating library C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/Debug/lib_avian.lib and object C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/external/lib_avian/Debug/lib_avian.exp
+  lib_avian.vcxproj -> C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\bin\Debug\lib_avian.dll

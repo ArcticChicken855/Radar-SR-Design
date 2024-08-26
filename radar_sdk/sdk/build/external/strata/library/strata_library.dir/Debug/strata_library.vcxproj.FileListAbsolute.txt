@@ -1,0 +1,1 @@
+C:\Users\natha\Alabama\Senior Design\radar_sdk\sdk\build\external\strata\library\strata_library.dir\Debug\strata_library.lib

@@ -1,0 +1,13 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.28/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CTest.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CTestTargets.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CTestUseLaunchers.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/DartConfiguration.tcl.in
+C:/Program Files/CMake/share/cmake-3.28/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake
+C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/contrib/pugixml/CMakeLists.txt
+C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/contrib/pugixml/scripts/pugixml-config.cmake.in
+C:/Users/natha/Alabama/Senior Design/radar_sdk/external/strata/contrib/pugixml/scripts/pugixml.pc.in

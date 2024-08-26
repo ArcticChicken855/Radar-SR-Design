@@ -1,0 +1,1173 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:14 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:14 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.9.5+33de0b227 for .NET Framework
+      Build started 3/5/2024 6:23:20 PM.
+      
+      Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\3.28.3\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\3.28.3\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\3.28.3\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.38
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/3.28.3/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:14 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.9.5+33de0b227 for .NET Framework
+      Build started 3/5/2024 6:23:22 PM.
+      
+      Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\3.28.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\3.28.3\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\3.28.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:02.17
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/3.28.3/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:14 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-f36r7m"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-f36r7m"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/W3"
+      CMAKE_C_FLAGS_DEBUG: "/D_DEBUG /MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/c_flags_overrides.cmake"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-f36r7m'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_26521.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/5/2024 6:23:25 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f36r7m\\cmTC_26521.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_26521.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f36r7m\\Debug\\".
+          Creating directory "cmTC_26521.dir\\Debug\\cmTC_26521.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_26521.dir\\Debug\\cmTC_26521.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_26521.dir\\Debug\\cmTC_26521.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_26521.dir\\Debug\\\\" /Fd"cmTC_26521.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_26521.dir\\Debug\\\\" /Fd"cmTC_26521.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f36r7m\\Debug\\cmTC_26521.exe" /INCREMENTAL /ILK:"cmTC_26521.dir\\Debug\\cmTC_26521.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-f36r7m/Debug/cmTC_26521.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-f36r7m/Debug/cmTC_26521.lib" /MACHINE:X64  /machine:x64 cmTC_26521.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_26521.vcxproj -> C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f36r7m\\Debug\\cmTC_26521.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_26521.dir\\Debug\\cmTC_26521.tlog\\unsuccessfulbuild".
+          Touching "cmTC_26521.dir\\Debug\\cmTC_26521.tlog\\cmTC_26521.lastbuildstate".
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f36r7m\\cmTC_26521.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.58
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:14 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-fdm2iq"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-fdm2iq"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/W3 /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/D_DEBUG /MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_USER_MAKE_RULES_OVERRIDE_CXX: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/cxx_flags_overrides.cmake"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-fdm2iq'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ed0e1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/5/2024 6:23:27 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fdm2iq\\cmTC_ed0e1.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_ed0e1.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fdm2iq\\Debug\\".
+          Creating directory "cmTC_ed0e1.dir\\Debug\\cmTC_ed0e1.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_ed0e1.dir\\Debug\\cmTC_ed0e1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_ed0e1.dir\\Debug\\cmTC_ed0e1.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ed0e1.dir\\Debug\\\\" /Fd"cmTC_ed0e1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ed0e1.dir\\Debug\\\\" /Fd"cmTC_ed0e1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fdm2iq\\Debug\\cmTC_ed0e1.exe" /INCREMENTAL /ILK:"cmTC_ed0e1.dir\\Debug\\cmTC_ed0e1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-fdm2iq/Debug/cmTC_ed0e1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-fdm2iq/Debug/cmTC_ed0e1.lib" /MACHINE:X64  /machine:x64 cmTC_ed0e1.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_ed0e1.vcxproj -> C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fdm2iq\\Debug\\cmTC_ed0e1.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_ed0e1.dir\\Debug\\cmTC_ed0e1.tlog\\unsuccessfulbuild".
+          Touching "cmTC_ed0e1.dir\\Debug\\cmTC_ed0e1.tlog\\cmTC_ed0e1.lastbuildstate".
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fdm2iq\\cmTC_ed0e1.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.46
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "external/strata/library/platform/CMakeLists.txt:242 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-sxn9xt"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-sxn9xt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/c_flags_overrides.cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-sxn9xt'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f8e7e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/5/2024 6:23:30 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sxn9xt\\cmTC_f8e7e.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_f8e7e.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sxn9xt\\Debug\\".
+          Creating directory "cmTC_f8e7e.dir\\Debug\\cmTC_f8e7e.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_f8e7e.dir\\Debug\\cmTC_f8e7e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f8e7e.dir\\Debug\\cmTC_f8e7e.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f8e7e.dir\\Debug\\\\" /Fd"cmTC_f8e7e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sxn9xt\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f8e7e.dir\\Debug\\\\" /Fd"cmTC_f8e7e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sxn9xt\\src.c"
+          src.c
+        C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sxn9xt\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sxn9xt\\cmTC_f8e7e.vcxproj]
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sxn9xt\\cmTC_f8e7e.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sxn9xt\\cmTC_f8e7e.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sxn9xt\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sxn9xt\\cmTC_f8e7e.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.22
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "external/strata/library/platform/CMakeLists.txt:242 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-vxnp7c"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-vxnp7c"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/c_flags_overrides.cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-vxnp7c'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4c69f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/5/2024 6:23:31 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vxnp7c\\cmTC_4c69f.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_4c69f.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vxnp7c\\Debug\\".
+          Creating directory "cmTC_4c69f.dir\\Debug\\cmTC_4c69f.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_4c69f.dir\\Debug\\cmTC_4c69f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_4c69f.dir\\Debug\\cmTC_4c69f.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D CHECK_FUNCTION_EXISTS=pthread_create /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4c69f.dir\\Debug\\\\" /Fd"cmTC_4c69f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vxnp7c\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D CHECK_FUNCTION_EXISTS=pthread_create /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4c69f.dir\\Debug\\\\" /Fd"cmTC_4c69f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vxnp7c\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vxnp7c\\Debug\\cmTC_4c69f.exe" /INCREMENTAL /ILK:"cmTC_4c69f.dir\\Debug\\cmTC_4c69f.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-vxnp7c/Debug/cmTC_4c69f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-vxnp7c/Debug/cmTC_4c69f.lib" /MACHINE:X64  /machine:x64 cmTC_4c69f.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vxnp7c\\cmTC_4c69f.vcxproj]
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vxnp7c\\cmTC_4c69f.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vxnp7c\\cmTC_4c69f.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vxnp7c\\cmTC_4c69f.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.15
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "external/strata/library/platform/CMakeLists.txt:242 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-tu4f2a"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-tu4f2a"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/c_flags_overrides.cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-tu4f2a'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9aaf1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/5/2024 6:23:33 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tu4f2a\\cmTC_9aaf1.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_9aaf1.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tu4f2a\\Debug\\".
+          Creating directory "cmTC_9aaf1.dir\\Debug\\cmTC_9aaf1.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_9aaf1.dir\\Debug\\cmTC_9aaf1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_9aaf1.dir\\Debug\\cmTC_9aaf1.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D CHECK_FUNCTION_EXISTS=pthread_create /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9aaf1.dir\\Debug\\\\" /Fd"cmTC_9aaf1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tu4f2a\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D CHECK_FUNCTION_EXISTS=pthread_create /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9aaf1.dir\\Debug\\\\" /Fd"cmTC_9aaf1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tu4f2a\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tu4f2a\\Debug\\cmTC_9aaf1.exe" /INCREMENTAL /ILK:"cmTC_9aaf1.dir\\Debug\\cmTC_9aaf1.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-tu4f2a/Debug/cmTC_9aaf1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-tu4f2a/Debug/cmTC_9aaf1.lib" /MACHINE:X64  /machine:x64 cmTC_9aaf1.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tu4f2a\\cmTC_9aaf1.vcxproj]
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tu4f2a\\cmTC_9aaf1.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tu4f2a\\cmTC_9aaf1.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tu4f2a\\cmTC_9aaf1.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.29
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "sdk/c/CMakeLists.txt:17 (check_library_exists)"
+    checks:
+      - "Looking for sqrt in m"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-do4ijh"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-do4ijh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/c_flags_overrides.cmake"
+    buildResult:
+      variable: "HAS_LIBM"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-do4ijh'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_48928.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/5/2024 6:23:35 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-do4ijh\\cmTC_48928.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_48928.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-do4ijh\\Debug\\".
+          Creating directory "cmTC_48928.dir\\Debug\\cmTC_48928.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_48928.dir\\Debug\\cmTC_48928.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_48928.dir\\Debug\\cmTC_48928.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D CHECK_FUNCTION_EXISTS=sqrt /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_48928.dir\\Debug\\\\" /Fd"cmTC_48928.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-do4ijh\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D CHECK_FUNCTION_EXISTS=sqrt /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_48928.dir\\Debug\\\\" /Fd"cmTC_48928.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-do4ijh\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-do4ijh\\Debug\\cmTC_48928.exe" /INCREMENTAL /ILK:"cmTC_48928.dir\\Debug\\cmTC_48928.ilk" /NOLOGO m.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-do4ijh/Debug/cmTC_48928.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeScratch/TryCompile-do4ijh/Debug/cmTC_48928.lib" /MACHINE:X64  /machine:x64 cmTC_48928.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'm.lib' [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-do4ijh\\cmTC_48928.vcxproj]
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-do4ijh\\cmTC_48928.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-do4ijh\\cmTC_48928.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'm.lib' [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeScratch\\TryCompile-do4ijh\\cmTC_48928.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.17
+        
+      exitCode: 1
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/TargetPlatform.cmake:37 (try_run)"
+      - "examples/c/BGT60ATR24C/motion_angle/CMakeLists.txt:4 (detect_target_platform)"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/W3"
+      CMAKE_C_FLAGS_DEBUG: "/D_DEBUG /MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/c_flags_overrides.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_09f9f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/5/2024 6:23:36 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_09f9f.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_09f9f.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\Debug\\".
+          Creating directory "cmTC_09f9f.dir\\Debug\\cmTC_09f9f.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_09f9f.dir\\Debug\\cmTC_09f9f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_09f9f.dir\\Debug\\cmTC_09f9f.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_09f9f.dir\\Debug\\\\" /Fd"cmTC_09f9f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_09f9f.dir\\Debug\\\\" /Fd"cmTC_09f9f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          arch.c
+        C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_09f9f.vcxproj]
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_09f9f.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_09f9f.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_09f9f.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.19
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/TargetPlatform.cmake:37 (try_run)"
+      - "examples/c/BGT60ATR24C/presence_detection/CMakeLists.txt:4 (detect_target_platform)"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/W3"
+      CMAKE_C_FLAGS_DEBUG: "/D_DEBUG /MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/c_flags_overrides.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7568e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/5/2024 6:23:38 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_7568e.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_7568e.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\Debug\\".
+          Creating directory "cmTC_7568e.dir\\Debug\\cmTC_7568e.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_7568e.dir\\Debug\\cmTC_7568e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_7568e.dir\\Debug\\cmTC_7568e.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7568e.dir\\Debug\\\\" /Fd"cmTC_7568e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7568e.dir\\Debug\\\\" /Fd"cmTC_7568e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          arch.c
+        C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_7568e.vcxproj]
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_7568e.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_7568e.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_7568e.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.18
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/TargetPlatform.cmake:37 (try_run)"
+      - "examples/c/BGT60ATR24C/segmentation/CMakeLists.txt:4 (detect_target_platform)"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/W3"
+      CMAKE_C_FLAGS_DEBUG: "/D_DEBUG /MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/c_flags_overrides.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c031e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/5/2024 6:23:40 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_c031e.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_c031e.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\Debug\\".
+          Creating directory "cmTC_c031e.dir\\Debug\\cmTC_c031e.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_c031e.dir\\Debug\\cmTC_c031e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_c031e.dir\\Debug\\cmTC_c031e.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c031e.dir\\Debug\\\\" /Fd"cmTC_c031e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c031e.dir\\Debug\\\\" /Fd"cmTC_c031e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          arch.c
+        C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_c031e.vcxproj]
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_c031e.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_c031e.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_c031e.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.37
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/TargetPlatform.cmake:37 (try_run)"
+      - "examples/c/BGT60LTR11AIP/advanced_motion_sensing/CMakeLists.txt:4 (detect_target_platform)"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/W3"
+      CMAKE_C_FLAGS_DEBUG: "/D_DEBUG /MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/c_flags_overrides.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_24843.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/5/2024 6:23:42 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_24843.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_24843.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\Debug\\".
+          Creating directory "cmTC_24843.dir\\Debug\\cmTC_24843.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_24843.dir\\Debug\\cmTC_24843.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_24843.dir\\Debug\\cmTC_24843.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_24843.dir\\Debug\\\\" /Fd"cmTC_24843.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_24843.dir\\Debug\\\\" /Fd"cmTC_24843.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          arch.c
+        C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_24843.vcxproj]
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_24843.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_24843.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_24843.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.19
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/TargetPlatform.cmake:37 (try_run)"
+      - "examples/c/BGT60TR13C/motion_angle/CMakeLists.txt:4 (detect_target_platform)"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/W3"
+      CMAKE_C_FLAGS_DEBUG: "/D_DEBUG /MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/c_flags_overrides.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_99bb3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/5/2024 6:23:43 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_99bb3.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_99bb3.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\Debug\\".
+          Creating directory "cmTC_99bb3.dir\\Debug\\cmTC_99bb3.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_99bb3.dir\\Debug\\cmTC_99bb3.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_99bb3.dir\\Debug\\cmTC_99bb3.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_99bb3.dir\\Debug\\\\" /Fd"cmTC_99bb3.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_99bb3.dir\\Debug\\\\" /Fd"cmTC_99bb3.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          arch.c
+        C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_99bb3.vcxproj]
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_99bb3.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_99bb3.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_99bb3.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.21
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/TargetPlatform.cmake:37 (try_run)"
+      - "examples/c/BGT60TR13C/presence_detection/CMakeLists.txt:4 (detect_target_platform)"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/W3"
+      CMAKE_C_FLAGS_DEBUG: "/D_DEBUG /MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/c_flags_overrides.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a29ab.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/5/2024 6:23:45 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_a29ab.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_a29ab.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\Debug\\".
+          Creating directory "cmTC_a29ab.dir\\Debug\\cmTC_a29ab.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_a29ab.dir\\Debug\\cmTC_a29ab.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_a29ab.dir\\Debug\\cmTC_a29ab.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a29ab.dir\\Debug\\\\" /Fd"cmTC_a29ab.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a29ab.dir\\Debug\\\\" /Fd"cmTC_a29ab.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          arch.c
+        C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_a29ab.vcxproj]
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_a29ab.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_a29ab.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_a29ab.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.28
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/TargetPlatform.cmake:37 (try_run)"
+      - "examples/c/BGT60TR13C/segmentation/CMakeLists.txt:4 (detect_target_platform)"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/W3"
+      CMAKE_C_FLAGS_DEBUG: "/D_DEBUG /MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/c_flags_overrides.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_52ff4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/5/2024 6:23:47 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_52ff4.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_52ff4.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\Debug\\".
+          Creating directory "cmTC_52ff4.dir\\Debug\\cmTC_52ff4.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_52ff4.dir\\Debug\\cmTC_52ff4.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_52ff4.dir\\Debug\\cmTC_52ff4.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_52ff4.dir\\Debug\\\\" /Fd"cmTC_52ff4.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_52ff4.dir\\Debug\\\\" /Fd"cmTC_52ff4.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          arch.c
+        C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_52ff4.vcxproj]
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_52ff4.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_52ff4.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_52ff4.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.28
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/TargetPlatform.cmake:37 (try_run)"
+      - "examples/c/BGT60UTR11AIP/presence_detection/CMakeLists.txt:4 (detect_target_platform)"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/W3"
+      CMAKE_C_FLAGS_DEBUG: "/D_DEBUG /MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/c_flags_overrides.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7556d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/5/2024 6:23:49 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_7556d.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_7556d.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\Debug\\".
+          Creating directory "cmTC_7556d.dir\\Debug\\cmTC_7556d.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_7556d.dir\\Debug\\cmTC_7556d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_7556d.dir\\Debug\\cmTC_7556d.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7556d.dir\\Debug\\\\" /Fd"cmTC_7556d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7556d.dir\\Debug\\\\" /Fd"cmTC_7556d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          arch.c
+        C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_7556d.vcxproj]
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_7556d.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_7556d.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_7556d.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.21
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/TargetPlatform.cmake:37 (try_run)"
+      - "examples/c/BGT60ATR24C/motion_angle/CMakeLists.txt:4 (detect_target_platform)"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/W3"
+      CMAKE_C_FLAGS_DEBUG: "/D_DEBUG /MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/c_flags_overrides.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5af11.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/27/2024 6:19:58 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_5af11.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_5af11.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\Debug\\".
+          Creating directory "cmTC_5af11.dir\\Debug\\cmTC_5af11.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_5af11.dir\\Debug\\cmTC_5af11.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_5af11.dir\\Debug\\cmTC_5af11.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5af11.dir\\Debug\\\\" /Fd"cmTC_5af11.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5af11.dir\\Debug\\\\" /Fd"cmTC_5af11.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          arch.c
+        C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_5af11.vcxproj]
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_5af11.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_5af11.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_5af11.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.59
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/TargetPlatform.cmake:37 (try_run)"
+      - "examples/c/BGT60ATR24C/presence_detection/CMakeLists.txt:4 (detect_target_platform)"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/W3"
+      CMAKE_C_FLAGS_DEBUG: "/D_DEBUG /MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/c_flags_overrides.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_73f18.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/27/2024 6:19:59 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_73f18.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_73f18.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\Debug\\".
+          Creating directory "cmTC_73f18.dir\\Debug\\cmTC_73f18.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_73f18.dir\\Debug\\cmTC_73f18.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_73f18.dir\\Debug\\cmTC_73f18.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_73f18.dir\\Debug\\\\" /Fd"cmTC_73f18.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_73f18.dir\\Debug\\\\" /Fd"cmTC_73f18.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          arch.c
+        C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_73f18.vcxproj]
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_73f18.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_73f18.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_73f18.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.30
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/TargetPlatform.cmake:37 (try_run)"
+      - "examples/c/BGT60ATR24C/segmentation/CMakeLists.txt:4 (detect_target_platform)"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/W3"
+      CMAKE_C_FLAGS_DEBUG: "/D_DEBUG /MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/c_flags_overrides.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_dd0fe.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/27/2024 6:20:00 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_dd0fe.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_dd0fe.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\Debug\\".
+          Creating directory "cmTC_dd0fe.dir\\Debug\\cmTC_dd0fe.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_dd0fe.dir\\Debug\\cmTC_dd0fe.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_dd0fe.dir\\Debug\\cmTC_dd0fe.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dd0fe.dir\\Debug\\\\" /Fd"cmTC_dd0fe.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dd0fe.dir\\Debug\\\\" /Fd"cmTC_dd0fe.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          arch.c
+        C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_dd0fe.vcxproj]
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_dd0fe.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_dd0fe.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_dd0fe.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.70
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/TargetPlatform.cmake:37 (try_run)"
+      - "examples/c/BGT60LTR11AIP/advanced_motion_sensing/CMakeLists.txt:4 (detect_target_platform)"
+    directories:
+      source: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/W3"
+      CMAKE_C_FLAGS_DEBUG: "/D_DEBUG /MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Users/natha/Alabama/Senior Design/radar_sdk/cmake/c_flags_overrides.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/natha/Alabama/Senior Design/radar_sdk/sdk/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1ab3e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.5+33de0b227 for .NET Framework
+        Build started 3/27/2024 6:20:01 PM.
+        
+        Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_1ab3e.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_1ab3e.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\Debug\\".
+          Creating directory "cmTC_1ab3e.dir\\Debug\\cmTC_1ab3e.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_1ab3e.dir\\Debug\\cmTC_1ab3e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1ab3e.dir\\Debug\\cmTC_1ab3e.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1ab3e.dir\\Debug\\\\" /Fd"cmTC_1ab3e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _DEBUG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1ab3e.dir\\Debug\\\\" /Fd"cmTC_1ab3e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c"
+          arch.c
+        C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_1ab3e.vcxproj]
+        Done Building Project "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_1ab3e.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_1ab3e.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\arch.c(16,1): error C1189: #error:  CMAKE_ARCH win32_x64 [C:\\Users\\natha\\Alabama\\Senior Design\\radar_sdk\\sdk\\build\\CMakeFiles\\CMakeTmp\\cmTC_1ab3e.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.30
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+...
