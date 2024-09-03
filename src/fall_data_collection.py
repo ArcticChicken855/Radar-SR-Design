@@ -1,6 +1,13 @@
-"""
-exec(open("C:\\Users\\natha\\Alabama\\Senior Design\\Python Radar Project\\env\\Scripts\\fall_data_collection_V2.py").read(), {'directory': "C:\\Users\\natha\\Alabama\\Senior Design\\Python Radar Project\\Fall Data\\Video_demo_4_19_2024"})
-"""
+
+# This program is used for fall data collection. It stores all data in a
+# dictionary which also has the recording parameters.
+
+# The program will store the output into a file under the "Fall Data" directory.
+# In this directory, it needs a sub-directory. Give the name of the desired
+# sub-directory as a system argument when running the program.
+
+# EXECUTION COMMAND:
+# py .\src\fall_data_collection.py <sub-directory name>
 
 from ifxradarsdk import get_version_full
 from ifxradarsdk.fmcw import DeviceFmcw
@@ -11,8 +18,9 @@ import time
 import pickle
 import os
 import re
+import sys
+from pathlib import Path
     
-# main logic:
 with DeviceFmcw() as device:
     # print some basic info
     print("Radar SDK Version: " + get_version_full())
@@ -52,10 +60,11 @@ with DeviceFmcw() as device:
     metrics = device.metrics_from_sequence(sequence.loop.sub_sequence.contents) 
                 
     # get the directory for outputting the data
-    directory = globals().get('directory', None)
+    project_dir = Path(__file__).parent.parent
+    directory = project_dir / 'Fall_Data' / sys.argv[1]
 
     # main loop
-    while True: # "while True is bad" stfu dumbass if you look 3 lines down u see how the loop breaks
+    while True:
 
         user_control = input('Press enter to start recording, press s to stop recording, press c to end prgm:')
         if (user_control == 'c'):
