@@ -1,6 +1,5 @@
-"""
-exec(open("C:\\Users\\natha\\Alabama\\Senior Design\\Python Radar Project\\env\\Scripts\\fall_data_processing_V9.py").read(), {'directory': "C:\\Users\\natha\\Alabama\\Senior Design\\Python Radar Project\\Fall Data\\Hardaway walking 4_9_2024", 'files_to_process': 'all'})
-"""
+# py .\src\fall_data_processing.py FALL1_9_3_2024 [1,2,3]
+
 
 import numpy as np
 import os
@@ -10,6 +9,7 @@ import matplotlib.animation
 import scipy.ndimage
 from time import time
 from pathlib import Path
+import sys
 
 # set up the timing stuff
 global pkl_load_time
@@ -90,7 +90,6 @@ def compute_doppler_DFT(range_chirp_tensor, recording, dft_resolution_factor, wi
     return output_array
 
 def compute_range_DFT(recording, frames, dft_resolution_factor, window_type, positive_frequencies_only):
-    return (1, frames[:, :, :, 0:64])
     # get a few bits of information to make it easier
     config = recording['config']
     num_frames, num_antennas, chirps_per_frame, samples_per_chirp = np.shape(frames)
@@ -396,18 +395,18 @@ def import_recording(file_num, directory):
     pkl_file.close()
     return recording
 
-# get the directory in the first positional argument
-directory = globals().get('directory', None)
+# get the directory in the second positional argument (after the execution command)
+project_dir = Path(__file__).parent.parent
+directory = str(project_dir / 'Fall_Data' / sys.argv[1])
 
-# use the second positional argument to specify what IQ pickles to process
-files_to_process = globals().get('files_to_process', None)
+# use the third positional argument to specify what IQ pickles to process
+files_to_process = sys.argv[2]
 
 # if want to process all files, count how many files there are in the directory
 if files_to_process == 'all':
     file_nums = list(range(len(next(os.walk(directory + "\\IQ pickles"))[2]))) # forbidden line of code gifted by the stack overflow gods
 else:
-    file_nums = files_to_process
-
+    file_nums = sys.argv[2].translate(str.maketrans("", "", "[]")).split(',')
 
 # now, make the main logic that loops over each file that was specified
 for filenum in file_nums:
@@ -450,13 +449,17 @@ for filenum in file_nums:
         plot_avg_dist(range_freqs_normalized_to_distance, distance_frames, metrics['max_range_m'], recording['notes'], samples_window_type)
 
     # now, get the range-doppler tensor
-    doppler_dft_resolution_factor = 1 # resolution factor, where a val of 1 means that there is not any cutoff or zero padding
-    chirps_window_type = 'none'
-    fftshift = True
+    skipDoppler = False
+    if skipDoppler is True:
+        range_doppler_tensor = (1, frames[:, :, :, 0:64])
+    else:
+        doppler_dft_resolution_factor = 1 # resolution factor, where a val of 1 means that there is not any cutoff or zero padding
+        chirps_window_type = 'none'
+        fftshift = True
 
-    dummy_timer = time()
-    range_doppler_tensor = compute_doppler_DFT(range_chirp_tensor, recording, doppler_dft_resolution_factor, chirps_window_type, fftshift)
-    doppler_dft_function_time += time() - dummy_timer
+        dummy_timer = time()
+        range_doppler_tensor = compute_doppler_DFT(range_chirp_tensor, recording, doppler_dft_resolution_factor, chirps_window_type, fftshift)
+        doppler_dft_function_time += time() - dummy_timer
 
     # get the abs val of the tensor
     abs_range_doppler_tensor = np.abs(range_doppler_tensor)
@@ -528,7 +531,7 @@ for filenum in file_nums:
 # todo: impliment range binning
 # todo: impliment microdoppler with STFT
 
-show_time = True
+show_time = False
 if show_time is True:
     total_time = time() - time_start
     print(f'Total Time={total_time}\npkl_load={pkl_load_time}\nrange_dft_function={range_dft_function_time}\nrange_dft={range_dft_time}\ndoppler_dft_function={doppler_dft_function_time}\ndoppler_dft={doppler_dft_time}\nwindow_multi={window_multi_time}\nfigure_view={figure_view_time}\nconvolve={convolve_time}\nspecto_creation={spectogram_creation_time}')
