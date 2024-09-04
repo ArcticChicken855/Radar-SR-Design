@@ -61,7 +61,7 @@ with DeviceFmcw() as device:
                 
     # get the directory for outputting the data
     project_dir = Path(__file__).parent.parent
-    directory = project_dir / 'Fall_Data' / sys.argv[1]
+    directory = str(project_dir / 'Fall_Data' / sys.argv[1])
 
     # main loop
     while True:

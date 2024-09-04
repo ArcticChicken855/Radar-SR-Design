@@ -206,8 +206,8 @@ def plot_range_velocity_heatmap(input_matrix, max_range, max_velocity, notes, nu
 
     # show the plot
     dummy_timer = time()
-    fig.show()
     global figure_view_time
+    plt.show()
     figure_view_time += time() - dummy_timer
 
     # allow saving by returning the fig
@@ -468,7 +468,7 @@ for filenum in file_nums:
     avg_abs_range_doppler_tensor = np.sum(abs_range_doppler_tensor, axis=1)
 
     # try plotting the range-velocity heatmap for the average of n frames
-    plot_heatmap_single_image = False
+    plot_heatmap_single_image = True
     if plot_heatmap_single_image is True:
         frm_start = 20
         nfrms = 5
@@ -517,7 +517,7 @@ for filenum in file_nums:
     spectogram_sum = np.sum(filtered_range_doppler_tensor[:, :, cut_length:], axis=2)
     spectogram_creation_time = time() - dummy_timer
     
-    plot_spectogram = True
+    plot_spectogram = False
     if plot_spectogram == True:
         spectogram_cutoff_factor = 1
         spectogram_sum = spectogram_sum[:, 0:round(np.size(spectogram_sum[0, :])/2)] # comment out this line if u want to use full processing
