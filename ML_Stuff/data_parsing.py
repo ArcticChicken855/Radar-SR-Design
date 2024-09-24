@@ -1,6 +1,6 @@
 import pathlib as p
 import numpy as np
-from DataUtils import *
+from data_utils import *
 
 
 def get_notes(data):
