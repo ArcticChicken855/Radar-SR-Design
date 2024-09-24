@@ -7571,3 +7571,7 @@ env/Lib/site-packages/wheel-0.44.0.dist-info/RECORD
 env/Lib/site-packages/wheel-0.44.0.dist-info/REQUESTED
 env/Lib/site-packages/wheel-0.44.0.dist-info/WHEEL
 env/Scripts/wheel.exe
+
+.idea
+
+*.pyc
