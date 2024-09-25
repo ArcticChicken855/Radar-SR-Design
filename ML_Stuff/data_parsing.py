@@ -26,6 +26,22 @@ def is_data_valid(data):
         return False
 
 
+def get_radar1_frames(data):
+    return data['frames_R1']
+
+
+def get_radar2_frames(data):
+    return data['frames_R2']
+
+
+def get_radar1_config(data):
+    return data['config1']
+
+
+def get_radar2_config(data):
+    return data['config2']
+
+
 def test_is_data_fall(data_array):
     for data in data_array:
         if not is_data_valid(data):
@@ -36,10 +52,3 @@ def test_is_data_fall(data_array):
             print("No Fall: ")
         print(get_notes(data))
         print("-----------------")
-
-
-
-datapath = p.Path().home() / "RadarData" / "2RadarData" / "IQpickles"
-data_array = get_all_data_from_path(datapath)
-
-test_is_data_fall(data_array)
