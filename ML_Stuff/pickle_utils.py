@@ -6,6 +6,11 @@ And just to make things easier
 
 import pickle
 
+# A lot of what im saving and loading is numpy arrays
+# Even though this file does not use numpy,
+# it seems to need the import so that numpy arrays can be properly saved and loaded
+import numpy as np
+
 
 def get_data_from_path(path):
     pkl = open(path, 'rb')
