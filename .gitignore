@@ -7575,3 +7575,4 @@ env/Scripts/wheel.exe
 .idea
 
 *.pyc
+env/
