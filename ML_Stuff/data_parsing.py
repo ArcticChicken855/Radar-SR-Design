@@ -1,6 +1,8 @@
-import pathlib as p
-import numpy as np
-from data_utils import *
+"""
+Functions to aid in parsing the full radar data structure
+Extract radar data, notes, config settings, etc
+The idea is that you don't need to interact with the data structure directly, and can just use the functions here.
+"""
 
 
 def get_notes(data):

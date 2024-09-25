@@ -1,3 +1,11 @@
+"""
+Functions for computing the spectrogram from raw radar frames.
+Primarily use build_spectrogram_matrix
+
+Functions by Nathan
+Stripped Down and Repurposed by William
+"""
+
 import numpy as np
 
 
@@ -79,6 +87,10 @@ def compute_doppler_dft(range_chirp_tensor, dft_resolution_factor=1, window_type
 
 
 def build_spectrogram_matrix(radar_frames):
+    """
+    Construct the spectrogram matrix from raw radar frames.
+    """
+
     range_chirp_tensor = compute_range_dft(radar_frames)
     range_doppler_tensor = compute_doppler_dft(range_chirp_tensor)
 

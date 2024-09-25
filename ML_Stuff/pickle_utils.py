@@ -1,3 +1,9 @@
+"""
+Functions to load and save pickles
+Use this rather than interacting manually to avoid mistakes
+And just to make things easier
+"""
+
 import pickle
 
 
