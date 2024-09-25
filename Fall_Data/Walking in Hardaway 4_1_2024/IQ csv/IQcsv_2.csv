@@ -1,4 +1,0 @@
-date:,2024-04-01 20:08:46
-duration:,7.200586795806885
-recording notes:,"William walking towards, 4-0m"
-FmcwSimpleSequenceConfig:,    frame_repetition_time_s: 0.20000000298023224,    chirp_repetition_time_s: 0.00041123799746856093,    num_chirps: 32,    tdm_mimo: False,    chirp: FmcwSequenceChirp:,    start_frequency_Hz: 59133931281.0,    end_frequency_Hz: 62366068720.0,    sample_rate_Hz: 1000000.0,    num_samples: 64,    rx_mask: 5,    tx_mask: 1,    tx_power_level: 31,    lp_cutoff_Hz: 500000,    hp_cutoff_Hz: 80000,    if_gain_dB: 33
