@@ -1,28 +1,29 @@
-from flask import Flask, jsonify
+from flask import Flask, request, jsonify
 from flask_cors import CORS
-import random
 
+# Initialize Flask app
 app = Flask(__name__)
+
+# Enable Cross-Origin Resource Sharing
 CORS(app)
 
-# Function to generate random fake radar data
-def generate_fake_fall_data():
-    fall_status = random.choice(['fall_detected', 'no_fall'])
-    fall_type = random.choice(['slip', 'trip', 'collapse']) if fall_status == 'fall_detected' else 'none'
-    fall_severity = random.choice(['minor', 'moderate', 'severe']) if fall_status == 'fall_detected' else 'none'
-    timestamp = '2024-09-23T12:00:00'
-    return {
-        'status': fall_status,
-        'fall_type': fall_type,
-        'fall_severity': fall_severity,
-        'timestamp': timestamp
-    }
+# Store radar data with default value (no fall)
+radar_data = {
+    'status': 'no_fall'  # Either 'fall_detected' or 'no_fall'
+}
 
-# Route to serve radar data
+# Route to handle POST requests from the Raspberry Pi
+@app.route('/submit-data', methods=['POST'])
+def receive_data():
+    global radar_data
+    radar_data = request.json  # Update radar_data with incoming JSON
+    return jsonify({'message': 'Data received'}), 200
+
+# Route to handle GET requests from React frontend
 @app.route('/radar-data', methods=['GET'])
 def get_radar_data():
-    fake_data = generate_fake_fall_data()
-    return jsonify(fake_data)
+    return jsonify(radar_data)  # Send radar_data to React frontend
 
+# Start Flask server
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
