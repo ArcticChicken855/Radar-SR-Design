@@ -20,3 +20,8 @@ def get_all_data_from_path(path):
         data = get_data_from_path(file_path)
         data_array.append(data)
     return data_array
+
+
+def save_data_to_path(path, file_name, data):
+    with open(path / file_name, 'wb') as handle:
+        pickle.dump(data, handle, protocol=pickle.HIGHEST_PROTOCOL)
