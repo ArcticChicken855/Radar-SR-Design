@@ -60,33 +60,13 @@ def get_radar_data(data_array):
     return output_array
 
 
-def get_spectrograms(radar_data_array):
-    """
-    Given an array of radar data
-    Returns a new array of the spectrograms
-    """
-
+def process_frames(data_array):
     output_array = []
-    for radar_data in radar_data_array:
-        spectrogram = build_spectrogram_matrix(radar_data)
-        output_array.append(spectrogram)
+    for data in data_array:
+        processed = full_process_frames(data)
+        output_array.append(processed)
 
     return output_array
-
-
-def resize_spectrograms(spectrogram_array):
-    """
-    Given an array of spectrograms
-    Return a new array of resized spectrograms according to data_manipulation.resize_spectrogram()
-    """
-
-    output_array = []
-    for spectrogram in spectrogram_array:
-        resized = resize_spectrogram(spectrogram)
-        output_array.append(resized)
-
-    return output_array
-
 
 def split_training_vs_testing(data_array):
     data_count = len(data_array)
@@ -118,13 +98,9 @@ def main():
     print("Collected " + str(len(non_fall_radar_data)) + " non-falls.")
     print("\n")
 
-    print("Creating Spectrograms.")
-    fall_spectrograms = get_spectrograms(fall_radar_data)
-    non_fall_spectrograms = get_spectrograms(non_fall_radar_data)
-
-    print("Resizing Spectrograms.")
-    fall_spectrograms_resized = resize_spectrograms(fall_spectrograms)
-    non_fall_spectrograms_resized = resize_spectrograms(non_fall_spectrograms)
+    print("Processing Data.")
+    fall_spectrograms_resized = process_frames(fall_radar_data)
+    non_fall_spectrograms_resized = process_frames(non_fall_radar_data)
     print("\n")
 
     print("Splitting into Training and Testing Arrays.")

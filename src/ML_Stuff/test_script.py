@@ -5,6 +5,7 @@ Before moving important things to their own files
 
 import pathlib as p
 import matplotlib.pyplot as plt
+from decider import Decider
 
 from pickle_utils import *
 from data_parsing import *
@@ -34,5 +35,4 @@ spectrogram = build_spectrogram_matrix(radar1_frames)
 resized = resize_spectrogram(spectrogram)
 
 plot_image(resized)
-
 
