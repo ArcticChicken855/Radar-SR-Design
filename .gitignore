@@ -7581,3 +7581,5 @@ radar_sdk/python_wheels/ifxradarsdk-3.5.0+8c595dbb.dist-info/
 radar_sdk/python_wheels/ifxradarsdk/
 
 Fall_Data/
+my-app/
+node_modules/

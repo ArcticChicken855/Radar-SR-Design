@@ -20,7 +20,6 @@ function App() {
   const [radarStatus, setRadarStatus] = useState('No data yet');
   const [fallSeverity, setFallSeverity] = useState('none');
 
-  // Fetch data from Flask backend
   useEffect(() => {
     axios.get('http://localhost:5000/radar-data')
       .then(response => {
