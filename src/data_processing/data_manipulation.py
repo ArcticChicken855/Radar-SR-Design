@@ -4,7 +4,7 @@ And for the function that does the 'full data processing', so there's one functi
 """
 
 import skimage as ski
-from spectrogram_stuff import build_spectrogram_matrix
+from src.data_processing.spectrogram_stuff import build_spectrogram_matrix
 
 TARGET_SPECTROGRAM_SIZE = (128, 128)
 

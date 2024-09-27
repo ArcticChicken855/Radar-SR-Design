@@ -6,12 +6,15 @@ import pathlib as p
 import matplotlib.pyplot as plt
 
 from src.data_processing.pickle_utils import *
+from src.ML_Stuff.model_structure import create_model
 
 
 # Currently paths are hardcoded to my (William's) files
 # I should probably change this Todo
 root_path = p.Path().home() / "RadarData" / "2RadarData"
 compiled_data_path = root_path / "CompiledData"
+
+SAVED_MODEL_PATH = p.Path().cwd().parents[1] / "saved_model" / "model.keras"
 
 # Todo I don't like having to rely on strings
 training_data = get_data_from_path(compiled_data_path / "training_data.pkl")
@@ -28,22 +31,7 @@ training_dataset = training_dataset.shuffle(50).batch(10)
 testing_dataset = testing_dataset.batch(10)
 
 # Todo again, tune this
-model = keras.Sequential([
-    layers.Input(shape=(128, 128)),
-    layers.Conv1D(16, 3, padding='same', activation='relu'),
-    layers.MaxPool1D(),
-    layers.Conv1D(32, 3, padding='same', activation='relu'),
-    layers.MaxPool1D(),
-    layers.Conv1D(64, 3, padding='same', activation='relu'),
-    layers.MaxPool1D(),
-    layers.Flatten(),
-    layers.Dense(128, activation='relu'),
-    layers.Dense(2)
-])
-
-model.compile(optimizer='adam',
-              loss=keras.losses.SparseCategoricalCrossentropy(from_logits=True),
-              metrics=['accuracy'])
+model = create_model()
 
 history = model.fit(
     training_dataset,
@@ -64,3 +52,6 @@ plt.ylim([min(plt.ylim()), 1])
 plt.title('Test me Boy')
 plt.xticks(np.arange(0, 20, step=1))
 plt.show()
+
+
+model.save(SAVED_MODEL_PATH)
