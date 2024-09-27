@@ -12,6 +12,12 @@ radar_data = {
     'status': 'no_fall'  # Either 'fall_detected' or 'no_fall'
 }
 
+
+@app.route("/")
+def view_page():
+    return radar_data['status']
+
+
 # Route to handle POST requests from the Raspberry Pi
 @app.route('/submit-data', methods=['POST'])
 def receive_data():
@@ -19,11 +25,13 @@ def receive_data():
     radar_data = request.json  # Update radar_data with incoming JSON
     return jsonify({'message': 'Data received'}), 200
 
+
 # Route to handle GET requests from React frontend
 @app.route('/radar-data', methods=['GET'])
 def get_radar_data():
     return jsonify(radar_data)  # Send radar_data to React frontend
 
+
 # Start Flask server
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='127.0.0.1', port=5000, debug=True)
