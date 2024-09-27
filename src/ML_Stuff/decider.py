@@ -1,5 +1,5 @@
 import keras
-from data_manipulation import full_process_frames
+from src.data_processing.data_manipulation import full_process_frames
 
 
 class Decider:

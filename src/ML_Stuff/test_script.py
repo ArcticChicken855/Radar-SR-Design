@@ -5,12 +5,10 @@ Before moving important things to their own files
 
 import pathlib as p
 import matplotlib.pyplot as plt
-from decider import Decider
 
-from pickle_utils import *
-from data_parsing import *
-from spectrogram_stuff import *
-from data_manipulation import *
+from src.data_processing.pickle_utils import *
+from src.data_processing.data_parsing import *
+from src.data_processing.data_manipulation import *
 
 
 def build_and_plot_spectrogram(radar_frames):

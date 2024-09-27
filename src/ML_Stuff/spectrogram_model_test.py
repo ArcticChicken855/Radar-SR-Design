@@ -4,9 +4,8 @@ from keras import layers
 
 import pathlib as p
 import matplotlib.pyplot as plt
-import numpy as np
 
-from pickle_utils import *
+from src.data_processing.pickle_utils import *
 
 
 # Currently paths are hardcoded to my (William's) files
