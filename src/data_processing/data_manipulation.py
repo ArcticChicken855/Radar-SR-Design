@@ -1,10 +1,10 @@
 """
 File for miscellaneous data manipulating
-Currently for resizing spectrograms to match expected format for ML
+And for the function that does the 'full data processing', so there's one function for the whole stack
 """
 
 import skimage as ski
-from spectrogram_stuff import build_spectrogram_matrix
+from src.data_processing.spectrogram_stuff import build_spectrogram_matrix
 
 TARGET_SPECTROGRAM_SIZE = (128, 128)
 

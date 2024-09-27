@@ -5,13 +5,11 @@ And finally saving as 'compiled' pickles for model training
 """
 
 import pathlib as p
-import numpy as np
 import math
 
-from pickle_utils import *
-from data_parsing import *
-from spectrogram_stuff import build_spectrogram_matrix
-from data_manipulation import *
+from src.data_processing.pickle_utils import *
+from src.data_processing.data_parsing import *
+from src.data_processing.data_manipulation import *
 
 # what portion of data should be used in training vs. testing
 # ie 0.8 indicates that 80% of data should be used in training

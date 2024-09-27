@@ -5,12 +5,11 @@ Before moving important things to their own files
 
 import pathlib as p
 import matplotlib.pyplot as plt
-from decider import Decider
 
-from pickle_utils import *
-from data_parsing import *
-from spectrogram_stuff import *
-from data_manipulation import *
+from src.data_processing.pickle_utils import *
+from src.data_processing.data_parsing import *
+from src.data_processing.data_manipulation import *
+from decider import Decider
 
 
 def build_and_plot_spectrogram(radar_frames):
@@ -26,13 +25,51 @@ def plot_image(image, title=""):
     plt.show()
 
 
-datapath = p.Path().home() / "RadarData" / "2RadarData" / "IQpickles"
-data_array = get_all_data_from_path(datapath)
-test_data = data_array[10]
+def evaluate_decider(test_data_path):
+    correct_decisions = 0
+    incorrect_decisions = 0
 
-radar1_frames = get_radar1_frames(test_data)
-spectrogram = build_spectrogram_matrix(radar1_frames)
-resized = resize_spectrogram(spectrogram)
+    data_array = get_all_data_from_path(test_data_path)
 
-plot_image(resized)
+    print("Initializing Decider: ")
+    decider = Decider()
 
+    print("Decider Initialized. Running Evaluation.")
+    for data in data_array:
+        if not is_data_valid(data):
+            continue
+
+        print("--------------------------------")
+        is_fall = is_data_fall(data)
+
+        if is_fall:
+            print("Data contains a fall")
+        else:
+            print("Data contains no fall")
+
+        radar1_frames = get_radar1_frames(data)
+        radar2_frames = get_radar2_frames(data)
+
+        decision = decider.make_decision(radar1_frames, radar2_frames)
+
+        if decision:
+            print("Fall Detected!")
+        else:
+            print("No Fall Detected!")
+
+        if decision == is_fall:
+            print("Correct!")
+            correct_decisions += 1
+        else:
+            print("Incorrect!")
+            incorrect_decisions += 1
+
+    accuracy = correct_decisions / (correct_decisions + incorrect_decisions)
+    print("------------------------------")
+    print("Evaluation Complete.")
+    print("Correct Decisions: " + str(correct_decisions))
+    print("Incorrect Decisions: " + str(incorrect_decisions))
+    print("Overall Accuracy: " + str(accuracy) + "%")
+
+
+evaluate_decider(p.Path().home() / "RadarData" / "2RadarData" / "IQpickles")
