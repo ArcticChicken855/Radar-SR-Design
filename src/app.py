@@ -3,16 +3,15 @@ from flask_cors import CORS
 
 # Initialize Flask app
 app = Flask(__name__)
-
-# Enable Cross-Origin Resource Sharing
 CORS(app)
 
-# Store radar data with default value (no fall)
+# Store radar data with default values (no fall and no severity)
 radar_data = {
-    'status': 'no_fall'  # Either 'fall_detected' or 'no_fall'
+    'status': 'no_fall',  # Either 'fall_detected' or 'no_fall'
+    'fall_severity': 'none'  # Either 'mild', 'moderate', 'severe', or 'none'
 }
 
-# Route to handle POST requests from the Raspberry Pi
+# Route to handle POST requests from Raspberry Pi
 @app.route('/submit-data', methods=['POST'])
 def receive_data():
     global radar_data
