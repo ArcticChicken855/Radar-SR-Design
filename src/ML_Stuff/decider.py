@@ -20,18 +20,16 @@ class Decider:
         loaded_model = keras.models.load_model(saved_model_path)
         self.model = keras.Sequential([loaded_model, keras.layers.Softmax()])
 
-    def make_decision(self, radar1_frames, radar2_frames):
+    def make_decision(self, radar_frames):
         # TODO stupid ugly function
-        processed_radar1 = np.array([full_process_frames(radar1_frames)])
-        processed_radar2 = np.array([full_process_frames(radar2_frames)])
+        # changed to only handle one radar at a time
+        processed_radar = np.array([full_process_frames(radar_frames)])
 
-        prediction1 = self.model.predict(processed_radar1)[0]
-        prediction2 = self.model.predict(processed_radar2)[0]
+        prediction = self.model.predict(processed_radar)[0]
 
-        print(prediction1)
-        print(prediction2)
+        print(prediction)
 
-        if prediction1[0] < prediction1[1] or prediction2[0] < prediction2[1]:
+        if prediction[0] < prediction[1]:
             return True
         else:
             return False
