@@ -62,7 +62,7 @@ metrics1, sequence1 = set_up_radar_parameters(device1, frame_rep_time, num_rx_an
 metrics2, sequence2 = set_up_radar_parameters(device2, frame_rep_time, num_rx_antennas, fc2, bandwidth)
 
 # define how many frames to use in a segment
-frames_per_segment = 12 # must be divisible by 4
+frames_per_segment = 24 # must be divisible by 4
 
 semi_formatted = create_dict_from_sequence(sequence1)[0]['loop']['sub_sequence'][0]['loop']
 segment_shape = (frames_per_segment, num_rx_antennas, semi_formatted['num_repetitions'], semi_formatted['sub_sequence'][0]['chirp']['num_samples'])
@@ -88,8 +88,20 @@ while True: # main loop
 
         print(f'Radar 1: {decision1}')
 
-        segment_R1[0:(frames_per_segment // 2) - 1] = segment_R1[(frames_per_segment // 2) - 1 : frames_per_segment - 1]
-        R1_idx = (frames_per_segment // 2) - 1 
+        segment_R1[0:(frames_per_segment // 2) - 1] = segment_R1[frames_per_segment // 2 : frames_per_segment - 1]
+        R1_idx = (frames_per_segment // 2)
+
+    if R2_idx == frames_per_segment - 1:
+        decision2 = myDecider.make_decision(segment_R2)
+
+        print(f'Radar 2: {decision2}')
+
+        segment_R2[0:(frames_per_segment // 2) - 1] = segment_R2[frames_per_segment // 2 : frames_per_segment - 1]
+        R2_idx = (frames_per_segment // 2)
+
+
+    R1_idx += 1
+    R2_idx += 1
 
     
 

@@ -16,7 +16,7 @@ class Decider:
     def __init__(self):
         # i've added a softmax layer to the output of the model to make the results
         # easier to understand
-        saved_model_path = p.Path().cwd().parents[1] / "saved_model" / "model.keras"
+        saved_model_path = p.Path(__file__).parent.parent / "saved_model" / "model.keras"
         loaded_model = keras.models.load_model(saved_model_path)
         self.model = keras.Sequential([loaded_model, keras.layers.Softmax()])
 
