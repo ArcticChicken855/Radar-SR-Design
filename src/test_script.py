@@ -6,9 +6,9 @@ Before moving important things to their own files
 import pathlib as p
 import matplotlib.pyplot as plt
 
-from src.data_processing.pickle_utils import *
-from src.data_processing.data_parsing import *
-from src.data_processing.data_manipulation import *
+from pickle_utils import *
+from data_parsing import *
+from data_manipulation import *
 from decider import Decider
 
 

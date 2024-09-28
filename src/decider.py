@@ -1,6 +1,6 @@
 import tensorflow as tf
 import keras
-from src.data_processing.data_manipulation import full_process_frames
+from data_manipulation import full_process_frames
 import pathlib as p
 
 import numpy as np

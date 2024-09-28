@@ -5,8 +5,8 @@ from keras import layers
 import pathlib as p
 import matplotlib.pyplot as plt
 
-from src.data_processing.pickle_utils import *
-from src.ML_Stuff.model_structure import create_model
+from pickle_utils import *
+from model_structure import create_model
 
 
 # Currently paths are hardcoded to my (William's) files
