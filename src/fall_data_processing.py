@@ -389,7 +389,7 @@ def save_spectogram_plot(fig, pkl_num, directory):
 def import_recording(file_num, directory):
     # this function opens up the pickle file and returns the recording
     pkl_directory = directory + "\\IQ pickles"
-    pkl_file = open(pkl_directory + "\\IQpickle_" + str(file_num) + ".pkl", 'rb')
+    pkl_file = open("C:\\Users\\natha\\Alabama\\Senior Design\\Scnd-Radar-SR-Design\\Fall_Data\\FALL_9_23_2024\\IQ pickles\\IQpickle_3.pkl", 'rb')
     recording = pickle.load(pkl_file)
     pkl_file.close()
     return recording
@@ -412,7 +412,7 @@ def filter_clutter(range_doppler_tensor, config, order, cutoff_freq):
     
     half_H = H_freq[0:len(H_freq)//2]
     fixed = np.append(np.flip(half_H), half_H)
-    fixed[fixed == 0] = np.min(fixed[fixed > 0]) / order / 2
+    fixed[fixed < 0.001] = np.min(fixed[fixed > 0.001]) / order / 2
 
     #print(fixed)
 
@@ -472,7 +472,7 @@ for filenum in file_nums:
 
         # get the DFT across the range axis
         range_dft_resolution_factor = 4 # resolution factor, where a val of 1 means that there is not any cutoff or zero padding
-        samples_window_type = 'hanning'
+        samples_window_type = 'blackman'
         positive_frequencies_only = True
 
         dummy_timer = time()
@@ -491,7 +491,7 @@ for filenum in file_nums:
 
         # now, get the range-doppler tensor
         doppler_dft_resolution_factor = 4 # resolution factor, where a val of 1 means that there is not any cutoff or zero padding
-        chirps_window_type = 'hanning'
+        chirps_window_type = 'blackman'
         fftshift = True
 
         dummy_timer = time()
@@ -507,14 +507,14 @@ for filenum in file_nums:
         # try using a butterworth filter to get rid of the ground clutter
         ground_filter_method = 'butterworth'
         if ground_filter_method == "butterworth":
-            avg_abs_range_doppler_tensor = filter_clutter(avg_abs_range_doppler_tensor, config, order=1, cutoff_freq=400)
+            avg_abs_range_doppler_tensor = filter_clutter(avg_abs_range_doppler_tensor, config, order=3, cutoff_freq=70)
         elif ground_filter_method == "averaging":
             avg_abs_range_doppler_tensor = declutter_algo2(avg_abs_range_doppler_tensor, include_range_info=False, num_frames_to_include=5)
         else:
             pass
 
         # try plotting the range-velocity heatmap for the average of n frames
-        plot_heatmap_single_image = True
+        plot_heatmap_single_image = False
         if plot_heatmap_single_image is True:
             frm_start = 20
             nfrms = 5
@@ -534,7 +534,7 @@ for filenum in file_nums:
         # start by implimenting the time-domain filter across the framenumber
         filter_coefficients = np.array([0.2, 0.4, 0.6, 0.8, 1]) ** 1.5
         #filter_coefficients = np.array([1])
-        use_a_filter = True
+        use_a_filter = False
         if use_a_filter is True:
             dummy_timer = time()
             filtered_range_doppler_tensor = RV_time_filter(avg_abs_range_doppler_tensor, filter_coefficients)
@@ -567,7 +567,7 @@ for filenum in file_nums:
             spectogram_cutoff_factor = 1
             spectogram_sum = spectogram_sum[:, 0:round(np.size(spectogram_sum[0, :])/2)] # comment out this line if u want to use full processing
             spectogram_sum_fig = plot_spectorgam_sum(spectogram_sum, spectogram_cutoff_factor, recording['notes'], num_antennas, samples_window_type, chirps_window_type, range_dft_resolution_factor, doppler_dft_resolution_factor, cut_distance_factor, filter_coefficients, config['frame_repetition_time_s'], metrics['max_speed_m_s'])
-
+            plt.show()
             save_spectogram = False
             if save_spectogram is True:
                 save_spectogram_plot(spectogram_sum_fig, filenum, directory)

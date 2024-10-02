@@ -3,8 +3,9 @@ File for miscellaneous data manipulating
 And for the function that does the 'full data processing', so there's one function for the whole stack
 """
 
+import numpy as np
 import skimage as ski
-from spectrogram_stuff import build_spectrogram_matrix
+from spectrogram_stuff import build_spectrogram_matrix, build_spectrogram_matrix_efficient
 
 TARGET_SPECTROGRAM_SIZE = (128, 128)
 
@@ -21,6 +22,7 @@ def full_process_frames(raw_radar_frames):
     Use (or modify) this method to keep all processing consistent
     between training and decision
     """
-    spectrogram = build_spectrogram_matrix(raw_radar_frames)
+    spectrogram = build_spectrogram_matrix_efficient(raw_radar_frames)
+    print(np.shape(spectrogram))
     resized = resize_spectrogram(spectrogram)
     return resized
