@@ -22,7 +22,6 @@ def full_process_frames(raw_radar_frames):
     Use (or modify) this method to keep all processing consistent
     between training and decision
     """
-    spectrogram = build_spectrogram_matrix_efficient(raw_radar_frames)
-    print(np.shape(spectrogram))
+    spectrogram = build_spectrogram_matrix(raw_radar_frames)
     resized = resize_spectrogram(spectrogram)
     return resized

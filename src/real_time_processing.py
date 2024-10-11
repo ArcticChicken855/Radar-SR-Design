@@ -2,6 +2,7 @@ from decider import Decider
 from ifxradarsdk.fmcw import DeviceFmcw
 from ifxradarsdk.fmcw.types import FmcwSimpleSequenceConfig, FmcwSequenceChirp, create_dict_from_sequence
 import numpy as np
+import time
 
 first_UUID =  "00323253-4335-4851-3036-303439303531"
 second_UUID = "00323353-5334-4841-3131-303432303631"
@@ -15,7 +16,7 @@ print("Sensor: " + str(device1.get_sensor_type()))
 print("UUID of board: " + device2.get_board_uuid())
 print("Sensor: " + str(device2.get_sensor_type()))
 
-frame_rep_time = 0.1
+frame_rep_time = 0.025
 num_rx_antennas = num_rx_antennas = device1.get_sensor_information()["num_rx_antennas"]
 
 def set_up_radar_parameters(device, frame_rep_time, num_rx_antennas, center_frequency, bandwidth):
@@ -62,7 +63,7 @@ metrics1, sequence1 = set_up_radar_parameters(device1, frame_rep_time, num_rx_an
 metrics2, sequence2 = set_up_radar_parameters(device2, frame_rep_time, num_rx_antennas, fc2, bandwidth)
 
 # define how many frames to use in a segment
-frames_per_segment = 24 # must be divisible by 4
+frames_per_segment = 128 # must be divisible by 4
 
 semi_formatted = create_dict_from_sequence(sequence1)[0]['loop']['sub_sequence'][0]['loop']
 segment_shape = (frames_per_segment, num_rx_antennas, semi_formatted['num_repetitions'], semi_formatted['sub_sequence'][0]['chirp']['num_samples'])
@@ -74,25 +75,34 @@ R2_idx = (frames_per_segment // 4) - 1
 
 myDecider = Decider()
 
+previous_time = time.time()
 while True: # main loop
+
     """
     First, get a frame of data from each radar. Insert the frame into the corresponding segment at the index.
     Then, once a segment is full, send the whole segment to the decider function.
     After that, move the front half of the segment to the back half and keep filling from the middle up.
     """
+    device1.start_acquisition()
+    device2.start_acquisition()
+
     segment_R1[R1_idx] = device1.get_next_frame()[0]
     segment_R2[R2_idx] = device2.get_next_frame()[0]
 
     if R1_idx == frames_per_segment - 1:
-        decision1 = myDecider.make_decision(segment_R1)
+        device1.stop_acquisition()
+        device2.stop_acquisition()
+        decision1 = myDecider.make_decision(segment_R1, plot=True)
 
         print(f'Radar 1: {decision1}')
 
         segment_R1[0:(frames_per_segment // 2) - 1] = segment_R1[frames_per_segment // 2 : frames_per_segment - 1]
         R1_idx = (frames_per_segment // 2)
 
+        print(R1_idx)
+
     if R2_idx == frames_per_segment - 1:
-        decision2 = myDecider.make_decision(segment_R2)
+        decision2 = myDecider.make_decision(segment_R2, plot=False)
 
         print(f'Radar 2: {decision2}')
 
@@ -102,6 +112,10 @@ while True: # main loop
 
     R1_idx += 1
     R2_idx += 1
+
+    new_time = time.time()
+    print(f'{1000*(new_time - previous_time):.3g}ms')
+    previous_time = new_time
 
     
 
