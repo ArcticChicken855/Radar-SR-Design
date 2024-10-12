@@ -4,6 +4,9 @@ from ifxradarsdk.fmcw.types import FmcwSimpleSequenceConfig, FmcwSequenceChirp, 
 import numpy as np
 import time
 
+import radar_parameters_josh as rp # TO CHANGE PARAMS MAKE A COPY OF JOSH AND CHANGE
+from processing_parameters_bob import processing_params # TO CHANGE PARAMS MAKE A COPY OF BOB AND CHANGE
+
 first_UUID =  "00323253-4335-4851-3036-303439303531"
 second_UUID = "00323353-5334-4841-3131-303432303631"
     
@@ -16,57 +19,18 @@ print("Sensor: " + str(device1.get_sensor_type()))
 print("UUID of board: " + device2.get_board_uuid())
 print("Sensor: " + str(device2.get_sensor_type()))
 
-frame_rep_time = 0.025
-num_rx_antennas = num_rx_antennas = device1.get_sensor_information()["num_rx_antennas"]
+metrics1, sequence1 = rp.set_up_parameters_R1(device1)
+metrics2, sequence2 = rp.set_up_parameters_R2(device2)
 
-def set_up_radar_parameters(device, frame_rep_time, num_rx_antennas, center_frequency, bandwidth):
-    """
-    This function simply sets up the radar device with the necessary parameters,
-    and also returns the metrics of the radar for the given params.
-    """
-    start_freq = center_frequency - bandwidth//2
-    end_freq = center_frequency + bandwidth//2
-
-    radar_config = FmcwSimpleSequenceConfig(
-        frame_repetition_time_s=frame_rep_time, 
-        chirp_repetition_time_s=0.17e-3,    
-        num_chirps=128,                          
-        tdm_mimo=False,                      
-        chirp=FmcwSequenceChirp(
-            start_frequency_Hz=start_freq,
-            end_frequency_Hz=end_freq,  
-            sample_rate_Hz=1e6, # max                
-            num_samples=128,               
-            rx_mask=(1 << num_rx_antennas) - 1,                    
-            tx_mask=1,               
-            tx_power_level=31, # max  
-            lp_cutoff_Hz=500000,               
-            hp_cutoff_Hz=80000,           
-            if_gain_dB=33,                      
-        )
-    )
-
-    # give the parameters to the device
-    sequence = device.create_simple_sequence(radar_config)
-    device.set_acquisition_sequence(sequence)    
-
-    # find the metrics from the params
-    metrics = device.metrics_from_sequence(sequence.loop.sub_sequence.contents)
-
-    return metrics, sequence
-
-bandwidth = 1250E6
-fc1 = 59100E6
-fc2 = 60350E6
-
-metrics1, sequence1 = set_up_radar_parameters(device1, frame_rep_time, num_rx_antennas, fc1, bandwidth)
-metrics2, sequence2 = set_up_radar_parameters(device2, frame_rep_time, num_rx_antennas, fc2, bandwidth)
-
-# define how many frames to use in a segment
+# define how many frames to use in a ML segment
 frames_per_segment = 128 # must be divisible by 4
 
-semi_formatted = create_dict_from_sequence(sequence1)[0]['loop']['sub_sequence'][0]['loop']
-segment_shape = (frames_per_segment, num_rx_antennas, semi_formatted['num_repetitions'], semi_formatted['sub_sequence'][0]['chirp']['num_samples'])
+sequence_info = create_dict_from_sequence(sequence1)[0]['loop']['sub_sequence'][0]['loop']
+num_chirps = sequence_info['num_repetitions']
+num_samples = sequence_info['sub_sequence'][0]['chirp']['num_samples']
+num_rx_antennas = 3
+
+segment_shape = (frames_per_segment, num_rx_antennas, num_chirps, num_samples)
 
 segment_R1 = np.zeros(segment_shape, dtype=complex)
 segment_R2 = np.zeros(segment_shape, dtype = complex)
@@ -75,7 +39,10 @@ R2_idx = (frames_per_segment // 4) - 1
 
 myDecider = Decider()
 
-previous_time = time.time()
+loop_start_time = time.time()
+device1.start_acquisition()
+device2.start_acquisition()
+
 while True: # main loop
 
     """
@@ -90,8 +57,7 @@ while True: # main loop
     segment_R2[R2_idx] = device2.get_next_frame()[0]
 
     if R1_idx == frames_per_segment - 1:
-        device1.stop_acquisition()
-        device2.stop_acquisition()
+        
         decision1 = myDecider.make_decision(segment_R1, plot=True)
 
         print(f'Radar 1: {decision1}')
@@ -112,10 +78,6 @@ while True: # main loop
 
     R1_idx += 1
     R2_idx += 1
-
-    new_time = time.time()
-    print(f'{1000*(new_time - previous_time):.3g}ms')
-    previous_time = new_time
 
     
 
