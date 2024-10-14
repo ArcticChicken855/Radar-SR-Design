@@ -4,7 +4,7 @@ To make new paramters, save a copy of me and rename me!
 To import, use 'from processing_parameters_bob import processing_params'.
 """
 
-from processing_params_def import ProcessingParameters
+from parameter_defs import ProcessingParameters
 
 processing_params = ProcessingParameters(
     range_fft_res=1, 
