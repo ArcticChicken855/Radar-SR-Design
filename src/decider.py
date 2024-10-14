@@ -1,17 +1,10 @@
 import tensorflow as tf
 import keras
-from data_manipulation import full_process_frames
 import pathlib as p
 import matplotlib.pyplot as plt
 
 import numpy as np
-import time
-
-def plot_image(image, title=""):
-    fig, ax = plt.subplots()
-    ax.set_title(title)
-    ax.imshow(image, aspect='auto')
-    plt.show()
+import skimage as ski
 
 class Decider:
     """
@@ -29,10 +22,12 @@ class Decider:
         loaded_model = keras.models.load_model(saved_model_path)
         self.model = keras.Sequential([loaded_model, keras.layers.Softmax()])
         self.previous_time=0
+        self.target_spectogram_size = (128, 128)
 
     def make_decision(self, processed_spectogram):
 
-        prediction = self.model.predict(processed_spectogram)[0]
+        resized_spectogram = ski.transform.resize(processed_spectogram, self.target_spectogram_size)
+        prediction = self.model.predict(resized_spectogram) # this doesn't work for some reason
 
         print(prediction)
 

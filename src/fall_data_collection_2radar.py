@@ -21,6 +21,10 @@ import re
 import sys
 from pathlib import Path 
 
+from radar_parameter_assigner import assign_radar_parameters
+
+from radar_parameters_josh import R1_params, R2_params # TO CHANGE PARAMS MAKE A COPY OF JOSH AND CHANGE
+
 first_UUID =  "00323253-4335-4851-3036-303439303531"
 second_UUID = "00323353-5334-4841-3131-303432303631"
     
@@ -33,53 +37,35 @@ print("Sensor: " + str(device1.get_sensor_type()))
 print("UUID of board: " + device2.get_board_uuid())
 print("Sensor: " + str(device2.get_sensor_type()))
 
-frame_rep_time = 0.1
-num_rx_antennas = num_rx_antennas = device1.get_sensor_information()["num_rx_antennas"]
+# assign the specified parameters to each radar, and get the corresponding metrics
+metrics1 = assign_radar_parameters(device1, R1_params)
+metrics2 = assign_radar_parameters(device2, R2_params)
 
-def set_up_radar_parameters(device, frame_rep_time, num_rx_antennas, center_frequency, bandwidth):
+def make_recording(R1_params, R2_params, metrics1, metrics2):
     """
-    This function simply sets up the radar device with the necessary parameters,
-    and also returns the metrics of the radar for the given params.
+    This makes a dictionary with the recorded data as well as the necessary info about the radar.
+    It stores the dict as a pickle in the file that is specified in the run command.
     """
-    start_freq = center_frequency - bandwidth//2
-    end_freq = center_frequency + bandwidth//2
+    project_dir = Path(__file__).parent.parent
+    directory = str(project_dir / 'Fall_Data' / sys.argv[1])
 
-    radar_config = FmcwSimpleSequenceConfig(
-        frame_repetition_time_s=frame_rep_time, 
-        chirp_repetition_time_s=0.17e-3,    
-        num_chirps=128,                          
-        tdm_mimo=False,                      
-        chirp=FmcwSequenceChirp(
-            start_frequency_Hz=start_freq,
-            end_frequency_Hz=end_freq,  
-            sample_rate_Hz=1e6, # max                
-            num_samples=128,               
-            rx_mask=(1 << num_rx_antennas) - 1,                    
-            tx_mask=1,               
-            tx_power_level=31, # max  
-            lp_cutoff_Hz=500000,               
-            hp_cutoff_Hz=80000,           
-            if_gain_dB=33,                      
-        )
-    )
+    # make a 'Recording' dictionary to store this loop's record
+    thisRecording = dict()
+    thisRecording['directory'] = directory
+    thisRecording['date'] = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())
 
-    # give the parameters to the device
-    sequence = device.create_simple_sequence(radar_config)
-    device.set_acquisition_sequence(sequence)    
+    thisRecording['frames_R1'] = list() # we will append to this list as we gather radar data
+    thisRecording['frames_R2'] = list()
 
-    # find the metrics from the params
-    metrics = device.metrics_from_sequence(sequence.loop.sub_sequence.contents)
+    thisRecording['metrics_R1'] = metrics1
+    thisRecording['metrics_R2'] = metrics2
 
-    return metrics, sequence
+    thisRecording['radar_parameters_R1'] = R1_params
+    thisRecording['radar_parameters_R2'] = R2_params
 
-bandwidth = 1250E6
-fc1 = 59100E6
-fc2 = 60350E6
+    return thisRecording
 
-metrics1, sequence1 = set_up_radar_parameters(device1, frame_rep_time, num_rx_antennas, fc1, bandwidth)
-metrics2, sequence2 = set_up_radar_parameters(device2, frame_rep_time, num_rx_antennas, fc2, bandwidth)
-
-def make_recording(sequence1, sequence2, metrics1, metrics2, frame_rep_time, num_rx_antennas):
+def make_recording_old(sequence1, sequence2, metrics1, metrics2, frame_rep_time, num_rx_antennas): # OLD FUNCTION, DO NOT USE THIS
     """
     This makes a dictionary with the recorded data as well as the necessary info about the radar.
     It stores the dict as a pickle in the file that is specified in the run command.
@@ -135,7 +121,7 @@ def make_recording(sequence1, sequence2, metrics1, metrics2, frame_rep_time, num
 # main loop
 while True:
     
-    Recording = make_recording(sequence1, sequence2, metrics1, metrics2, frame_rep_time, num_rx_antennas)
+    Recording = make_recording(R1_params, R2_params, metrics1, metrics2)
 
     user_control = input('Press enter to start recording, press s to stop recording, press c to end prgm:')
     if (user_control == 'c'):

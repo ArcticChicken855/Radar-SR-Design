@@ -7,8 +7,8 @@ To import, use 'from processing_parameters_bob import processing_params'.
 from parameter_defs import ProcessingParameters
 
 processing_params = ProcessingParameters(
-    range_fft_res=1, 
-    velocity_fft_res=1, 
+    range_dft_res=1, 
+    velocity_dft_res=1, 
     range_window_type='blackman', 
     velocity_window_type='blackman', 
     range_minimum_m = 0.1, 

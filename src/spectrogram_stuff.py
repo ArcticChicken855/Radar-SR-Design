@@ -76,11 +76,11 @@ def compute_doppler_dft(range_chirp_tensor, velocity_axis=2, dft_resolution_fact
 
         # shape the window into the same form as the input matrix
         if velocity_axis == 2:
-            shaped_window = window[None, None, :, None]
+            shaped_window = window[None, None, :]
         elif velocity_axis == 1:
-            shaped_window = window[None, :, None]
+            shaped_window = window[None, :]
         elif velocity_axis == 0:
-            shaped_window = window[:, None]
+            shaped_window = window
 
         # get the product
         product = range_chirp_tensor * shaped_window
@@ -103,7 +103,7 @@ def butterworth_ground_filter():
 def range_binning():
     pass
 
-def get_velocity_slice_from_raw(raw_frame, processing_params, metrics):
+def get_spectogram_slice_from_raw(raw_frame, processing_params, metrics):
     """
     This function computes a single slice of the spectogram.
     """
@@ -118,7 +118,7 @@ def get_velocity_slice_from_raw(raw_frame, processing_params, metrics):
     
     # sum across the ranges greater than the specified minimum range
     range_per_step = np.shape(range_chirp_matrix)[1] / metrics['max_range_m']
-    starting_idx = np.ceil(processing_params.range_minimum_m / range_per_step)
+    starting_idx = int(np.ceil(processing_params.range_minimum_m / range_per_step))
     summed_slice = np.sum(range_chirp_matrix[:, starting_idx:], axis=1)
                                         
     # compute the doppler DFT
@@ -134,14 +134,18 @@ def get_velocity_slice_from_raw(raw_frame, processing_params, metrics):
 
 def spectogram_postprocessing(spectogram, processing_params):
     """
-    This function applies the clipping operation using the specified clipping factors.
+    This function takes the transpose, so that time is on the x-axis.
+    It also applies the clipping operation using the specified clipping factors.
     It also takes the logarithm.
-    Also, if there is any coefficients specified for he time-domain filter, it applies those here.
+    Also, if there are any coefficients specified for the time-domain filter, it applies those here.
     """
+    # take the transpose, so that time is on the x-axis
+    flipped_spectogram = np.transpose(spectogram)
+
     # perform the clipping
-    max_amplitude = np.max(spectogram) * processing_params.amplitude_cutoff_factor_max
-    min_amplitude = np.max(spectogram) * processing_params.amplitude_cutoff_factor_min
-    clipped_spectogram = np.clip(spectogram, min_amplitude, max_amplitude)
+    max_amplitude = np.max(flipped_spectogram) * processing_params.amplitude_cutoff_factor_max
+    min_amplitude = np.max(flipped_spectogram) * processing_params.amplitude_cutoff_factor_min
+    clipped_spectogram = np.clip(flipped_spectogram, min_amplitude, max_amplitude)
 
     # change to a logarithmic scaling of the amplitude
     log_spectogram = np.log10(clipped_spectogram)
