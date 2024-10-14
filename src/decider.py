@@ -30,25 +30,11 @@ class Decider:
         self.model = keras.Sequential([loaded_model, keras.layers.Softmax()])
         self.previous_time=0
 
-    def make_decision(self, radar_frames, plot):
-        # TODO stupid ugly function
-        # changed to only handle one radar at a time
+    def make_decision(self, processed_spectogram):
 
-
-        processed_radar = np.array([full_process_frames(radar_frames)])
-
-        if plot is True:
-            plot_image(processed_radar[0])
-
-        self.previous_time = time.time()
-        prediction = self.model.predict(processed_radar)[0]
+        prediction = self.model.predict(processed_spectogram)[0]
 
         print(prediction)
-
-        current_time = time.time()
-        diff = current_time - self.previous_time
-        print("Decider Time: " + str(diff * 1000) + " ms")
-        
 
         if prediction[0] < prediction[1]:
             return True

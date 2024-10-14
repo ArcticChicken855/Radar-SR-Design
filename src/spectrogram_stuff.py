@@ -7,6 +7,7 @@ Stripped Down and Repurposed by William
 """
 
 import numpy as np
+import scipy.ndimage
 
 def compute_range_dft(frames, range_axis=3, dft_resolution_factor=1, window_type='none', positive_frequencies_only=True):
     # get a few bits of information to make it easier
@@ -102,7 +103,7 @@ def butterworth_ground_filter():
 def range_binning():
     pass
 
-def get_velocity_slice_from_raw(raw_frame, params, metrics):
+def get_velocity_slice_from_raw(raw_frame, processing_params, metrics):
     """
     This function computes a single slice of the spectogram.
     """
@@ -112,30 +113,47 @@ def get_velocity_slice_from_raw(raw_frame, params, metrics):
     # compute the range DFT
     range_chirp_matrix = compute_range_dft(summed_radar_frame, 
                                            range_axis=1, 
-                                           window_type=params.range_window_type, 
-                                           dft_resolution_factor=params.range_dft_res)
+                                           window_type=processing_params.range_window_type, 
+                                           dft_resolution_factor=processing_params.range_dft_res)
     
     # sum across the ranges greater than the specified minimum range
     range_per_step = np.shape(range_chirp_matrix)[1] / metrics['max_range_m']
-    starting_idx = np.ceil(params.range_minimum_m / range_per_step)
+    starting_idx = np.ceil(processing_params.range_minimum_m / range_per_step)
     summed_slice = np.sum(range_chirp_matrix[:, starting_idx:], axis=1)
                                         
     # compute the doppler DFT
     doppler_slice = compute_doppler_dft(summed_slice, 
                                         velocity_axis=0, 
-                                        window_type=params.velocity_window_type, 
-                                        dft_resolution_factor=params.velocity_dft_res)
+                                        window_type=processing_params.velocity_window_type, 
+                                        dft_resolution_factor=processing_params.velocity_dft_res)
     
     # compute the absolute val
     abs_doppler_slice = np.abs(doppler_slice)
 
     return abs_doppler_slice
 
-def clip_spectogram(spectogram, params):
+def spectogram_postprocessing(spectogram, processing_params):
     """
     This function applies the clipping operation using the specified clipping factors.
+    It also takes the logarithm.
+    Also, if there is any coefficients specified for he time-domain filter, it applies those here.
     """
-    pass
+    # perform the clipping
+    max_amplitude = np.max(spectogram) * processing_params.amplitude_cutoff_factor_max
+    min_amplitude = np.max(spectogram) * processing_params.amplitude_cutoff_factor_min
+    clipped_spectogram = np.clip(spectogram, min_amplitude, max_amplitude)
+
+    # change to a logarithmic scaling of the amplitude
+    log_spectogram = np.log10(clipped_spectogram)
+
+    # perform the time-domain filtering if specified in the processing_params
+    if processing_params.time_filter_coefficients is not None:
+        final_spectogram = scipy.ndimage.convolve1d(log_spectogram, processing_params.time_filter_coefficients, axis=0)
+    else:
+        final_spectogram = log_spectogram
+
+    return final_spectogram
+
 
 def build_spectrogram_matrix(radar_frames):
     """

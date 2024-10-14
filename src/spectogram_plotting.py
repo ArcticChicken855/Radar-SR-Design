@@ -5,7 +5,28 @@ from parameter_defs import ProcessingParameters, RadarParameters
 def generate_title_string(p_params):
     return "Title"
 
-def plot_spectorgam_sum(processed_spectogram, title_string, metrics):
+def plot_spectorgam(processed_spectogram, title_string):
+    """
+    This function simply generates a single image for the spectrogram.
+    It does not apply any additional processing.
+    """
+
+    # make the figure and axis obj
+    fig, ax = plt.subplots()
+
+    # set title
+    ax.set_title(title_string)
+
+    # get the heatmap
+    ax = plt.imshow(processed_spectogram, cmap='hot', interpolation='nearest', aspect='auto')
+
+    # show the plot
+    fig.show()
+
+    # allow saving by returning the fig
+    return fig
+
+def plot_spectorgam(processed_spectogram, title_string, metrics):
     """
     This function simply generates a single image for the spectrogram.
     It does not apply any additional processing.
