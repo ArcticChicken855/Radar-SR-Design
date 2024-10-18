@@ -49,7 +49,7 @@ def full_segment_actions(segment, frames_per_segment, metrics, radar_params, pro
     Then, the completed spectogram is passed to the AI.
     Finally, the front half of the segment is sent to the back half, and the segment index is set to the midpoint.
     """
-    processed_spectogram = spectrogram_stuff.spectogram_postprocessing(segment, processing_params)
+    processed_spectogram = spectrogram_stuff.spectrogram_postprocessing(segment, processing_params)
 
     if plot == 'static':
         device1.stop_acquisition()
