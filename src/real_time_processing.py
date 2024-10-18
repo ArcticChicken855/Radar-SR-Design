@@ -8,7 +8,7 @@ import spectrogram_stuff
 import spectogram_plotting
 from decider import Decider
 
-from radar_parameters_josh import R1_params, R2_params # TO CHANGE PARAMS MAKE A COPY OF JOSH AND CHANGE
+from radar_parameters_oldie import R1_params, R2_params # TO CHANGE PARAMS MAKE A COPY OF JOSH AND CHANGE
 from processing_parameters_bob import processing_params # TO CHANGE PARAMS MAKE A COPY OF BOB AND CHANGE
 
 first_UUID =  "00323253-4335-4851-3036-303439303531"
