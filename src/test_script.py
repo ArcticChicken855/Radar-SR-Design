@@ -76,18 +76,19 @@ def evaluate_decider(test_data_path):
 
 
 
-fall_data_path = p.Path(__file__).parents[1] / "Fall_Data" / "RawData"
+fall_data_path = p.Path(__file__).parents[1] / "Fall_Data"
 
-data = get_all_data_from_path(fall_data_path / "oct_3")
-test_data = data[20]
+data = get_all_data_from_path(fall_data_path / "test3" / "IQpickles")
+test_data = data[0]
 
 test_frames = get_radar1_frames(test_data)
 metrics = test_data['config1']['metrics']
 print(np.shape(test_frames))
 
 
-spectrogram = build_spectrogram_matrix(test_frames)
+spectrogram = full_process_frames(test_frames)
 print(np.shape(spectrogram))
 
-plot_image(spectrogram, "-".join(get_notes(test_data)))
+decider = Decider()
+decider.make_decision(spectrogram)
 

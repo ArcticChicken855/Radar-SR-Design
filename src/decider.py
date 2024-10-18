@@ -30,7 +30,10 @@ class Decider:
     def make_decision(self, processed_spectogram):
 
         resized_spectogram = ski.transform.resize(processed_spectogram, self.target_spectogram_size)
-        prediction = self.model.predict(resized_spectogram) # this doesn't work for some reason
+        resized_spectogram = np.array([resized_spectogram])
+
+        prediction = self.model.predict(resized_spectogram)[0] # this doesn't work for some reason
+
 
 
         print(prediction)
