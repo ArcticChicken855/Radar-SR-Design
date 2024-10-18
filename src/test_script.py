@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 from pickle_utils import *
 from data_parsing import *
-from data_manipulation import *
+from spectrogram_stuff import *
 from decider import Decider
 from processing_parameters_bob import processing_params
 
@@ -79,16 +79,16 @@ def evaluate_decider(test_data_path):
 fall_data_path = p.Path(__file__).parents[1] / "Fall_Data"
 
 data = get_all_data_from_path(fall_data_path / "test3" / "IQpickles")
-test_data = data[0]
+test_data = data[3]
 
 test_frames = get_radar1_frames(test_data)
-metrics = test_data['config1']['metrics']
+metrics = test_data['config']['metrics']
 print(np.shape(test_frames))
+title = "-".join(get_notes(test_data))
 
-
-spectrogram = full_process_frames(test_frames)
+spectrogram = build_spectrogram_matrix2(test_frames)
 print(np.shape(spectrogram))
 
-decider = Decider()
-decider.make_decision(spectrogram)
+plot_image(spectrogram, title)
+
 
