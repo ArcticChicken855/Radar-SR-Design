@@ -33,10 +33,10 @@ myDecider = Decider()
 # define how many frames to use in a segment
 frames_per_segment = 128 # must be divisible by 4
 
-segment_shape = (frames_per_segment, R1_params.num_chirps * processing_params.velocity_dft_res) # assuming that these parameters are the same for R1 and R2
+segment_shape = (frames_per_segment, R1_params.num_rx_antennas, R1_params.num_chirps, R1_params.num_samples) # assuming that these parameters are the same for R1 and R2
 
-segment_R1 = np.zeros(segment_shape, dtype=float)
-segment_R2 = np.zeros(segment_shape, dtype=float)
+segment_R1 = np.zeros(segment_shape, dtype=complex)
+segment_R2 = np.zeros(segment_shape, dtype=complex)
 R1_idx = 0
 R2_idx = (frames_per_segment // 4) - 1
 
@@ -49,7 +49,7 @@ def full_segment_actions(segment, frames_per_segment, metrics, radar_params, pro
     Then, the completed spectogram is passed to the AI.
     Finally, the front half of the segment is sent to the back half, and the segment index is set to the midpoint.
     """
-    processed_spectogram = spectrogram_stuff.spectrogram_postprocessing(segment, processing_params)
+    processed_spectogram = spectrogram_stuff.build_spectrogram_matrix(segment, processing_params, metrics)
 
     if plot == 'static':
         device1.stop_acquisition()
@@ -59,7 +59,7 @@ def full_segment_actions(segment, frames_per_segment, metrics, radar_params, pro
         device2.start_acquisition()
     
     decision = myDecider.make_decision(processed_spectogram)
-    print(f'Radar 1: {decision}')
+    print(f'Radar ?: {decision}')
 
     segment[0:(frames_per_segment // 2) - 1] = segment[frames_per_segment // 2 : frames_per_segment - 1]
     segment_idx = (frames_per_segment // 2) - 1
@@ -82,9 +82,8 @@ while True: # main loop
     frame2 = device2.get_next_frame()[0]
 
     # immediately do the processing on the acquired frames, giving a single slice of the spectogram
-    segment_R1[R1_idx] = spectrogram_stuff.get_spectogram_slice_from_raw(frame1, processing_params, metrics1)
-    segment_R2[R2_idx] = spectrogram_stuff.get_spectogram_slice_from_raw(frame2, processing_params, metrics2)
-
+    segment_R1[R1_idx] = frame1
+    segment_R2[R2_idx] = frame2
 
     if R1_idx == frames_per_segment - 1:
         segment_R1, R1_idx = full_segment_actions(segment_R1, frames_per_segment, metrics1, R1_params, processing_params, plot='static')
