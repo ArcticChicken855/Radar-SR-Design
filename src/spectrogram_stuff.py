@@ -235,21 +235,21 @@ def build_spectrogram_matrix2(radar_frames):
 
     range_chirp_tensor = compute_range_dft(raw_sum, range_axis=2)
 
-    # cut it
-    cut_distance_factor = 0.01
-    cut_length = round(np.shape(range_chirp_tensor)[2]) * cut_distance_factor
-    m = np.sum(filtered_range_doppler_tensor[:, :, cut_length:], axis=2)
-
-    temprogram = compute_doppler_dft(m, velocity_axis=1)
+    
+    range_doppler_tensor = compute_doppler_dft(range_chirp_tensor, velocity_axis=1)
 
     # get the abs val of the tensor
-    abs_doppler_matrix = np.abs(temprogram)
+    abs_range_doppler_tensor = np.abs(range_doppler_tensor)
 
     # TODO: I'm skipping the filter stage for now
-    filtered_range_doppler_tensor = abs_doppler_matrix
+    filtered_range_doppler_tensor = abs_range_doppler_tensor
+
+    cut_distance_factor = 0.01
+    cut_length = round(np.size(filtered_range_doppler_tensor[0, 0]) * cut_distance_factor)
+    spectrogram = np.sum(filtered_range_doppler_tensor[:, :, cut_length:], axis=2)
 
     # use log scale, and cut off vals near zero
-    matrix_to_plot = np.log10(np.where(abs_doppler_matrix < 1E-6, 1E-6, abs_doppler_matrix))
+    matrix_to_plot = np.log10(np.where(spectrogram < 1E-6, 1E-6, spectrogram))
 
     # clip out the most extreme values and rotate
     cutoff_factor = 1
