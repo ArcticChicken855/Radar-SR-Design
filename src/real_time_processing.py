@@ -58,8 +58,8 @@ def full_segment_actions(segment, frames_per_segment, metrics, radar_params, pro
         device1.start_acquisition()
         device2.start_acquisition()
     
-    decision = myDecider.make_decision(processed_spectogram)
-    print(f'Radar 1: {decision}')
+    #decision = myDecider.make_decision(processed_spectogram)
+    #print(f'Radar 1: {decision}')
 
     segment[0:(frames_per_segment // 2) - 1] = segment[frames_per_segment // 2 : frames_per_segment - 1]
     segment_idx = (frames_per_segment // 2) - 1
