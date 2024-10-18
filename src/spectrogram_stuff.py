@@ -8,10 +8,12 @@ Stripped Down and Repurposed by William
 
 import numpy as np
 
+import scipy.ndimage
 
-def compute_range_dft(frames, dft_resolution_factor=1, window_type='none', positive_frequencies_only=True):
+def compute_range_dft(frames, range_axis=3, dft_resolution_factor=1, window_type='none', positive_frequencies_only=True):
     # get a few bits of information to make it easier
-    samples_per_chirp = np.shape(frames)[3]
+    samples_per_chirp = np.shape(frames)[range_axis]
+
 
     # use the resolution factor to find the length of the DFT
     dft_length = dft_resolution_factor * samples_per_chirp
@@ -30,7 +32,14 @@ def compute_range_dft(frames, dft_resolution_factor=1, window_type='none', posit
 
         # shape the window into the same form as the input matrix
         # Todo: what is happening here?
-        shaped_window = window[None, None, None, :]
+
+        if range_axis == 3:
+            shaped_window = window[None, None, None, :]
+        elif range_axis == 2:
+            shaped_window = window[None, None, :]
+        elif range_axis == 1:
+            shaped_window = window[None, :]
+
 
         # get the product
         product = frames * shaped_window
@@ -39,19 +48,22 @@ def compute_range_dft(frames, dft_resolution_factor=1, window_type='none', posit
         product = frames
 
     # main DFT computation
-    output_array = np.fft.fft(product, n=dft_length, axis=3)
+    output_array = np.fft.fft(product, n=dft_length, axis=range_axis)
 
     # if requested, only return the positive frequencies of the DFT
     if positive_frequencies_only:
-        output_array = output_array[:, :, :, 0:int(dft_length / 2)]
+        if range_axis == 3:
+            output_array = output_array[:, :, :, 0:int(dft_length / 2)]
+        elif range_axis == 2:
+            output_array = output_array[:, :, 0:int(dft_length / 2)]
 
-    # now return the shit
+    # now return the stuff
     return output_array
 
-
-def compute_doppler_dft(range_chirp_tensor, dft_resolution_factor=1, window_type='none', fftshift=True):
+def compute_doppler_dft(range_chirp_tensor, velocity_axis=2, dft_resolution_factor=1, window_type='none', fftshift=True):
     # get a few bits of information to make it easier
-    num_frames, num_antennas, chirps_per_frame, range_dft_length = np.shape(range_chirp_tensor)
+    chirps_per_frame = np.shape(range_chirp_tensor)[velocity_axis]
+
 
     # use the resolution factor to find the length of the DFT
     doppler_dft_length = dft_resolution_factor * chirps_per_frame
@@ -68,7 +80,14 @@ def compute_doppler_dft(range_chirp_tensor, dft_resolution_factor=1, window_type
             window = np.bartlett(chirps_per_frame)
 
         # shape the window into the same form as the input matrix
-        shaped_window = window[None, None, :, None]
+
+        if velocity_axis == 2:
+            shaped_window = window[None, None, :]
+        elif velocity_axis == 1:
+            shaped_window = window[None, :]
+        elif velocity_axis == 0:
+            shaped_window = window
+
 
         # get the product
         product = range_chirp_tensor * shaped_window
@@ -78,13 +97,76 @@ def compute_doppler_dft(range_chirp_tensor, dft_resolution_factor=1, window_type
 
     # main DFT computation
     if fftshift is True:
-        output_array = np.fft.fftshift(np.fft.fft(product, n=doppler_dft_length, axis=2), axes=2)
+
+        output_array = np.fft.fftshift(np.fft.fft(product, n=doppler_dft_length, axis=velocity_axis), axes=velocity_axis)
     else:
-        output_array = np.fft.fft(product, n=doppler_dft_length, axis=2)
+        output_array = np.fft.fft(product, n=doppler_dft_length, axis=velocity_axis)
+
 
     # now return the shit
     return output_array
 
+
+def butterworth_ground_filter():
+    pass
+    
+def range_binning():
+    pass
+
+def get_spectogram_slice_from_raw(raw_frame, processing_params, metrics):
+    """
+    This function computes a single slice of the spectogram.
+    """
+    # first, sum across all antennas
+    summed_radar_frame = np.sum(raw_frame, axis=0)
+
+    # compute the range DFT
+    range_chirp_matrix = compute_range_dft(summed_radar_frame, 
+                                           range_axis=1, 
+                                           window_type=processing_params.range_window_type, 
+                                           dft_resolution_factor=processing_params.range_dft_res)
+    
+    # sum across the ranges greater than the specified minimum range
+    range_per_step = np.shape(range_chirp_matrix)[1] / metrics['max_range_m']
+    starting_idx = int(np.ceil(processing_params.range_minimum_m / range_per_step))
+    summed_slice = np.sum(range_chirp_matrix[:, starting_idx:], axis=1)
+                                        
+    # compute the doppler DFT
+    doppler_slice = compute_doppler_dft(summed_slice, 
+                                        velocity_axis=0, 
+                                        window_type=processing_params.velocity_window_type, 
+                                        dft_resolution_factor=processing_params.velocity_dft_res)
+    
+    # compute the absolute val
+    abs_doppler_slice = np.abs(doppler_slice)
+
+    return abs_doppler_slice
+
+def spectrogram_postprocessing(spectrogram, processing_params):
+    """
+    This function takes the transpose, so that time is on the x-axis.
+    It also applies the clipping operation using the specified clipping factors.
+    It also takes the logarithm.
+    Also, if there are any coefficients specified for the time-domain filter, it applies those here.
+    """
+    # take the transpose, so that time is on the x-axis
+    flipped_spectogram = np.transpose(spectrogram)
+
+    # perform the clipping
+    max_amplitude = np.max(flipped_spectogram) * processing_params.amplitude_cutoff_factor_max
+    min_amplitude = np.max(flipped_spectogram) * processing_params.amplitude_cutoff_factor_min
+    clipped_spectogram = np.clip(flipped_spectogram, min_amplitude, max_amplitude)
+
+    # change to a logarithmic scaling of the amplitude
+    log_spectogram = np.log10(clipped_spectogram)
+
+    # perform the time-domain filtering if specified in the processing_params
+    if processing_params.time_filter_coefficients is not None:
+        final_spectogram = scipy.ndimage.convolve1d(log_spectogram, processing_params.time_filter_coefficients, axis=0)
+    else:
+        final_spectogram = log_spectogram
+
+    return final_spectogram
 
 def build_spectrogram_matrix(radar_frames):
     """

@@ -7583,3 +7583,4 @@ radar_sdk/python_wheels/ifxradarsdk/
 Fall_Data/
 my-app/
 node_modules/
+__pycache__

@@ -1,7 +1,15 @@
-from decider import Decider
 from ifxradarsdk.fmcw import DeviceFmcw
 from ifxradarsdk.fmcw.types import FmcwSimpleSequenceConfig, FmcwSequenceChirp, create_dict_from_sequence
 import numpy as np
+import time
+
+from radar_parameter_assigner import assign_radar_parameters
+import spectrogram_stuff
+import spectogram_plotting
+from decider import Decider
+
+from radar_parameters_josh import R1_params, R2_params # TO CHANGE PARAMS MAKE A COPY OF JOSH AND CHANGE
+from processing_parameters_bob import processing_params # TO CHANGE PARAMS MAKE A COPY OF BOB AND CHANGE
 
 first_UUID =  "00323253-4335-4851-3036-303439303531"
 second_UUID = "00323353-5334-4841-3131-303432303631"
@@ -15,81 +23,77 @@ print("Sensor: " + str(device1.get_sensor_type()))
 print("UUID of board: " + device2.get_board_uuid())
 print("Sensor: " + str(device2.get_sensor_type()))
 
-frame_rep_time = 0.1
-num_rx_antennas = num_rx_antennas = device1.get_sensor_information()["num_rx_antennas"]
+# assign the parameters to each device and get the associated metrics
+metrics1 = assign_radar_parameters(device1, R1_params)
+metrics2 = assign_radar_parameters(device2, R2_params)
 
-def set_up_radar_parameters(device, frame_rep_time, num_rx_antennas, center_frequency, bandwidth):
-    """
-    This function simply sets up the radar device with the necessary parameters,
-    and also returns the metrics of the radar for the given params.
-    """
-    start_freq = center_frequency - bandwidth//2
-    end_freq = center_frequency + bandwidth//2
-
-    radar_config = FmcwSimpleSequenceConfig(
-        frame_repetition_time_s=frame_rep_time, 
-        chirp_repetition_time_s=0.17e-3,    
-        num_chirps=128,                          
-        tdm_mimo=False,                      
-        chirp=FmcwSequenceChirp(
-            start_frequency_Hz=start_freq,
-            end_frequency_Hz=end_freq,  
-            sample_rate_Hz=1e6, # max                
-            num_samples=128,               
-            rx_mask=(1 << num_rx_antennas) - 1,                    
-            tx_mask=1,               
-            tx_power_level=31, # max  
-            lp_cutoff_Hz=500000,               
-            hp_cutoff_Hz=80000,           
-            if_gain_dB=33,                      
-        )
-    )
-
-    # give the parameters to the device
-    sequence = device.create_simple_sequence(radar_config)
-    device.set_acquisition_sequence(sequence)    
-
-    # find the metrics from the params
-    metrics = device.metrics_from_sequence(sequence.loop.sub_sequence.contents)
-
-    return metrics, sequence
-
-bandwidth = 1250E6
-fc1 = 59100E6
-fc2 = 60350E6
-
-metrics1, sequence1 = set_up_radar_parameters(device1, frame_rep_time, num_rx_antennas, fc1, bandwidth)
-metrics2, sequence2 = set_up_radar_parameters(device2, frame_rep_time, num_rx_antennas, fc2, bandwidth)
+# initiate the ML decider class
+myDecider = Decider()
 
 # define how many frames to use in a segment
-frames_per_segment = 12 # must be divisible by 4
+frames_per_segment = 128 # must be divisible by 4
 
-semi_formatted = create_dict_from_sequence(sequence1)[0]['loop']['sub_sequence'][0]['loop']
-segment_shape = (frames_per_segment, num_rx_antennas, semi_formatted['num_repetitions'], semi_formatted['sub_sequence'][0]['chirp']['num_samples'])
+segment_shape = (frames_per_segment, R1_params.num_chirps * processing_params.velocity_dft_res) # assuming that these parameters are the same for R1 and R2
 
-segment_R1 = np.zeros(segment_shape, dtype=complex)
-segment_R2 = np.zeros(segment_shape, dtype = complex)
+segment_R1 = np.zeros(segment_shape, dtype=float)
+segment_R2 = np.zeros(segment_shape, dtype=float)
 R1_idx = 0
 R2_idx = (frames_per_segment // 4) - 1
 
-myDecider = Decider()
+# make a function to handle all operations when a segment gets filled up
+def full_segment_actions(segment, frames_per_segment, metrics, radar_params, processing_params, plot=False):
+    """
+    This function defines what happens whenever a sement gets filled.
+    First, the sement is subjected to some postprocessing to get the completed spectogram.
+    This is then optionally plotted.
+    Then, the completed spectogram is passed to the AI.
+    Finally, the front half of the segment is sent to the back half, and the segment index is set to the midpoint.
+    """
+    processed_spectogram = spectrogram_stuff.spectrogram_postprocessing(segment, processing_params)
+
+    if plot == 'static':
+        device1.stop_acquisition()
+        device2.stop_acquisition()
+        spectogram_plotting.plot_spectogram(processed_spectogram, 'Title', radar_params, metrics)
+        device1.start_acquisition()
+        device2.start_acquisition()
+    
+    decision = myDecider.make_decision(processed_spectogram)
+    print(f'Radar 1: {decision}')
+
+    segment[0:(frames_per_segment // 2) - 1] = segment[frames_per_segment // 2 : frames_per_segment - 1]
+    segment_idx = (frames_per_segment // 2) - 1
+
+    return segment, segment_idx
+
+loop_start_time = time.time()
+device1.start_acquisition()
+device2.start_acquisition()
 
 while True: # main loop
     """
-    First, get a frame of data from each radar. Insert the frame into the corresponding segment at the index.
-    Then, once a segment is full, send the whole segment to the decider function.
+    First, get a frame of data from each radar.
+    Immediately process those frames into a slice of the spectogram.
+    Each slice gets placed into the segment. Once a segment is full, send it to the AI for classification.
     After that, move the front half of the segment to the back half and keep filling from the middle up.
     """
-    segment_R1[R1_idx] = device1.get_next_frame()[0]
-    segment_R2[R2_idx] = device2.get_next_frame()[0]
+    # get the next available frames from each radar
+    frame1 = device1.get_next_frame()[0]
+    frame2 = device2.get_next_frame()[0]
+
+    # immediately do the processing on the acquired frames, giving a single slice of the spectogram
+    segment_R1[R1_idx] = spectrogram_stuff.get_spectogram_slice_from_raw(frame1, processing_params, metrics1)
+    segment_R2[R2_idx] = spectrogram_stuff.get_spectogram_slice_from_raw(frame2, processing_params, metrics2)
+
 
     if R1_idx == frames_per_segment - 1:
-        decision1 = myDecider.make_decision(segment_R1)
+        segment_R1, R1_idx = full_segment_actions(segment_R1, frames_per_segment, metrics1, R1_params, processing_params, plot='static')
 
-        print(f'Radar 1: {decision1}')
+    if R2_idx == frames_per_segment - 1:
+        segment_R2, R2_idx = full_segment_actions(segment_R2, frames_per_segment, metrics2, R2_params, processing_params, plot='static')
 
-        segment_R1[0:(frames_per_segment // 2) - 1] = segment_R1[(frames_per_segment // 2) - 1 : frames_per_segment - 1]
-        R1_idx = (frames_per_segment // 2) - 1 
+    R1_idx += 1
+    R2_idx += 1
 
     
 
