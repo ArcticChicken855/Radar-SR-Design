@@ -117,19 +117,24 @@ def get_spectogram_slice_from_raw(raw_frame, processing_params, metrics):
     """
     This function computes a single slice of the spectogram.
     """
+    #print(f'raw frame:{np.shape(raw_frame)}')
     # first, sum across all antennas
     summed_radar_frame = np.sum(raw_frame, axis=0)
+    #print(f'summed frame:{np.shape(summed_radar_frame)}')
 
     # compute the range DFT
     range_chirp_matrix = compute_range_dft(summed_radar_frame, 
                                            range_axis=1, 
                                            window_type=processing_params.range_window_type, 
                                            dft_resolution_factor=processing_params.range_dft_res)
+    #print(f'rcm:{np.shape(range_chirp_matrix)}')
     
     # sum across the ranges greater than the specified minimum range
     range_per_step = np.shape(range_chirp_matrix)[1] / metrics['max_range_m']
     starting_idx = int(np.ceil(processing_params.range_minimum_m / range_per_step))
     summed_slice = np.sum(range_chirp_matrix[:, starting_idx:], axis=1)
+
+    #print(f'summed slice:{np.shape(summed_slice)}')
                                         
     # compute the doppler DFT
     doppler_slice = compute_doppler_dft(summed_slice, 
@@ -140,6 +145,7 @@ def get_spectogram_slice_from_raw(raw_frame, processing_params, metrics):
     # compute the absolute val
     abs_doppler_slice = np.abs(doppler_slice)
 
+    print(f'spectogram slice:{np.shape(abs_doppler_slice)}')
     return abs_doppler_slice
 
 def spectrogram_postprocessing(spectrogram, processing_params):
@@ -149,8 +155,10 @@ def spectrogram_postprocessing(spectrogram, processing_params):
     It also takes the logarithm.
     Also, if there are any coefficients specified for the time-domain filter, it applies those here.
     """
+    print(f'unprocessed spectrogram:{np.shape(spectrogram)}')
     # take the transpose, so that time is on the x-axis
     flipped_spectogram = np.transpose(spectrogram)
+    print(f'flipped_spectrogram:{np.shape(flipped_spectogram)}')
 
     # perform the clipping
     max_amplitude = np.max(flipped_spectogram) * processing_params.amplitude_cutoff_factor_max
@@ -166,35 +174,37 @@ def spectrogram_postprocessing(spectrogram, processing_params):
     else:
         final_spectogram = log_spectogram
 
+    print(f'final spectrogram:{np.shape(final_spectogram)}')
     return final_spectogram
 
-def build_spectrogram_matrix(radar_frames):
+def build_spectrogram_matrix_new(radar_frames, processing_params, metrics):
     """
     Construct the spectrogram matrix from raw radar frames.
     """
+    # make the shape of the intermediate matrix
+    intermediate_matrix = np.zeros((np.shape(radar_frames)[2]*processing_params.velocity_dft_res, np.shape(radar_frames)[0]))
+    intermediate_idx = 0
 
-    range_chirp_tensor = compute_range_dft(radar_frames)
-    range_doppler_tensor = compute_doppler_dft(range_chirp_tensor)
+    for frame in radar_frames:
+        intermediate_matrix[intermediate_idx] = get_spectogram_slice_from_raw(frame, processing_params, metrics)
 
-    # get the abs val of the tensor
-    abs_range_doppler_tensor = np.abs(range_doppler_tensor)
+    # make the finalized spectogram
+    finalized_spectogram = spectrogram_postprocessing(intermediate_matrix, processing_params)    
 
-    # average over all of the antennas used
-    avg_abs_range_doppler_tensor = np.sum(abs_range_doppler_tensor, axis=1)
+    return finalized_spectogram
 
-    # TODO: I'm skipping the filter stage for now
-    filtered_range_doppler_tensor = avg_abs_range_doppler_tensor
+def build_spectrogram_matrix(radar_frames, processing_params, metrics):
+    """
+    Construct the spectrogram matrix from raw radar frames.
+    """
+    # make the shape of the intermediate matrix
+    intermediate_matrix = np.zeros((np.shape(radar_frames)[2]*processing_params.velocity_dft_res, np.shape(radar_frames)[0]))
+    intermediate_idx = 0
 
-    cut_distance_factor = 0.01
-    cut_length = round(np.size(filtered_range_doppler_tensor[0, 0]) * cut_distance_factor)
-    spectrogram = np.sum(filtered_range_doppler_tensor[:, :, cut_length:], axis=2)
+    for frame in radar_frames:
+        intermediate_matrix[intermediate_idx] = get_spectogram_slice_from_raw(frame, processing_params, metrics)
 
-    # use log scale, and cut off vals near zero
-    matrix_to_plot = np.log10(np.where(spectrogram < 1E-6, 1E-6, spectrogram))
+    # make the finalized spectogram
+    finalized_spectogram = spectrogram_postprocessing(intermediate_matrix, processing_params)    
 
-    # clip out the most extreme values and rotate
-    cutoff_factor = 1
-    highest_point = cutoff_factor * np.max(matrix_to_plot)
-    matrix_to_plot = np.transpose(np.where(matrix_to_plot > highest_point, highest_point, matrix_to_plot)) # the transpose rotates the image so that time is on x
-
-    return matrix_to_plot
+    return finalized_spectogram

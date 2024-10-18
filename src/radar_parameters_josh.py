@@ -8,5 +8,5 @@ To use the functions, just pass in the device, and it will set the parameters. I
 
 from parameter_defs import RadarParameters
 
-R1_params = RadarParameters(center_frequency = 59100E6, bandwidth=1250E6)
-R2_params = RadarParameters(center_frequency=60350E6, bandwidth=1250E6)
+R1_params = RadarParameters(center_frequency = 59100E6, bandwidth=1250E6, num_chirps=64)
+R2_params = RadarParameters(center_frequency=60350E6, bandwidth=1250E6, num_chirps=64)
