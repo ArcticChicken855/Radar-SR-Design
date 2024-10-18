@@ -41,7 +41,7 @@ R1_idx = 0
 R2_idx = (frames_per_segment // 4) - 1
 
 # make a function to handle all operations when a segment gets filled up
-def full_segment_actions(segment, frames_per_segment, metrics, radar_params, processing_params, plot=False):
+def full_segment_actions(segment, frames_per_segment, metrics, radar_params, processing_params, radnum, plot=False):
     """
     This function defines what happens whenever a sement gets filled.
     First, the sement is subjected to some postprocessing to get the completed spectogram.
@@ -54,12 +54,12 @@ def full_segment_actions(segment, frames_per_segment, metrics, radar_params, pro
     if plot == 'static':
         device1.stop_acquisition()
         device2.stop_acquisition()
-        spectogram_plotting.plot_spectogram(processed_spectogram, 'Title', radar_params, metrics)
+        spectogram_plotting.plot_spectogram(processed_spectogram, f'Radar {radnum}', radar_params, metrics)
         device1.start_acquisition()
         device2.start_acquisition()
     
     decision = myDecider.make_decision(processed_spectogram)
-    print(f'Radar ?: {decision}')
+    print(f'Radar {radnum}: {decision}')
 
     segment[0:(frames_per_segment // 2) - 1] = segment[frames_per_segment // 2 : frames_per_segment - 1]
     segment_idx = (frames_per_segment // 2) - 1
@@ -86,10 +86,10 @@ while True: # main loop
     segment_R2[R2_idx] = frame2
 
     if R1_idx == frames_per_segment - 1:
-        segment_R1, R1_idx = full_segment_actions(segment_R1, frames_per_segment, metrics1, R1_params, processing_params, plot='static')
+        segment_R1, R1_idx = full_segment_actions(segment_R1, frames_per_segment, metrics1, R1_params, processing_params, radnum=1, plot='static')
 
     if R2_idx == frames_per_segment - 1:
-        segment_R2, R2_idx = full_segment_actions(segment_R2, frames_per_segment, metrics2, R2_params, processing_params, plot='static')
+        segment_R2, R2_idx = full_segment_actions(segment_R2, frames_per_segment, metrics2, R2_params, processing_params, radnum=2, plot='static')
 
     R1_idx += 1
     R2_idx += 1
