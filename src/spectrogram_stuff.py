@@ -159,7 +159,7 @@ def spectrogram_postprocessing(spectrogram, processing_params):
     return final_spectogram
 
 
-def build_spectrogram_matrix(radar_frames, processing_params, metrics):
+def build_spectrogram_matrix(radar_frames):
     """
     Construct the spectrogram matrix from raw radar frames.
     """

@@ -7,6 +7,8 @@ And finally saving as 'compiled' pickles for model training
 import pathlib as p
 import math
 
+from tensorflow.python.keras.backend import dtype
+
 from pickle_utils import *
 from data_parsing import *
 from data_manipulation import *
@@ -78,8 +80,11 @@ def split_training_vs_testing(data_array):
 
 def main():
     print("Collecting Data.")
-    data_array = get_all_data_from_path(raw_data_path)
+    data_array = get_all_data_from_path(raw_data_path / "sep_23")
+    data_array += get_all_data_from_path(raw_data_path / "oct_2")
+    data_array += get_all_data_from_path(raw_data_path / "oct_3")
     print("Found " + str(len(data_array)) + " recordings.")
+
 
     data_array = get_valid_data_only(data_array)
     print("Identified " + str(len(data_array)) + " valid recordings.")
@@ -111,10 +116,10 @@ def main():
     print("\n")
 
     print("Creating Labels.")
-    fall_training_labels = np.ones(len(fall_training_data))
-    fall_testing_labels = np.ones(len(fall_testing_data))
-    non_fall_training_labels = np.zeros(len(non_fall_training_data))
-    non_fall_testing_labels = np.zeros(len(non_fall_testing_data))
+    fall_training_labels = np.ones(len(fall_training_data), dtype=np.int64)
+    fall_testing_labels = np.ones(len(fall_testing_data), dtype=np.int64)
+    non_fall_training_labels = np.zeros(len(non_fall_training_data), dtype=np.int64)
+    non_fall_testing_labels = np.zeros(len(non_fall_testing_data), dtype=np.int64)
     print("Created " + str(len(fall_training_labels)) + " fall training labels.")
     print("Created " + str(len(fall_testing_labels)) + " fall testing labels.")
     print("Created " + str(len(non_fall_training_labels)) + " non-fall training labels.")
