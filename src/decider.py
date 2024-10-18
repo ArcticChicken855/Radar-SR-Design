@@ -1,10 +1,12 @@
 import tensorflow as tf
 import keras
+
 import pathlib as p
 import matplotlib.pyplot as plt
 
 import numpy as np
 import skimage as ski
+
 
 class Decider:
     """
@@ -12,6 +14,7 @@ class Decider:
     A single instance of this class should be created and reused to make decisions
     """
     model: keras.Sequential
+
 
     previous_time : float
 
@@ -28,6 +31,7 @@ class Decider:
 
         resized_spectogram = ski.transform.resize(processed_spectogram, self.target_spectogram_size)
         prediction = self.model.predict(resized_spectogram) # this doesn't work for some reason
+
 
         print(prediction)
 

@@ -6,7 +6,9 @@ import keras
 from keras import layers
 
 
+
 def create_model(normalization_layer):
+
     """
     Build and compile the ML model
     Input Shape: (128, 128)
@@ -15,7 +17,9 @@ def create_model(normalization_layer):
 
     model = keras.Sequential([
         layers.Input(shape=(128, 128)),
+
         normalization_layer,
+
         layers.Conv1D(16, 3, padding='same', activation='relu'),
         layers.MaxPool1D(),
         layers.Conv1D(32, 3, padding='same', activation='relu'),

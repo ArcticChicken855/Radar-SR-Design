@@ -6,6 +6,7 @@ Before moving important things to their own files
 import pathlib as p
 import matplotlib.pyplot as plt
 
+
 from pickle_utils import *
 from data_parsing import *
 from data_manipulation import *
@@ -16,6 +17,7 @@ from processing_parameters_bob import processing_params
 def build_and_plot_spectrogram(radar_frames, metrics, title=""):
     spectrogram = build_spectrogram_matrix(radar_frames, processing_params, metrics)
     plot_image(spectrogram, title)
+
 
 
 def plot_image(image, title=""):
@@ -73,6 +75,7 @@ def evaluate_decider(test_data_path):
     print("Overall Accuracy: " + str(accuracy) + "%")
 
 
+
 fall_data_path = p.Path(__file__).parents[1] / "Fall_Data" / "RawData"
 
 data = get_all_data_from_path(fall_data_path / "oct_3")
@@ -87,3 +90,4 @@ spectrogram = build_spectrogram_matrix(test_frames)
 print(np.shape(spectrogram))
 
 plot_image(spectrogram, "-".join(get_notes(test_data)))
+

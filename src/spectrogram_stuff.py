@@ -7,11 +7,13 @@ Stripped Down and Repurposed by William
 """
 
 import numpy as np
+
 import scipy.ndimage
 
 def compute_range_dft(frames, range_axis=3, dft_resolution_factor=1, window_type='none', positive_frequencies_only=True):
     # get a few bits of information to make it easier
     samples_per_chirp = np.shape(frames)[range_axis]
+
 
     # use the resolution factor to find the length of the DFT
     dft_length = dft_resolution_factor * samples_per_chirp
@@ -30,12 +32,14 @@ def compute_range_dft(frames, range_axis=3, dft_resolution_factor=1, window_type
 
         # shape the window into the same form as the input matrix
         # Todo: what is happening here?
+
         if range_axis == 3:
             shaped_window = window[None, None, None, :]
         elif range_axis == 2:
             shaped_window = window[None, None, :]
         elif range_axis == 1:
             shaped_window = window[None, :]
+
 
         # get the product
         product = frames * shaped_window
@@ -60,6 +64,7 @@ def compute_doppler_dft(range_chirp_tensor, velocity_axis=2, dft_resolution_fact
     # get a few bits of information to make it easier
     chirps_per_frame = np.shape(range_chirp_tensor)[velocity_axis]
 
+
     # use the resolution factor to find the length of the DFT
     doppler_dft_length = dft_resolution_factor * chirps_per_frame
 
@@ -75,12 +80,14 @@ def compute_doppler_dft(range_chirp_tensor, velocity_axis=2, dft_resolution_fact
             window = np.bartlett(chirps_per_frame)
 
         # shape the window into the same form as the input matrix
+
         if velocity_axis == 2:
             shaped_window = window[None, None, :]
         elif velocity_axis == 1:
             shaped_window = window[None, :]
         elif velocity_axis == 0:
             shaped_window = window
+
 
         # get the product
         product = range_chirp_tensor * shaped_window
@@ -90,12 +97,15 @@ def compute_doppler_dft(range_chirp_tensor, velocity_axis=2, dft_resolution_fact
 
     # main DFT computation
     if fftshift is True:
+
         output_array = np.fft.fftshift(np.fft.fft(product, n=doppler_dft_length, axis=velocity_axis), axes=velocity_axis)
     else:
         output_array = np.fft.fft(product, n=doppler_dft_length, axis=velocity_axis)
 
+
     # now return the shit
     return output_array
+
 
 def butterworth_ground_filter():
     pass
@@ -157,7 +167,6 @@ def spectrogram_postprocessing(spectrogram, processing_params):
         final_spectogram = log_spectogram
 
     return final_spectogram
-
 
 def build_spectrogram_matrix(radar_frames):
     """

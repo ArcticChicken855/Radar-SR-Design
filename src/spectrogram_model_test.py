@@ -1,4 +1,6 @@
+
 import numpy as np
+
 import tensorflow as tf
 import keras
 from keras import layers
@@ -6,16 +8,20 @@ from keras import layers
 import pathlib as p
 import matplotlib.pyplot as plt
 
+
 from pickle_utils import *
 from model_structure import create_model
 
 
+
 # Currently paths are hardcoded to my (William's) files
 # I should probably change this Todo
+
 root_path = p.Path(__file__).parents[1] / "Fall_Data"
 compiled_data_path = root_path / "CompiledData"
 
 SAVED_MODEL_PATH = p.Path(__file__).parents[1] / "saved_model" / "model.keras"
+
 
 # Todo I don't like having to rely on strings
 training_data = get_data_from_path(compiled_data_path / "training_data.pkl")
@@ -26,6 +32,7 @@ testing_labels = get_data_from_path(compiled_data_path / "testing_labels.pkl")
 
 training_dataset = tf.data.Dataset.from_tensor_slices((training_data, training_labels))
 testing_dataset = tf.data.Dataset.from_tensor_slices((testing_data, testing_labels))
+
 
 # Trying something to fix the imbalanced classes
 # basically there is too many non-falls, which is screwing with the output predictions
@@ -46,7 +53,9 @@ training_dataset = training_dataset.shuffle(50).batch(10)
 testing_dataset = testing_dataset.batch(10)
 
 # Todo again, tune this
+
 model = create_model(normalization)
+
 
 history = model.fit(
     training_dataset,
