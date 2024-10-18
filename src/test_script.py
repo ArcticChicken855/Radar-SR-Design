@@ -86,7 +86,7 @@ metrics = test_data['config']['metrics']
 print(np.shape(test_frames))
 title = "-".join(get_notes(test_data))
 
-spectrogram = build_spectrogram_matrix2(test_frames)
+spectrogram = build_spectrogram_matrix(test_frames)
 print(np.shape(spectrogram))
 
 plot_image(spectrogram, title)
