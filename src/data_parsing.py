@@ -10,11 +10,18 @@ def get_notes(data):
     notes = raw_notes.split("-")
     return notes
 
+def get_radar1_metrics(data):
+    metrics = get_radar1_config(data)['metrics']
+    return metrics
+
+def get_radar2_metrics(data):
+    metrics = get_radar2_config(data)['metrics']
+    return metrics
 
 def is_data_fall(data):
     notes = get_notes(data)
     data_type = notes[1]
-    if data_type == "w" or data_type == "n":
+    if data_type.startswith("w") or data_type == "n":
         return False
     else:
         return True

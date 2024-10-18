@@ -17,9 +17,9 @@ TRAINING_TESTING_RATIO = 0.80
 
 # Currently paths are hardcoded to my (William's) files
 # I should probably change this Todo
-root_path = p.Path().home() / "RadarData" / "2RadarData"
-raw_data_path = root_path / "IQpickles"
-compiled_data_path = root_path / "CompiledData"
+root_path = p.Path(__file__).parents[1]
+raw_data_path = root_path / "Fall_Data" / "RawData"
+compiled_data_path = root_path / "Fall_Data" / "CompiledData"
 
 
 def get_valid_data_only(data_array):
