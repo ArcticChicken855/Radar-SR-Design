@@ -83,8 +83,8 @@ def split_training_vs_testing(data_array):
 def main():
     print("Collecting Data.")
     data_array = get_all_data_from_path(raw_data_path / "sep_23")
-    data_array += get_all_data_from_path(raw_data_path / "oct_2")
-    data_array += get_all_data_from_path(raw_data_path / "oct_3")
+    #data_array += get_all_data_from_path(raw_data_path / "oct_2")
+    #data_array += get_all_data_from_path(raw_data_path / "oct_3")
     print("Found " + str(len(data_array)) + " recordings.")
     data_array = get_valid_data_only(data_array)
     print("Identified " + str(len(data_array)) + " valid recordings.")
