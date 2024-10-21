@@ -3,6 +3,8 @@ from ifxradarsdk.fmcw.types import FmcwSimpleSequenceConfig, FmcwSequenceChirp, 
 import numpy as np
 import time
 
+from scipy.signal import spectrogram
+
 from radar_parameter_assigner import assign_radar_parameters
 import spectrogram_stuff
 import spectogram_plotting
@@ -31,7 +33,7 @@ metrics2 = assign_radar_parameters(device2, R2_params)
 myDecider = Decider()
 
 # define how many frames to use in a segment
-frames_per_segment = 128 # must be divisible by 4
+frames_per_segment = 32 # must be divisible by 4
 
 segment_shape = (frames_per_segment, R1_params.num_rx_antennas, R1_params.num_chirps, R1_params.num_samples) # assuming that these parameters are the same for R1 and R2
 
@@ -61,7 +63,15 @@ def full_segment_actions(segment, frames_per_segment, metrics, radar_params, pro
     decision = myDecider.make_decision(processed_spectogram)
     print(f'Radar {radnum}: {decision}')
 
-    segment[0:(frames_per_segment // 2) - 1] = segment[frames_per_segment // 2 : frames_per_segment - 1]
+    if decision:
+        print("Fall Detected!!")
+        device1.stop_acquisition()
+        device2.stop_acquisition()
+        spectogram_plotting.plot_spectogram(processed_spectogram, f'Radar {radnum}', radar_params, metrics)
+        device1.start_acquisition()
+        device2.start_acquisition()
+
+    segment[0:(frames_per_segment // 2)] = segment[frames_per_segment // 2 : frames_per_segment]
     segment_idx = (frames_per_segment // 2) - 1
 
     return segment, segment_idx
@@ -86,10 +96,10 @@ while True: # main loop
     segment_R2[R2_idx] = frame2
 
     if R1_idx == frames_per_segment - 1:
-        segment_R1, R1_idx = full_segment_actions(segment_R1, frames_per_segment, metrics1, R1_params, processing_params, radnum=1, plot='static')
+        segment_R1, R1_idx = full_segment_actions(segment_R1, frames_per_segment, metrics1, R1_params, processing_params, radnum=1)
 
     if R2_idx == frames_per_segment - 1:
-        segment_R2, R2_idx = full_segment_actions(segment_R2, frames_per_segment, metrics2, R2_params, processing_params, radnum=2, plot='static')
+        segment_R2, R2_idx = full_segment_actions(segment_R2, frames_per_segment, metrics2, R2_params, processing_params, radnum=2)
 
     R1_idx += 1
     R2_idx += 1

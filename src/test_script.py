@@ -53,8 +53,8 @@ def evaluate_decider(test_data_path):
         radar1_frames = get_radar1_frames(data)
         radar2_frames = get_radar2_frames(data)
 
-        radar1_spectrogram = build_spectrogram_matrix(radar1_frames)
-        radar2_spectrogram = build_spectrogram_matrix(radar2_frames)
+        radar1_spectrogram = build_spectrogram_matrix(radar1_frames, None, None)
+        radar2_spectrogram = build_spectrogram_matrix(radar2_frames, None, None)
 
         decision = decider.make_decision(radar1_spectrogram)
         decision |= decider.make_decision(radar2_spectrogram)
@@ -80,9 +80,9 @@ def evaluate_decider(test_data_path):
 
 
 
-fall_data_path = p.Path(__file__).parents[1] / "Fall_Data" / "RawData"
+fall_data_path = p.Path(__file__).parents[1] / "Fall_Data" / "Falls-Oct-3+4" / "IQpickles"
 
-evaluate_decider(fall_data_path / "sep_23")
+evaluate_decider(fall_data_path)
 
 
 
