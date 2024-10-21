@@ -53,7 +53,11 @@ def evaluate_decider(test_data_path):
         radar1_frames = get_radar1_frames(data)
         radar2_frames = get_radar2_frames(data)
 
-        decision = decider.make_decision(radar1_frames, radar2_frames)
+        radar1_spectrogram = build_spectrogram_matrix(radar1_frames)
+        radar2_spectrogram = build_spectrogram_matrix(radar2_frames)
+
+        decision = decider.make_decision(radar1_spectrogram)
+        decision |= decider.make_decision(radar2_spectrogram)
 
         if decision:
             print("Fall Detected!")
@@ -76,19 +80,9 @@ def evaluate_decider(test_data_path):
 
 
 
-fall_data_path = p.Path(__file__).parents[1] / "Fall_Data"
+fall_data_path = p.Path(__file__).parents[1] / "Fall_Data" / "RawData"
 
-data = get_all_data_from_path(fall_data_path / "test3" / "IQpickles")
-test_data = data[3]
+evaluate_decider(fall_data_path / "sep_23")
 
-test_frames = get_radar1_frames(test_data)
-metrics = test_data['config']['metrics']
-print(np.shape(test_frames))
-title = "-".join(get_notes(test_data))
-
-spectrogram = build_spectrogram_matrix(test_frames)
-print(np.shape(spectrogram))
-
-plot_image(spectrogram, title)
 
 
