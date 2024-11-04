@@ -28,7 +28,7 @@ class Decider:
         self.target_spectogram_size = (128, 128)
 
     def make_decision(self, radar1_spectrogram, radar2_spectrogram):
-        combined = [np.array(radar1_spectrogram), np.array(radar2_spectrogram)]
+        combined = [np.array([radar1_spectrogram]), np.array([radar2_spectrogram])]
 
         prediction = self.model.predict(combined)[0]
 
