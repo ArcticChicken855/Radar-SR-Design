@@ -27,12 +27,10 @@ class Decider:
         self.previous_time=0
         self.target_spectogram_size = (128, 128)
 
-    def make_decision(self, processed_spectogram):
+    def make_decision(self, radar1_spectrogram, radar2_spectrogram):
+        combined = [np.array(radar1_spectrogram), np.array(radar2_spectrogram)]
 
-        resized_spectogram = ski.transform.resize(processed_spectogram, self.target_spectogram_size)
-        resized_spectogram = np.array([resized_spectogram])
-
-        prediction = self.model.predict(resized_spectogram)[0] # this doesn't work for some reason
+        prediction = self.model.predict(combined)[0]
 
 
 

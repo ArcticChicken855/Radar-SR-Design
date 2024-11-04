@@ -12,6 +12,7 @@ from data_parsing import *
 from spectrogram_stuff import *
 from decider import Decider
 from processing_parameters_bob import processing_params
+from src.data_manipulation import full_process_frames
 
 
 def build_and_plot_spectrogram(radar_frames, metrics, title=""):
@@ -53,11 +54,10 @@ def evaluate_decider(test_data_path):
         radar1_frames = get_radar1_frames(data)
         radar2_frames = get_radar2_frames(data)
 
-        radar1_spectrogram = build_spectrogram_matrix(radar1_frames)
-        radar2_spectrogram = build_spectrogram_matrix(radar2_frames)
+        radar1_spectrogram = full_process_frames(radar1_frames)
+        radar2_spectrogram = full_process_frames(radar2_frames)
 
-        decision = decider.make_decision(radar1_spectrogram)
-        decision |= decider.make_decision(radar2_spectrogram)
+        decision = decider.make_decision(radar1_spectrogram, radar2_spectrogram)
 
         if decision:
             print("Fall Detected!")
