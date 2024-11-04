@@ -6,6 +6,7 @@ And finally saving as 'compiled' pickles for model training
 
 import pathlib as p
 import math
+import random
 
 
 from tensorflow.python.keras.backend import dtype
@@ -92,6 +93,9 @@ def main():
     print("Found " + str(len(data_array)) + " recordings.")
     data_array = get_valid_data_only(data_array)
     print("Identified " + str(len(data_array)) + " valid recordings.")
+
+    print("Shuffling Data.")
+    random.shuffle(data_array)
 
     fall_array, non_fall_array = separate_falls(data_array)
     print("Identified " + str(len(fall_array)) + " falls.")

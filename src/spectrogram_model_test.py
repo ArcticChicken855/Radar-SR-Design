@@ -29,9 +29,6 @@ training_labels = get_data_from_path(compiled_data_path / "training_labels.pkl")
 
 testing_data = get_data_from_path(compiled_data_path / "testing_data.pkl")
 testing_labels = get_data_from_path(compiled_data_path / "testing_labels.pkl")
-
-training_dataset = tf.data.Dataset.from_tensor_slices((training_data, training_labels))
-testing_dataset = tf.data.Dataset.from_tensor_slices((testing_data, testing_labels))
 #endregion
 
 #region weights and normalize
@@ -47,17 +44,14 @@ class_weight = {0: weight_0, 1: weight_1}
 
 # next idea, normalize data
 normalization = layers.Normalization(axis=None)
-normalization.adapt(training_data)
+normalization.adapt(training_data[0] + training_data[1])
 #endregion
 
-# Todo what are the best values to use here?
-training_dataset = training_dataset.shuffle(50).batch(10)
-testing_dataset = testing_dataset.batch(10)
 
 #region model and first training
-def make_seperate_model_part():
+def make_separate_model_part():
 
-    seperate_layers = keras.Sequential([
+    separate_layers = keras.Sequential([
         layers.Input(shape=(128, 128)),
 
         normalization,
@@ -71,30 +65,42 @@ def make_seperate_model_part():
         layers.Flatten()
     ])
 
-    return seperate_layers
+    return separate_layers
 
 radar1_input = layers.Input(shape=(128,128),name="radar1")
 radar2_input = layers.Input(shape=(128,128),name="radar2")
 
-radar1_model = make_seperate_model_part()
-radar2_model = make_seperate_model_part()
+radar1_model = make_separate_model_part()
+radar2_model = make_separate_model_part()
 
 y1 = radar1_model(radar1_input)
 y2 = radar2_model(radar2_input)
 
 concatenate = layers.concatenate([y1, y2])
+dense1 = layers.Dense(128, activation='relu')(concatenate)
+drop1 = layers.Dropout(0.5)(dense1)
+dense2 = layers.Dense(2)(drop1)
+output = layers.Softmax(name="output")(dense2)
 
+model = keras.Model(
+    inputs=[radar1_input, radar2_input],
+    outputs=output
+)
 
-
+keras.utils.plot_model(model)
 
 model.compile(optimizer='adam',
               loss=keras.losses.SparseCategoricalCrossentropy(from_logits=True),
               metrics=['accuracy'])
 
 history = model.fit(
-    training_dataset,
-    validation_data=testing_dataset,
+    # oddly I think I have to do this to make it a 'list of arrays' rather than a array of arrays
+    x=[training_data[0], training_data[1]],
+    y=training_labels,
+    validation_data=([testing_data[0], testing_data[1]], testing_labels),
     epochs=100,
+    batch_size=10,
+    shuffle=True,
     class_weight=class_weight
 )
 
