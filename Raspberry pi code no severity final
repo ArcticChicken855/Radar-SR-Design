@@ -1,0 +1,28 @@
+import requests
+import time
+
+# Replace this function with radar data processing code
+def get_radar_data():
+    # This is simulated data; replace it with actual data from radar
+    data = {
+        "status": "fall_detected"  # Can be 'fall_detected' or 'no_fall'
+    }
+    return data
+
+# Backend server URL
+SERVER_URL = "http://138.197.73.178:5000/submit-data"  # Replace with the backend server IP
+
+while True:
+    radar_data = get_radar_data()  # Get the radar data
+    try:
+        # Send data to the backend
+        response = requests.post(SERVER_URL, json=radar_data)
+        if response.status_code == 200:
+            print("Data sent successfully:", response.json())
+        else:
+            print("Failed to send data:", response.status_code)
+    except Exception as e:
+        print("Error:", e)
+
+    # Wait for 4 seconds before sending the next data
+    time.sleep(4)
