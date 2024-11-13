@@ -2,6 +2,7 @@ from ifxradarsdk.fmcw import DeviceFmcw
 from ifxradarsdk.fmcw.types import FmcwSimpleSequenceConfig, FmcwSequenceChirp, create_dict_from_sequence
 import numpy as np
 import time
+from web_data import push_radar_data
 
 from scipy.signal import spectrogram
 
@@ -62,6 +63,8 @@ def full_segment_actions(segment, frames_per_segment, metrics, radar_params, pro
     
     decision = myDecider.make_decision(processed_spectogram)
     print(f'Radar {radnum}: {decision}')
+
+    push_radar_data(decision)
 
     if decision:
         print("Fall Detected!!")
