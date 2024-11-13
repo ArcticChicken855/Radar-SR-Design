@@ -80,9 +80,9 @@ def evaluate_decider(test_data_path):
 
 
 
-fall_data_path = p.Path(__file__).parents[1] / "Fall_Data" / "RawData"
+fall_data_path = p.Path(__file__).parents[1] / "Fall_Data" / "Falls-Oct-3+4" / "IQpickles"
 
-evaluate_decider(fall_data_path / "oct_2")
+evaluate_decider(fall_data_path)
 
 
 

@@ -11,7 +11,7 @@ import spectogram_plotting
 from decider import Decider
 from data_manipulation import full_process_frames
 
-from radar_parameters_oldie import R1_params, R2_params # TO CHANGE PARAMS MAKE A COPY OF JOSH AND CHANGE
+from radar_parameters_josh import R1_params, R2_params # TO CHANGE PARAMS MAKE A COPY OF JOSH AND CHANGE
 from processing_parameters_bob import processing_params # TO CHANGE PARAMS MAKE A COPY OF BOB AND CHANGE
 
 first_UUID =  "00323253-4335-4851-3036-303439303531"
@@ -34,7 +34,7 @@ metrics2 = assign_radar_parameters(device2, R2_params)
 myDecider = Decider()
 
 # define how many frames to use in a segment
-frames_per_segment = 32 # must be divisible by 4
+frames_per_segment = 128 # must be divisible by 4
 
 segment_shape = (frames_per_segment, R1_params.num_rx_antennas, R1_params.num_chirps, R1_params.num_samples) # assuming that these parameters are the same for R1 and R2
 
