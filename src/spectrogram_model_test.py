@@ -14,8 +14,6 @@ from pickle_utils import *
 
 
 #region loading data
-# Currently paths are hardcoded to my (William's) files
-# I should probably change this Todo
 
 root_path = p.Path(__file__).parents[1] / "Fall_Data"
 compiled_data_path = root_path / "CompiledData"
@@ -49,7 +47,7 @@ class_weight = {0: weight_0, 1: weight_1}
 def make_separate_model_part():
 
     separate_layers = keras.Sequential([
-        layers.Input(shape=(128, 128)),
+        layers.Input(shape=(128, 160)),
         layers.Conv1D(16, 3, padding='same', activation='relu'),
         layers.MaxPool1D(),
         layers.Conv1D(32, 3, padding='same', activation='relu'),
@@ -61,8 +59,8 @@ def make_separate_model_part():
 
     return separate_layers
 
-radar1_input = layers.Input(shape=(128,128),name="radar1")
-radar2_input = layers.Input(shape=(128,128),name="radar2")
+radar1_input = layers.Input(shape=(128,160),name="radar1")
+radar2_input = layers.Input(shape=(128,160),name="radar2")
 
 normalization1 = layers.Normalization(axis=None, name="normalization1")
 normalization1.adapt(training_data[0])
@@ -93,7 +91,7 @@ model = keras.Model(
     outputs=output
 )
 
-keras.utils.plot_model(model)
+#keras.utils.plot_model(model)
 
 # now, I'm going to try freezing the layers
 for layer in model.layers[7:]:
