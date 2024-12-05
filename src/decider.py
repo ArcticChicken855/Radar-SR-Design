@@ -16,16 +16,11 @@ class Decider:
     model: keras.Sequential
 
 
-    previous_time : float
 
     def __init__(self):
-        # i've added a softmax layer to the output of the model to make the results
-        # easier to understand
         saved_model_path = p.Path(__file__).parent.parent / "saved_model" / "model.keras"
-        loaded_model = keras.models.load_model(saved_model_path)
-        self.model = keras.Sequential([loaded_model, keras.layers.Softmax()])
-        self.previous_time=0
-        self.target_spectogram_size = (128, 128)
+        self.model = keras.models.load_model(saved_model_path)
+
 
     def make_decision(self, radar1_spectrogram, radar2_spectrogram):
         combined = [np.array([radar1_spectrogram]), np.array([radar2_spectrogram])]
