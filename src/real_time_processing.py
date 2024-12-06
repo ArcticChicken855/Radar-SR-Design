@@ -3,7 +3,6 @@ from ifxradarsdk.fmcw.types import FmcwSimpleSequenceConfig, FmcwSequenceChirp, 
 import numpy as np
 import time
 from web_data import push_radar_data
-import gpiod
 
 from scipy.signal import spectrogram
 
@@ -12,7 +11,7 @@ import spectrogram_stuff
 import spectogram_plotting
 from decider import Decider
 
-from radar_parameters_oldie import R1_params, R2_params # TO CHANGE PARAMS MAKE A COPY OF JOSH AND CHANGE
+from radar_parameters_josh import R1_params, R2_params # TO CHANGE PARAMS MAKE A COPY OF JOSH AND CHANGE
 from processing_parameters_bob import processing_params # TO CHANGE PARAMS MAKE A COPY OF BOB AND CHANGE
 
 first_UUID =  "00323253-4335-4851-3036-303439303531"
@@ -26,11 +25,6 @@ print("UUID of board: " + device1.get_board_uuid())
 print("Sensor: " + str(device1.get_sensor_type()))
 print("UUID of board: " + device2.get_board_uuid())
 print("Sensor: " + str(device2.get_sensor_type()))
-
-# set up the reset pin
-BUTTON_PIN = 17
-chip = gpiod.Chip('gpiochip4')
-button_line = chip.get_line(BUTTON_PIN)
 
 # assign the parameters to each device and get the associated metrics
 metrics1 = assign_radar_parameters(device1, R1_params)
@@ -78,13 +72,6 @@ def full_segment_actions(segment, frames_per_segment, metrics, radar_params, pro
         device1.stop_acquisition()
         device2.stop_acquisition()
         spectogram_plotting.plot_spectogram(processed_spectogram, f'Radar {radnum}', radar_params, metrics)
-
-        # wait to continue until reset button is pressed
-        while True:
-            button_state = button_line.get_value()
-            time.sleep(0.1)
-            if button_state == 1:
-                break
 
         device1.start_acquisition()
         device2.start_acquisition()
