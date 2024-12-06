@@ -54,20 +54,26 @@ def get_radar_data(data_array):
     Returns a new array containing only the radar frames
     This includes the radar frames from both radar1 and radar2
     """
+    radar1_array = []
+    radar2_array = []
 
-    radar1_array = [get_radar1_frames(data) for data in data_array]
-    radar2_array = [get_radar2_frames(data) for data in data_array]
+    for i in range(len(data_array)):
+        if random.random() > 0.5:
+            radar1_array.append(get_radar1_frames(data_array[i]))
+            radar2_array.append(get_radar2_frames(data_array[i]))
+        else:
+            radar1_array.append(get_radar2_frames((data_array[i])))
+            radar2_array.append(get_radar1_frames((data_array[i])))
+
+
 
 
     # basically what I want to implement here is randomly shuffling which radar is which
     # this should prevent biases from things like more often falling in the direction of one of the
     # two radars
 
-    for (i in range(0, len(radar1_array)))
-        
 
     output_array = [radar1_array, radar2_array]
-
     return output_array
 
 
