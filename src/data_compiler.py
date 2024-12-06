@@ -57,6 +57,15 @@ def get_radar_data(data_array):
 
     radar1_array = [get_radar1_frames(data) for data in data_array]
     radar2_array = [get_radar2_frames(data) for data in data_array]
+
+
+    # basically what I want to implement here is randomly shuffling which radar is which
+    # this should prevent biases from things like more often falling in the direction of one of the
+    # two radars
+
+    for (i in range(0, len(radar1_array)))
+        
+
     output_array = [radar1_array, radar2_array]
 
     return output_array
