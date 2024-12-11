@@ -3,10 +3,13 @@ from ifxradarsdk.fmcw.types import FmcwSimpleSequenceConfig, FmcwSequenceChirp, 
 import numpy as np
 import time
 
+from scipy.signal import spectrogram
+
 from radar_parameter_assigner import assign_radar_parameters
 import spectrogram_stuff
 import spectogram_plotting
 from decider import Decider
+from data_manipulation import full_process_frames
 
 from radar_parameters_josh import R1_params, R2_params # TO CHANGE PARAMS MAKE A COPY OF JOSH AND CHANGE
 from processing_parameters_bob import processing_params # TO CHANGE PARAMS MAKE A COPY OF BOB AND CHANGE
@@ -33,15 +36,15 @@ myDecider = Decider()
 # define how many frames to use in a segment
 frames_per_segment = 128 # must be divisible by 4
 
-segment_shape = (frames_per_segment, R1_params.num_chirps * processing_params.velocity_dft_res) # assuming that these parameters are the same for R1 and R2
+segment_shape = (frames_per_segment, R1_params.num_rx_antennas, R1_params.num_chirps, R1_params.num_samples) # assuming that these parameters are the same for R1 and R2
 
-segment_R1 = np.zeros(segment_shape, dtype=float)
-segment_R2 = np.zeros(segment_shape, dtype=float)
+segment_R1 = np.zeros(segment_shape, dtype=complex)
+segment_R2 = np.zeros(segment_shape, dtype=complex)
 R1_idx = 0
-R2_idx = (frames_per_segment // 4) - 1
+R2_idx = 0
 
 # make a function to handle all operations when a segment gets filled up
-def full_segment_actions(segment, frames_per_segment, metrics, radar_params, processing_params, plot=False):
+def full_segment_actions(segment1, segment2, frames_per_segment, metrics, radar_params, processing_params, plot=False):
     """
     This function defines what happens whenever a sement gets filled.
     First, the sement is subjected to some postprocessing to get the completed spectogram.
@@ -49,22 +52,25 @@ def full_segment_actions(segment, frames_per_segment, metrics, radar_params, pro
     Then, the completed spectogram is passed to the AI.
     Finally, the front half of the segment is sent to the back half, and the segment index is set to the midpoint.
     """
-    processed_spectogram = spectrogram_stuff.spectrogram_postprocessing(segment, processing_params)
+    processed_spectogram1 = full_process_frames(segment1)
+    processed_spectogram2 = full_process_frames(segment2)
+    
+    decision = myDecider.make_decision(processed_spectogram1, processed_spectogram2)
 
-    if plot == 'static':
+    if decision:
+        print("Fall Detected!!")
         device1.stop_acquisition()
         device2.stop_acquisition()
-        spectogram_plotting.plot_spectogram(processed_spectogram, 'Title', radar_params, metrics)
+        spectogram_plotting.plot_spectogram(processed_spectogram1, "radar1", radar_params, metrics)
+        spectogram_plotting.plot_spectogram(processed_spectogram2, "radar2", radar_params, metrics)
         device1.start_acquisition()
         device2.start_acquisition()
-    
-    decision = myDecider.make_decision(processed_spectogram)
-    print(f'Radar 1: {decision}')
 
-    segment[0:(frames_per_segment // 2) - 1] = segment[frames_per_segment // 2 : frames_per_segment - 1]
+    segment1[0:(frames_per_segment // 2)] = segment1[frames_per_segment // 2 : frames_per_segment]
+    segment2[0:(frames_per_segment // 2)] = segment2[frames_per_segment // 2: frames_per_segment]
     segment_idx = (frames_per_segment // 2) - 1
 
-    return segment, segment_idx
+    return segment1, segment2, segment_idx
 
 loop_start_time = time.time()
 device1.start_acquisition()
@@ -82,15 +88,14 @@ while True: # main loop
     frame2 = device2.get_next_frame()[0]
 
     # immediately do the processing on the acquired frames, giving a single slice of the spectogram
-    segment_R1[R1_idx] = spectrogram_stuff.get_spectogram_slice_from_raw(frame1, processing_params, metrics1)
-    segment_R2[R2_idx] = spectrogram_stuff.get_spectogram_slice_from_raw(frame2, processing_params, metrics2)
-
+    segment_R1[R1_idx] = frame1
+    segment_R2[R2_idx] = frame2
 
     if R1_idx == frames_per_segment - 1:
-        segment_R1, R1_idx = full_segment_actions(segment_R1, frames_per_segment, metrics1, R1_params, processing_params, plot='static')
+        segment_R1, segment_R2, idx = full_segment_actions(segment_R1, segment_R2, frames_per_segment, metrics1, R1_params, processing_params)
+        R1_idx = idx
+        R2_idx = idx
 
-    if R2_idx == frames_per_segment - 1:
-        segment_R2, R2_idx = full_segment_actions(segment_R2, frames_per_segment, metrics2, R2_params, processing_params, plot='static')
 
     R1_idx += 1
     R2_idx += 1
