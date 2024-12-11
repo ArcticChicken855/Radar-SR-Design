@@ -54,24 +54,20 @@ def get_radar_data(data_array):
     Returns a new array containing only the radar frames
     This includes the radar frames from both radar1 and radar2
     """
-    radar1_array = []
-    radar2_array = []
 
-    for i in range(len(data_array)):
-        if random.random() > 0.5:
-            radar1_array.append(get_radar1_frames(data_array[i]))
-            radar2_array.append(get_radar2_frames(data_array[i]))
-        else:
-            radar1_array.append(get_radar2_frames((data_array[i])))
-            radar2_array.append(get_radar1_frames((data_array[i])))
+    # basically my idea is to do a form of data augmentation by having two copies of each recording
+    # the normal copy, and a copy where radar1 and radar2 are swapped
 
+    radar1_array = [get_radar1_frames(data) for data in data_array]
+    radar2_array = [get_radar2_frames(data) for data in data_array]
 
+    radar1_array += [get_radar2_frames(data) for data in data_array]
+    radar2_array += [get_radar1_frames(data) for data in data_array]
 
-
-    # basically what I want to implement here is randomly shuffling which radar is which
-    # this should prevent biases from things like more often falling in the direction of one of the
-    # two radars
-
+    # now shuffle
+    combined = list(zip(radar1_array, radar2_array))
+    random.shuffle(combined)
+    radar1_array, radar2_array = list(zip(*combined))
 
     output_array = [radar1_array, radar2_array]
     return output_array
@@ -103,12 +99,10 @@ def split_training_vs_testing(data_array):
 def main():
     print("Collecting Data.")
     data_array = get_all_data_from_path(raw_data_path / "nov13" / "IQpickles")
+    data_array += get_all_data_from_path(raw_data_path / "dec10" / "IQpickles")
     print("Found " + str(len(data_array)) + " recordings.")
     data_array = get_valid_data_only(data_array)
     print("Identified " + str(len(data_array)) + " valid recordings.")
-
-    print("Shuffling Data.")
-    random.shuffle(data_array)
 
     fall_array, non_fall_array = separate_falls(data_array)
     print("Identified " + str(len(fall_array)) + " falls.")
@@ -121,6 +115,7 @@ def main():
     print("Collected " + str(len(fall_radar_data[0])) + " falls.")
     print("Collected " + str(len(non_fall_radar_data[0])) + " non-falls.")
     print("\n")
+
 
 
 

@@ -7,7 +7,7 @@ from keras import layers
 
 import pathlib as p
 import matplotlib.pyplot as plt
-
+from tensorflow.python.layers.core import Dropout
 
 from pickle_utils import *
 
@@ -99,7 +99,7 @@ for layer in model.layers[7:]:
 
 
 model.compile(optimizer='adam',
-              loss=keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+              loss=keras.losses.SparseCategoricalCrossentropy(),
               metrics=['accuracy'])
 
 history = model.fit(
@@ -123,7 +123,7 @@ for layer in model.layers[7:]:
 
 # recompile
 model.compile(optimizer='adam',
-              loss=keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+              loss=keras.losses.SparseCategoricalCrossentropy(),
               metrics=['accuracy'])
 
 # and continue training
